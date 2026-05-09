@@ -4,8 +4,10 @@ Inibsa · Interhack BCN 2026
 ## Project Structure
  
 - `src/`: Python scripts for data analysis and statistics.
+- `src/api.py`: RestAPI backend for real-time alert fetching.
 - `data/`: Raw datasets in CSV and XLSX format.
 - `docs/`: Documentation, hackathon briefings, and statistical reports.
+- `docs/api_documentation.md`: Detailed technical documentation for the RestAPI.
 - `plots/`: Generated visualizations and charts.
 - `README.md`: Project overview and documentation.
  
