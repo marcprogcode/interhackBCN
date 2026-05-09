@@ -84,6 +84,20 @@ def plot_signals(recurring_clients, reference_date, top_n=15):
     # Sort by how "recent" their last purchase was to show active churn
     clients_with_signals = sorted(clients_with_signals, key=lambda x: x['last_purchase'], reverse=True)
     
+    # --- Generate Markdown of Alerts ---
+    md_lines = ["# Sales Alerts\n", "| Client ID | Date of Alert |", "|-----------|---------------|"]
+    has_alerts = False
+    for client in clients_with_signals:
+        for _, _, exp_date in client['signals']:
+            md_lines.append(f"| {client['id']} | {exp_date.strftime('%Y-%m-%d')} |")
+            has_alerts = True
+            
+    if has_alerts:
+        md_path = os.path.join(os.path.dirname(__file__), 'sales_alerts.md')
+        with open(md_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(md_lines) + '\n')
+        print(f"Alerts Markdown saved successfully at {md_path}")
+
     to_plot = clients_with_signals[:top_n]
     
     for i, client in enumerate(to_plot):
