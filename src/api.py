@@ -59,6 +59,8 @@ async def get_alerts(top_x: int = Query(10, description="Number of top priority 
         result.append({
             "company_id": str(row['Client_ID']),
             "location": str(row['Location']),
+            "product_family": str(row['Product_Family']),
+            "type": str(row['Type']),
             "reason": str(row['Reason']),
             "priority_score": float(row['Normalized_Score']),
             "expected_return": float(round(row['Expected_Value'], 2)),

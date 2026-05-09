@@ -35,6 +35,8 @@ Retrieves a list of high-priority client alerts, enriched with location data and
 | :--- | :--- | :--- |
 | `company_id` | `string` | Unique identifier of the client company. |
 | `location` | `string` | Province where the company is located. |
+| `product_family` | `string` | The product family the alert applies to. |
+| `type` | `string` | The type of alert (e.g., Replenishment, Churn Risk). |
 | `reason` | `string` | Human-readable explanation of why the alert was triggered. |
 | `priority_score` | `float` | Normalized score from **1.0 to 10.0** within the current selection (10 = highest priority). |
 | `expected_return` | `float` | Estimated revenue (in €) from a successful outreach. |
@@ -51,6 +53,8 @@ curl "http://localhost:8000/alerts?top_x=3"
   {
     "company_id": "13146",
     "location": "Madrid",
+    "product_family": "Anestesia",
+    "type": "Replenishment",
     "reason": "Overdue 138d (cycle:108, thresh:125, conf:1.00, age:1385d, txns:18)",
     "priority_score": 10.0,
     "expected_return": 1827.42,
@@ -59,6 +63,8 @@ curl "http://localhost:8000/alerts?top_x=3"
   {
     "company_id": "42207",
     "location": "Valencia",
+    "product_family": "Restauración",
+    "type": "Churn Risk",
     "reason": "Overdue 82d (cycle:64, thresh:74, conf:1.00, age:1289d, txns:26)",
     "priority_score": 7.5,
     "expected_return": 1696.88,
@@ -67,6 +73,8 @@ curl "http://localhost:8000/alerts?top_x=3"
   {
     "company_id": "13247",
     "location": "Guipúzcoa",
+    "product_family": "Infección",
+    "type": "Replenishment",
     "reason": "Overdue 122d (cycle:97, thresh:112, conf:0.92, age:1355d, txns:21)",
     "priority_score": 4.2,
     "expected_return": 1890.75,
