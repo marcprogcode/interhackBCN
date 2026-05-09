@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import math
 from datetime import timedelta
 import os
 from data_loader import DataLoader
@@ -24,31 +25,36 @@ class PrioritizationEngine:
         q95 = ltv['LTV'].quantile(0.95)
         q90 = ltv['LTV'].quantile(0.90)
         q75 = ltv['LTV'].quantile(0.75)
+        q50 = ltv['LTV'].quantile(0.50)
         
         def get_multiplier(val):
-            if val >= q99: return 3.0
-            if val >= q95: return 2.0
-            if val >= q90: return 1.5
-            if val >= q75: return 1.2
-            return 1.0
+            if val >= q99: return 5.0
+            if val >= q95: return 3.0
+            if val >= q90: return 2.0
+            if val >= q75: return 1.5
+            if val >= q50: return 1.0
+            return 0.2  # Strongly penalize low-value clients
             
         ltv['LTV_Multiplier'] = ltv['LTV'].apply(get_multiplier)
         return ltv[['Id. Cliente', 'LTV', 'LTV_Multiplier']]
 
-    def get_potencial_bonus(self, client_id, family, df_potencial):
-        """Returns a 1.05 multiplier if potential > actual spend, 1.0 otherwise."""
-        # Simple lookup: Since this is highly noisy, we'll just return a static bonus if potential > 0
-        # A more robust implementation could compare to actual annualized spend.
-        # For this iteration, we keep it simple as requested (low priority, high noise).
+    def get_potencial_bonus(self, client_id, family, df_potencial, annualized_spend):
+        """Returns a multiplier if potential > actual spend, targeting promiscuous clients."""
         pot = df_potencial[(df_potencial['Id.Cliente'] == client_id) & (df_potencial['Familia'] == family)]
-        if not pot.empty and pot['Potencial_H'].values[0] > 0:
-            return 1.05
+        if not pot.empty:
+            pot_val = pot['Potencial_H'].values[0]
+            if pot_val > annualized_spend * 2.0:
+                return 2.0  # High potential for capture (highly promiscuous)
+            elif pot_val > annualized_spend * 1.2:
+                return 1.5  # Some potential
         return 1.0
 
     def process_commodities(self, df_com, current_date, ltv_df, df_potencial):
         alerts = []
+        from tqdm import tqdm
         # Group by Client and Family
-        for (client, family), group in df_com.groupby(['Id. Cliente', 'Familia_H']):
+        groups = df_com.groupby(['Id. Cliente', 'Familia_H'])
+        for (client, family), group in tqdm(groups, desc="Processing Commodities"):
             group = group.sort_values('Fecha')
             
             # Need to use unique dates to avoid zero intervals from same-day purchases
@@ -59,9 +65,21 @@ class PrioritizationEngine:
             # Inter-Purchase Times (IPT)
             ipts = unique_dates.diff().dt.days.dropna()
             
-            # 1. Confidence calculation
+            # 1. Confidence and Longevity calculation
             real_cycles = len(ipts[ipts >= 7])
             confidence = min(1.0, real_cycles / 10.0) # 0.0 to 1.0
+            
+            client_age_days = (group['Fecha'].iloc[-1] - group['Fecha'].iloc[0]).days
+            if client_age_days < 90:
+                longevity_mult = 0.1 # Heavily penalize clients with barely any history
+            elif client_age_days < 365:
+                longevity_mult = 0.5
+            elif client_age_days < 1095:
+                longevity_mult = 1.2
+            else:
+                longevity_mult = 1.5
+                
+            annualized_spend = group['Valores_H'].sum() / max(1, client_age_days / 365.0)
             
             # Robust Peak-Tracking: 85th Percentile of recent cycles
             recent_ipts = ipts.tail(15)
@@ -87,24 +105,45 @@ class PrioritizationEngine:
                 avg_tx_value = group['Valores_H'].mean()
                 if avg_tx_value <= 0:
                     continue
-                    
-                urgency = min(dslp / max(1, base_cycle), 5.0) # Cap urgency to avoid extreme scores
                 
-                ltv_mult = ltv_df[ltv_df['Id. Cliente'] == client]['LTV_Multiplier'].values
-                ltv_mult = ltv_mult[0] if len(ltv_mult) > 0 else 1.0
+                # 3. Urgency: logarithmic scaling instead of linear
+                # In real-time, dslp/base_cycle ≈ 1.0-2.0; log dampens extreme retroactive values
+                urgency = min(1.0 + math.log(max(1.0, dslp / base_cycle)), 2.5)
                 
-                pot_bonus = self.get_potencial_bonus(client, family, df_potencial)
+                # 4. Recoverability: clients far past threshold are probably lost
+                # Decays as they get further past their expected date
+                overdue_beyond = max(0, dslp - adjusted_threshold)
+                recoverability = 1.0 / (1.0 + 0.5 * (overdue_beyond / base_cycle))
                 
-                # 3. Score application
-                conf_multiplier = 0.5 + (0.5 * confidence) # Penalize newcomers
-                priority_score = avg_tx_value * urgency * ltv_mult * pot_bonus * conf_multiplier
+                # 5. LTV with family relevance
+                ltv_row = ltv_df[ltv_df['Id. Cliente'] == client]
+                global_ltv_mult = ltv_row['LTV_Multiplier'].values[0] if len(ltv_row) > 0 else 1.0
+                global_ltv = ltv_row['LTV'].values[0] if len(ltv_row) > 0 else 1.0
+                family_spend = group['Valores_H'].sum()
+                family_share = min(1.0, family_spend / max(1, global_ltv))
+                # Blend: full multiplier if family is >50% of spend, dampened otherwise
+                ltv_mult = global_ltv_mult * (0.5 + 0.5 * min(1.0, family_share * 2))
+                
+                pot_bonus = self.get_potencial_bonus(client, family, df_potencial, annualized_spend)
+                
+                # 6. Score: value × urgency × recoverability × modifiers
+                conf_multiplier = 0.5 + (0.5 * confidence) # Penalize newcomers further
+                priority_score = avg_tx_value * urgency * recoverability * ltv_mult * pot_bonus * conf_multiplier * longevity_mult
+                
+                formula_str = (f'avg_val({avg_tx_value:.1f}) × urg({urgency:.2f}) × '
+                               f'recov({recoverability:.2f}) × ltv({ltv_mult:.1f}) × '
+                               f'pot({pot_bonus:.1f}) × conf({conf_multiplier:.2f}) × '
+                               f'long({longevity_mult:.1f}) = {priority_score:.1f}')
+                reason_str = (f'Overdue {dslp}d (cycle:{base_cycle:.0f}, thresh:{adjusted_threshold:.0f}, '
+                              f'conf:{confidence:.2f}, age:{client_age_days}d, txns:{len(unique_dates)})')
                 
                 alerts.append({
                     'Client_ID': client,
                     'Product_Family': family,
                     'Type': 'Replenishment',
                     'Priority_Score': priority_score,
-                    'Reason': f'Overdue by {dslp} days (Typical Max Cycle: {base_cycle:.0f}, Conf: {confidence:.2f})',
+                    'Reason': reason_str,
+                    'Formula': formula_str,
                     'Expected_Value': avg_tx_value
                 })
         return alerts
@@ -115,7 +154,20 @@ class PrioritizationEngine:
         recent_start = current_date - timedelta(days=180)
         previous_start = current_date - timedelta(days=360)
         
-        for (client, family), group in df_tech.groupby(['Id. Cliente', 'Familia_H']):
+        from tqdm import tqdm
+        groups = df_tech.groupby(['Id. Cliente', 'Familia_H'])
+        for (client, family), group in tqdm(groups, desc="Processing Technical"):
+            client_age_days = (group['Fecha'].max() - group['Fecha'].min()).days
+            if client_age_days < 180:
+                continue # Cannot reliably determine churn with < 6 months of history
+                
+            if client_age_days < 365:
+                longevity_mult = 0.5
+            elif client_age_days < 1095:
+                longevity_mult = 1.2
+            else:
+                longevity_mult = 1.5
+                
             recent_vol = group[(group['Fecha'] > recent_start) & (group['Fecha'] <= current_date)]['Valores_H'].sum()
             prev_vol = group[(group['Fecha'] > previous_start) & (group['Fecha'] <= recent_start)]['Valores_H'].sum()
             
@@ -124,18 +176,30 @@ class PrioritizationEngine:
                 avg_tx_value = group['Valores_H'].mean()
                 urgency = 1.5 # Fixed urgency for churn risk
                 
-                ltv_mult = ltv_df[ltv_df['Id. Cliente'] == client]['LTV_Multiplier'].values
-                ltv_mult = ltv_mult[0] if len(ltv_mult) > 0 else 1.0
-                pot_bonus = self.get_potencial_bonus(client, family, df_potencial)
+                # Family-relevant LTV
+                ltv_row = ltv_df[ltv_df['Id. Cliente'] == client]
+                global_ltv_mult = ltv_row['LTV_Multiplier'].values[0] if len(ltv_row) > 0 else 1.0
+                global_ltv = ltv_row['LTV'].values[0] if len(ltv_row) > 0 else 1.0
+                family_spend = group['Valores_H'].sum()
+                family_share = min(1.0, family_spend / max(1, global_ltv))
+                ltv_mult = global_ltv_mult * (0.5 + 0.5 * min(1.0, family_share * 2))
                 
-                priority_score = prev_vol * urgency * ltv_mult * pot_bonus
+                annualized_spend = group['Valores_H'].sum() / max(1, client_age_days / 365.0)
+                pot_bonus = self.get_potencial_bonus(client, family, df_potencial, annualized_spend)
+                
+                priority_score = prev_vol * urgency * ltv_mult * pot_bonus * longevity_mult
+                
+                formula_str = (f'prev_vol({prev_vol:.0f}) × urgency({urgency:.1f}) × '
+                               f'ltv({ltv_mult:.1f}) × pot({pot_bonus:.1f}) × long({longevity_mult:.1f}) = {priority_score:.1f}')
+                reason_str = (f'Vol drop >50% (prev6m:{prev_vol:.0f}€→recent6m:{recent_vol:.0f}€, age:{client_age_days}d)')
                 
                 alerts.append({
                     'Client_ID': client,
                     'Product_Family': family,
                     'Type': 'Churn Risk',
                     'Priority_Score': priority_score,
-                    'Reason': f'Volume dropped >50% (Prev 6M: {prev_vol:.0f}€ -> Recent 6M: {recent_vol:.0f}€)',
+                    'Reason': reason_str,
+                    'Formula': formula_str,
                     'Expected_Value': prev_vol
                 })
         return alerts
