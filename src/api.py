@@ -22,7 +22,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-engine = PrioritizationEngine(data_dir="../data", output_dir="../outputs")
+# Calculate absolute paths for data and outputs
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+
+engine = PrioritizationEngine(data_dir=DATA_DIR, output_dir=OUTPUTS_DIR)
 
 @app.get("/alerts")
 async def get_alerts(top_x: int = Query(10, description="Number of top priority alerts to fetch")):
