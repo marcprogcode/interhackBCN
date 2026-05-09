@@ -1,71 +1,72 @@
-import sys
 import os
-
-# Ensure the current directory and its parent (root) are in the path
-sys.path.append(os.path.dirname(__file__))
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
-
-from fastapi import FastAPI, Query
-from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
-from prioritization_engine import PrioritizationEngine
+from fastapi import FastAPI, HTTPException
+from pymongo import MongoClient
+from pymongo.errors import ServerSelectionTimeoutError
 import uvicorn
 
-app = FastAPI(title="Interhack BCN Retention API")
+app = FastAPI(title="Interhack BCN Daily Alerts API")
 
-# Allow the frontend (on any origin) to call this API from the browser
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# Connect to local MongoDB instance
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
+# Set a low timeout so it doesn't hang if Mongo isn't running
+client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=2000)
+db = client["interhack"]
+collection = db["daily_alerts"]
 
-# Calculate absolute paths for data and outputs
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, "data")
-OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+CSV_PATH = os.path.join(os.path.dirname(__file__), '..', 'outputs', 'daily_alerts.csv')
 
-engine = PrioritizationEngine(data_dir=DATA_DIR, output_dir=OUTPUTS_DIR)
-
-@app.get("/alerts")
-async def get_alerts(top_x: int = Query(10, description="Number of top priority alerts to fetch")):
-    # Generate alerts using the engine
-    alerts_df = engine.generate_alerts()
-    
-    if alerts_df.empty:
-        return []
-    
-    # Take top X
-    top_alerts = alerts_df.head(top_x).copy()
-    
-    # Get client locations for joining
-    locations = engine.loader.get_client_locations()
-    top_alerts['Location'] = top_alerts['Client_ID'].map(locations).fillna("Unknown")
-    
-    # Normalize priority score 1-10 within the selection
-    max_score = top_alerts['Priority_Score'].max()
-    min_score = top_alerts['Priority_Score'].min()
-    
-    if max_score > min_score:
-        top_alerts['Normalized_Score'] = ((top_alerts['Priority_Score'] - min_score) / (max_score - min_score) * 9 + 1).round(1)
-    else:
-        top_alerts['Normalized_Score'] = 10.0
+def load_data_to_mongo(force=False):
+    try:
+        # Check connection first
+        client.admin.command('ping')
         
-    # Format the response as requested
-    result = []
-    for _, row in top_alerts.iterrows():
-        result.append({
-            "company_id": str(row['Client_ID']),
-            "location": str(row['Location']),
-            "reason": str(row['Reason']),
-            "priority_score": float(row['Normalized_Score']),
-            "expected_return": float(round(row['Expected_Value'], 2)),
-            "confidence": float(round(row['Confidence'], 2))
-        })
+        # If not forcing and we already have data, treat it as a cache
+        if not force and collection.count_documents({}) > 0:
+            print("Data already exists in MongoDB. Using cached data.")
+            return
+
+        if os.path.exists(CSV_PATH):
+            df = pd.read_csv(CSV_PATH)
+            # Convert dataframe to list of dictionaries
+            records = df.to_dict(orient='records')
+            
+            # Clear existing data and insert new data
+            collection.delete_many({})
+            if records:
+                collection.insert_many(records)
+                print(f"Successfully loaded {len(records)} records into MongoDB.")
+            else:
+                print("CSV file is empty.")
+        else:
+            print(f"CSV file not found at {CSV_PATH}")
+
+    except ServerSelectionTimeoutError:
+        print("MongoDB is not running or unreachable. Please start MongoDB.")
+    except Exception as e:
+        print(f"Error loading CSV to MongoDB: {e}")
+
+# Load the data when the script starts (only if MongoDB is empty)
+load_data_to_mongo()
+
+@app.get("/api/alerts")
+def get_all_alerts():
+    try:
+        # Check connection
+        client.admin.command('ping')
         
-    return result
+        # Retrieve all documents from the collection
+        cursor = collection.find({})
+        alerts = []
+        for document in cursor:
+            # Convert ObjectId to string or remove it
+            document['_id'] = str(document['_id'])
+            alerts.append(document)
+        return {"data": alerts}
+    except ServerSelectionTimeoutError:
+        raise HTTPException(status_code=503, detail="MongoDB service is unavailable")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
