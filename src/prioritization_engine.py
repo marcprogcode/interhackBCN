@@ -49,32 +49,35 @@ class PrioritizationEngine:
             
             # Need to use unique dates to avoid zero intervals from same-day purchases
             unique_dates = group['Fecha'].dt.normalize().drop_duplicates()
-            if len(unique_dates) < 3:
-                continue # Need history to calculate IPT
+            if len(unique_dates) < 4:
+                continue # Need enough history for BoS confidence
                 
-            # Inter-Purchase Times (IPT) - use recent history (last 5 intervals) to adapt over time
+            # Inter-Purchase Times (IPT)
             ipts = unique_dates.diff().dt.days.dropna()
-            median_ipt = ipts.tail(5).median()
             
-            if pd.isna(median_ipt) or median_ipt <= 0:
+            # Robust Peak-Tracking: 85th Percentile of recent cycles
+            recent_ipts = ipts.tail(15)
+            base_cycle = recent_ipts.quantile(0.85)
+            
+            if pd.isna(base_cycle) or base_cycle <= 0:
                 continue
                 
             last_purchase_date = group['Fecha'].iloc[-1]
             dslp = (current_date - last_purchase_date).days
             
-            expected_date = last_purchase_date + timedelta(days=median_ipt)
+            expected_date = last_purchase_date + timedelta(days=base_cycle)
             # August seasonality adjustment
             if expected_date.month == 8:
-                adjusted_threshold = median_ipt + 30
+                adjusted_threshold = base_cycle + 30
             else:
-                adjusted_threshold = median_ipt * 1.5
+                adjusted_threshold = base_cycle * 1.30
                 
             if dslp > adjusted_threshold:
                 avg_tx_value = group['Valores_H'].mean()
                 if avg_tx_value <= 0:
                     continue
                     
-                urgency = min(dslp / max(1, median_ipt), 5.0) # Cap urgency to avoid extreme scores
+                urgency = min(dslp / max(1, base_cycle), 5.0) # Cap urgency to avoid extreme scores
                 
                 ltv_mult = ltv_df[ltv_df['Id. Cliente'] == client]['LTV_Multiplier'].values
                 ltv_mult = ltv_mult[0] if len(ltv_mult) > 0 else 1.0
@@ -88,7 +91,7 @@ class PrioritizationEngine:
                     'Product_Family': family,
                     'Type': 'Replenishment',
                     'Priority_Score': priority_score,
-                    'Reason': f'Overdue by {dslp} days (Expected IPT: {median_ipt:.0f})',
+                    'Reason': f'Overdue by {dslp} days (Typical Max Cycle: {base_cycle:.0f})',
                     'Expected_Value': avg_tx_value
                 })
         return alerts
@@ -132,6 +135,8 @@ class PrioritizationEngine:
         # Determine current date
         if simulated_date:
             current_date = pd.to_datetime(simulated_date)
+            # PREVENT DATA LEAKAGE: Filter strictly to data before or on current_date
+            df = df[df['Fecha'] <= current_date]
         else:
             current_date = df['Fecha'].max()
             

@@ -45,21 +45,32 @@ class RetroactiveSimulator:
             history = client_data[client_data['Fecha'] < current_sim_date]
             unique_dates = history['Fecha'].drop_duplicates().sort_values()
             
-            if len(unique_dates) >= 3:
-                # Calculate metrics exactly like the prioritization engine
+            if len(unique_dates) >= 4:
                 history_ipt = unique_dates.diff().dt.days.dropna()
-                # Use recent history to adapt over time (e.g. last 5 intervals)
+                
+                # Old logic for comparison
                 median_ipt = history_ipt.tail(5).median()
+                
+                # Robust Peak-Tracking: 85th Percentile of recent cycles
+                recent_ipts = history_ipt.tail(15)
+                base_cycle = recent_ipts.quantile(0.85)
                 
                 last_purchase = unique_dates.iloc[-1]
                 dslp = (current_sim_date - last_purchase).days
                 
-                # Threshold logic
-                expected_date = last_purchase + timedelta(days=median_ipt)
-                if expected_date.month == 8:
-                    threshold = median_ipt + 30
+                # Threshold logic - old
+                expected_date_old = last_purchase + timedelta(days=median_ipt)
+                if expected_date_old.month == 8:
+                    old_threshold = median_ipt + 30
                 else:
-                    threshold = median_ipt * 1.5
+                    old_threshold = median_ipt * 1.5
+                
+                # Threshold logic - new (Peak-Tracking based)
+                expected_date = last_purchase + timedelta(days=base_cycle)
+                if expected_date.month == 8:
+                    threshold = base_cycle + 30
+                else:
+                    threshold = base_cycle * 1.30
                 
                 is_triggered = dslp > threshold
                 
@@ -73,6 +84,8 @@ class RetroactiveSimulator:
                     'Date': current_sim_date,
                     'DSLP': dslp,
                     'Threshold': threshold,
+                    'Old_Threshold': old_threshold,
+                    'Base_Cycle': base_cycle,
                     'Triggered': is_triggered
                 })
             
@@ -85,10 +98,12 @@ class RetroactiveSimulator:
         
         plt.figure(figsize=(15, 8))
         
-        # Plot 1: DSLP vs Threshold
+        # Plot 1: DSLP vs Thresholds
         ax1 = plt.gca()
         ax1.plot(sim_df['Date'], sim_df['DSLP'], color='#00f2ff', label='Days Since Last Purchase', linewidth=2)
-        ax1.plot(sim_df['Date'], sim_df['Threshold'], color='#ffaa00', linestyle='--', label='Alert Threshold', alpha=0.7)
+        ax1.plot(sim_df['Date'], sim_df['Threshold'], color='#ffaa00', linestyle='--', label='New Peak Threshold', linewidth=2, alpha=0.9)
+        if 'Old_Threshold' in sim_df.columns:
+            ax1.plot(sim_df['Date'], sim_df['Old_Threshold'], color='#888888', linestyle=':', label='Old Median Threshold', alpha=0.5)
         
         # Highlight trigger points
         for i, t_date in enumerate(trigger_dates):
@@ -131,14 +146,14 @@ class RetroactiveSimulator:
                           f"WHY: Client missed their usual pattern.\n"
                           f"They reached {days_overdue:.0f} days without\n"
                           f"purchasing, crossing the threshold of {thresh:.0f}\n"
-                          f"days (1.5x their recent median interval).\n"
+                          f"days (1.15x their typical max cycle).\n"
                           f"Total triggers: {len(trigger_dates)}")
             
             props = dict(boxstyle='round', facecolor='#1e1e1e', alpha=0.9, edgecolor='#00f2ff')
             plt.text(0.98, 0.05, explanation, transform=plt.gca().transAxes, fontsize=12,
                     verticalalignment='bottom', horizontalalignment='right', bbox=props, color='white')
 
-        filename = f"retro_alert_{client_id}.png"
+        filename = f"retro_alert_{client_id}_{family.replace(' ', '_')}.png"
         save_path = os.path.join(self.plots_dir, filename)
         plt.tight_layout()
         plt.savefig(save_path, dpi=150)
@@ -155,3 +170,5 @@ if __name__ == "__main__":
     # Test top clients
     sim.run_simulation(30696, "Familia C2")
     sim.run_simulation(35217, "Familia C1")
+    sim.run_simulation(11999, "Familia C1")
+    sim.run_simulation(11999, "Familia C2")
