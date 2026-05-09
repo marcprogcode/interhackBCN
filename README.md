@@ -1,5 +1,14 @@
  Smart Demand Signals 
 Inibsa · Interhack BCN 2026 
+ 
+## Project Structure
+ 
+- `src/`: Python scripts for data analysis and statistics.
+- `data/`: Raw datasets in CSV and XLSX format.
+- `docs/`: Documentation, hackathon briefings, and statistical reports.
+- `plots/`: Generated visualizations and charts.
+- `README.md`: Project overview and documentation.
+ 
 1. Context and Motivation 
 Inibsa is a locally-based pharmaceutical manufacturing company, committed to 
 European standards and sustainability criteria such as efficient use of water and 
