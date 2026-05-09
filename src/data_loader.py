@@ -47,3 +47,11 @@ class DataLoader:
         # Merge Ventas with Productos to get 'Bloque analítico' and 'Familia_H'
         merged = pd.merge(df_ventas, df_productos, left_on='Id. Producto', right_on='Id.Prod', how='left')
         return merged
+
+    def get_client_locations(self):
+        """Returns a mapping of Id. Cliente to Provincia."""
+        df_clientes = self.load_clientes()
+        # The file has: Id. Cliente,,Provincia
+        # We need to handle the unnamed column if it exists
+        df_clientes = df_clientes[['Id. Cliente', 'Provincia']]
+        return df_clientes.set_index('Id. Cliente')['Provincia'].to_dict()

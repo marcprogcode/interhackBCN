@@ -144,7 +144,8 @@ class PrioritizationEngine:
                     'Priority_Score': priority_score,
                     'Reason': reason_str,
                     'Formula': formula_str,
-                    'Expected_Value': avg_tx_value
+                    'Expected_Value': avg_tx_value,
+                    'Confidence': confidence
                 })
         return alerts
 
@@ -200,7 +201,8 @@ class PrioritizationEngine:
                     'Priority_Score': priority_score,
                     'Reason': reason_str,
                     'Formula': formula_str,
-                    'Expected_Value': prev_vol
+                    'Expected_Value': prev_vol,
+                    'Confidence': 0.85 # High confidence for clear volume drops
                 })
         return alerts
 
