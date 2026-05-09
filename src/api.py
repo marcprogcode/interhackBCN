@@ -6,12 +6,23 @@ sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 from prioritization_engine import PrioritizationEngine
 import uvicorn
 
 app = FastAPI(title="Interhack BCN Retention API")
-engine = PrioritizationEngine()
+
+# Allow the frontend (on any origin) to call this API from the browser
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+engine = PrioritizationEngine(data_dir="../data", output_dir="../outputs")
 
 @app.get("/alerts")
 async def get_alerts(top_x: int = Query(10, description="Number of top priority alerts to fetch")):
