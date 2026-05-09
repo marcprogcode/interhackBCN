@@ -17,7 +17,7 @@ def clean_currency(x):
 
 def run_statistical_analysis():
     print("--- Loading Data ---")
-    ventas_path = os.path.join("datasets", "Datasets.xlsx - Ventas.csv")
+    ventas_path = os.path.join("data", "Datasets.xlsx - Ventas.csv")
     df_ventas = pd.read_csv(ventas_path, low_memory=False)
     
     df_ventas['Fecha'] = pd.to_datetime(df_ventas['Fecha'], dayfirst=False)

@@ -18,6 +18,8 @@ The distribution of total lifetime value per client (N=8,095) is highly right-sk
 
 **Interpretation:** The vast difference between the mean and the median, along with extreme skewness and kurtosis, proves mathematically what the histogram showed: a small number of very high-value clients generate a disproportionately large amount of revenue.
 
+![LTV Distribution](../plots/lifetime_purchase_dist.png)
+ 
 ---
 
 ## 2. Client Tenure (Active Lifespan) Distribution
@@ -32,6 +34,8 @@ Tenure is defined as the days between a client's first and most recent purchase.
 *   **75th Percentile:** 1,662 days (~4.5 years)
 
 **Interpretation:** The median being higher than the mean indicates a left-skew in survival terms—a large core of loyal clients stick around for 3.4+ years, while a subset drops off early (bringing the mean down).
+ 
+![Tenure Distribution](../plots/client_tenure_dist.png)
 
 ---
 
@@ -42,6 +46,8 @@ To quantify the scatter plot showing Tenure vs LTV, we ran correlation tests.
 *   **Spearman Correlation (Rank-based):** 0.7906 (p-value: < 0.0001)
 
 **Interpretation:** The Pearson correlation is moderate (0.39) due to extreme LTV outliers breaking the linear scale. However, the **Spearman correlation is very strong (0.79)**. This means that *rank order* is highly consistent: as clients stay longer, their relative LTV rank reliably goes up. Loyalty is a massive driver of accumulated value.
+ 
+![Tenure vs LTV](../plots/tenure_vs_ltv.png)
 
 ---
 
@@ -56,6 +62,8 @@ We filtered for clients with > 2 years of tenure and compared a random sample (N
     * *Conclusion:* The median transaction values of the two groups are definitively drawn from different distributions. 
 *   **Levene's Test (Equality of Variances):** p-value < 0.0001 
     * *Conclusion:* The top spenders have statistically significantly higher variance. They don't just spend more on average; their transaction sizes are vastly more erratic.
+ 
+![Spender Comparison](../plots/spender_comparison_overlay.png)
 
 ---
 
@@ -65,3 +73,4 @@ To determine if the spending habits "follow each other" (from the dual-axis line
 *   **Pearson Correlation (Monthly Aggregates):** 0.6035 (p-value < 0.0001)
 
 **Interpretation:** A correlation of ~0.60 indicates a **moderate-to-strong positive relationship** in their spending rhythms over time. Both groups tend to peak and dip during the same months, confirming that broader business seasonality or market forces impact both low and high spenders similarly, even if the scale of their spending is entirely different.
+![Spending Habits](../plots/spending_habits_line_chart.png)

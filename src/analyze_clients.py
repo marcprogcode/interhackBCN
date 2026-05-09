@@ -21,8 +21,8 @@ def clean_currency(x):
 
 def analyze():
     print("Loading datasets...")
-    ventas_path = os.path.join("datasets", "Datasets.xlsx - Ventas.csv")
-    clientes_path = os.path.join("datasets", "Datasets.xlsx - Clientes.csv")
+    ventas_path = os.path.join("data", "Datasets.xlsx - Ventas.csv")
+    clientes_path = os.path.join("data", "Datasets.xlsx - Clientes.csv")
     
     if not os.path.exists(ventas_path):
         print(f"Error: {ventas_path} not found.")
@@ -60,7 +60,7 @@ def analyze():
     plt.xlabel('Total Lifetime Value (€)', fontsize=12)
     plt.ylabel('Frequency', fontsize=12)
     plt.tight_layout()
-    plt.savefig('lifetime_purchase_dist.png', dpi=300)
+    plt.savefig('plots/lifetime_purchase_dist.png', dpi=300)
     print("Saved lifetime_purchase_dist.png")
 
     # Plot 2: Client Tenure Distribution
@@ -70,7 +70,7 @@ def analyze():
     plt.xlabel('Days between First and Last Purchase', fontsize=12)
     plt.ylabel('Frequency', fontsize=12)
     plt.tight_layout()
-    plt.savefig('client_tenure_dist.png', dpi=300)
+    plt.savefig('plots/client_tenure_dist.png', dpi=300)
     print("Saved client_tenure_dist.png")
 
     # Bonus: Scatter plot of Tenure vs LTV
@@ -82,14 +82,14 @@ def analyze():
     plt.ylabel('Lifetime Value (€)', fontsize=12)
     plt.yscale('log') # Use log scale for Y as LTV varies wildly
     plt.tight_layout()
-    plt.savefig('tenure_vs_ltv.png', dpi=300)
+    plt.savefig('plots/tenure_vs_ltv.png', dpi=300)
     print("Saved tenure_vs_ltv.png")
 
     print("Analysis complete.")
 
 def analyze_comparative():
     print("\nStarting comparative analysis (Top vs Bottom spenders)...")
-    ventas_path = os.path.join("datasets", "Datasets.xlsx - Ventas.csv")
+    ventas_path = os.path.join("data", "Datasets.xlsx - Ventas.csv")
     df_ventas = pd.read_csv(ventas_path, low_memory=False)
     
     # Cleaning
@@ -157,12 +157,12 @@ def analyze_comparative():
     plt.xlim(all_sampled.quantile(0.01), all_sampled.quantile(0.99))
     
     plt.tight_layout()
-    plt.savefig('spender_comparison_overlay.png', dpi=300)
+    plt.savefig('plots/spender_comparison_overlay.png', dpi=300)
     print("Saved spender_comparison_overlay.png")
 
 def analyze_habits():
     print("\nStarting spending habits analysis (Line Chart)...")
-    ventas_path = os.path.join("datasets", "Datasets.xlsx - Ventas.csv")
+    ventas_path = os.path.join("data", "Datasets.xlsx - Ventas.csv")
     df_ventas = pd.read_csv(ventas_path, low_memory=False)
     
     # Cleaning
@@ -239,7 +239,7 @@ def analyze_habits():
     
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
-    plt.savefig('spending_habits_line_chart.png', dpi=300)
+    plt.savefig('plots/spending_habits_line_chart.png', dpi=300)
     print("Saved spending_habits_line_chart.png")
 
 if __name__ == "__main__":
