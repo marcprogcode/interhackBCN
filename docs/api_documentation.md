@@ -36,7 +36,7 @@ Retrieves a list of high-priority client alerts, enriched with location data and
 | `company_id` | `string` | Unique identifier of the client company. |
 | `location` | `string` | Province where the company is located. |
 | `product_family` | `string` | The product family the alert applies to. |
-| `type` | `string` | The type of alert (e.g., Replenishment, Churn Risk). |
+| `type` | `string` | The type of alert (e.g., Replenishment, Churn Risk, Losing Interest). |
 | `reason` | `string` | Human-readable explanation of why the alert was triggered. |
 | `priority_score` | `float` | Normalized score from **1.0 to 10.0** within the current selection (10 = highest priority). |
 | `expected_return` | `float` | Estimated revenue (in €) from a successful outreach. |

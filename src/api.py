@@ -56,7 +56,7 @@ async def get_alerts(top_x: int = Query(10, description="Number of top priority 
     # Format the response as requested
     result = []
     for _, row in top_alerts.iterrows():
-        result.append({
+        alert_obj = {
             "company_id": str(row['Client_ID']),
             "location": str(row['Location']),
             "product_family": str(row['Product_Family']),
@@ -65,7 +65,12 @@ async def get_alerts(top_x: int = Query(10, description="Number of top priority 
             "priority_score": float(row['Normalized_Score']),
             "expected_return": float(round(row['Expected_Value'], 2)),
             "confidence": float(round(row['Confidence'], 2))
-        })
+        }
+        # Include trendline gradient metadata for Losing Interest alerts
+        if row['Type'] == 'Losing Interest':
+            alert_obj["decay_rate"] = float(round(row.get('Decay_Rate', 0), 4))
+            alert_obj["r_squared"] = float(round(row.get('R_Squared', 0), 3))
+        result.append(alert_obj)
         
     return result
 
