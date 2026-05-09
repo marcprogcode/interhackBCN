@@ -20,10 +20,14 @@ class PrioritizationEngine:
         ltv.columns = ['Id. Cliente', 'LTV']
         
         # Calculate quantiles
+        q99 = ltv['LTV'].quantile(0.99)
+        q95 = ltv['LTV'].quantile(0.95)
         q90 = ltv['LTV'].quantile(0.90)
         q75 = ltv['LTV'].quantile(0.75)
         
         def get_multiplier(val):
+            if val >= q99: return 3.0
+            if val >= q95: return 2.0
             if val >= q90: return 1.5
             if val >= q75: return 1.2
             return 1.0
@@ -55,6 +59,10 @@ class PrioritizationEngine:
             # Inter-Purchase Times (IPT)
             ipts = unique_dates.diff().dt.days.dropna()
             
+            # 1. Confidence calculation
+            real_cycles = len(ipts[ipts >= 7])
+            confidence = min(1.0, real_cycles / 10.0) # 0.0 to 1.0
+            
             # Robust Peak-Tracking: 85th Percentile of recent cycles
             recent_ipts = ipts.tail(15)
             base_cycle = recent_ipts.quantile(0.85)
@@ -65,12 +73,15 @@ class PrioritizationEngine:
             last_purchase_date = group['Fecha'].iloc[-1]
             dslp = (current_date - last_purchase_date).days
             
+            # 2. Dynamic margin & Threshold
+            margin = 0.30 - (0.15 * confidence) # Scales from 30% down to 15%
+            
             expected_date = last_purchase_date + timedelta(days=base_cycle)
             # August seasonality adjustment
             if expected_date.month == 8:
                 adjusted_threshold = base_cycle + 30
             else:
-                adjusted_threshold = base_cycle * 1.30
+                adjusted_threshold = base_cycle * (1.0 + margin)
                 
             if dslp > adjusted_threshold:
                 avg_tx_value = group['Valores_H'].mean()
@@ -84,14 +95,16 @@ class PrioritizationEngine:
                 
                 pot_bonus = self.get_potencial_bonus(client, family, df_potencial)
                 
-                priority_score = avg_tx_value * urgency * ltv_mult * pot_bonus
+                # 3. Score application
+                conf_multiplier = 0.5 + (0.5 * confidence) # Penalize newcomers
+                priority_score = avg_tx_value * urgency * ltv_mult * pot_bonus * conf_multiplier
                 
                 alerts.append({
                     'Client_ID': client,
                     'Product_Family': family,
                     'Type': 'Replenishment',
                     'Priority_Score': priority_score,
-                    'Reason': f'Overdue by {dslp} days (Typical Max Cycle: {base_cycle:.0f})',
+                    'Reason': f'Overdue by {dslp} days (Typical Max Cycle: {base_cycle:.0f}, Conf: {confidence:.2f})',
                     'Expected_Value': avg_tx_value
                 })
         return alerts

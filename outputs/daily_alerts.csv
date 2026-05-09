@@ -1,633 +1,692 @@
 Client_ID,Product_Family,Type,Priority_Score,Reason,Expected_Value
-1000059994,Familia C2,Replenishment,8780.362500000001,Overdue by 1405 days (Typical Max Cycle: 66),1170.7150000000001
-31978,Familia C1,Replenishment,7440.299999999999,Overdue by 1012 days (Typical Max Cycle: 201),1240.05
-1000043173,Familia C2,Replenishment,6970.0284518654225,Overdue by 411 days (Typical Max Cycle: 126),1429.0536842105264
-35686,Familia C1,Replenishment,6380.506012357415,Overdue by 530 days (Typical Max Cycle: 263),2110.78375
-26122,Familia C1,Replenishment,5909.483333333334,Overdue by 1132 days (Typical Max Cycle: 91),787.9311111111111
-1000062003,Familia C1,Replenishment,5765.141944177092,Overdue by 971 days (Typical Max Cycle: 208),1233.7759999999998
-1000081558,Familia C1,Replenishment,5496.321815336464,Overdue by 472 days (Typical Max Cycle: 170),1653.5544444444447
-10927,Familia C2,Replenishment,5264.155000584522,Overdue by 339 days (Typical Max Cycle: 132),1362.3653846153845
-8979,Familia C1,Replenishment,5087.957139407597,Overdue by 481 days (Typical Max Cycle: 311),2190.325
-35572,Familia C1,Replenishment,4784.053782287823,Overdue by 534 days (Typical Max Cycle: 108),647.4300000000001
-1000067277,Familia C2,Replenishment,4696.56,Overdue by 1168 days (Typical Max Cycle: 219),939.3120000000001
-1000073191,Familia C2,Replenishment,4693.157142857142,Overdue by 1468 days (Typical Max Cycle: 27),782.1928571428572
-30222,Familia C1,Replenishment,4625.492887770321,Overdue by 697 days (Typical Max Cycle: 268),1779.8525
-27678,Familia C1,Replenishment,4566.785,Overdue by 688 days (Typical Max Cycle: 123),608.9046666666667
-8849,Familia C1,Replenishment,4341.471875000001,Overdue by 628 days (Typical Max Cycle: 102),578.8629166666667
-1000078799,Familia C1,Replenishment,4340.175,Overdue by 982 days (Typical Max Cycle: 144),723.3625
-1000100656,Familia C1,Replenishment,4323.504633663366,Overdue by 136 days (Typical Max Cycle: 101),2675.6983333333333
-1000081935,Familia C2,Replenishment,3959.4526829268298,Overdue by 619 days (Typical Max Cycle: 62),659.908780487805
-1000037345,Familia C2,Replenishment,3876.0299999999997,Overdue by 1493 days (Typical Max Cycle: 36),775.2059999999999
-1000051951,Familia C2,Replenishment,3827.021590909091,Overdue by 731 days (Typical Max Cycle: 34),510.2695454545455
-40220,Familia C2,Replenishment,3813.96,Overdue by 1090 days (Typical Max Cycle: 173),508.52799999999996
-1000064270,Familia C1,Replenishment,3810.2833333333338,Overdue by 724 days (Typical Max Cycle: 116),762.0566666666667
-32014,Familia C2,Replenishment,3805.6750000000006,Overdue by 831 days (Typical Max Cycle: 103),634.2791666666668
-1000075402,Familia C2,Replenishment,3781.74,Overdue by 1280 days (Typical Max Cycle: 171),630.29
-41044,Familia C1,Replenishment,3716.3452941176465,Overdue by 1087 days (Typical Max Cycle: 42),619.3908823529412
-35972,Familia C2,Replenishment,3626.7220588235296,Overdue by 542 days (Typical Max Cycle: 84),483.5629411764706
-40047,Familia C1,Replenishment,3615.0827263976903,Overdue by 901 days (Typical Max Cycle: 192),769.5592307692308
-5789,Familia C2,Replenishment,3513.568116949309,Overdue by 173 days (Typical Max Cycle: 98),1328.250606060606
-22568,Familia C2,Replenishment,3413.9678571428567,Overdue by 1101 days (Typical Max Cycle: 124),455.19571428571425
-1000080859,Familia C1,Replenishment,3306.75,Overdue by 1199 days (Typical Max Cycle: 66),661.35
-1000081808,Familia C1,Replenishment,3304.89375,Overdue by 1089 days (Typical Max Cycle: 138),660.97875
-40433,Familia C1,Replenishment,3219.9504601421113,Overdue by 688 days (Typical Max Cycle: 146),681.1973684210527
-1000081208,Familia C2,Replenishment,3080.708333333333,Overdue by 493 days (Typical Max Cycle: 62),410.76111111111106
-34537,Familia C2,Replenishment,3075.995980800001,Overdue by 964 days (Typical Max Cycle: 312),664.764
-1000081331,Familia C2,Replenishment,3036.4781249999996,Overdue by 705 days (Typical Max Cycle: 57),404.86375
-30199,Familia C2,Replenishment,3005.05,Overdue by 1031 days (Typical Max Cycle: 133),400.67333333333335
-41531,Familia C1,Replenishment,2991.54375,Overdue by 1083 days (Typical Max Cycle: 180),598.3087499999999
-1000080267,Familia C2,Replenishment,2981.6125,Overdue by 1145 days (Typical Max Cycle: 128),397.54833333333335
-34363,Familia C2,Replenishment,2977.2639671963093,Overdue by 928 days (Typical Max Cycle: 195),417.28749999999997
-1000081213,Familia C1,Replenishment,2958.6,Overdue by 986 days (Typical Max Cycle: 177),493.1
-40885,Familia C1,Replenishment,2955.2003912363066,Overdue by 985 days (Typical Max Cycle: 256),766.852
-37516,Familia C1,Replenishment,2942.871428571429,Overdue by 1265 days (Typical Max Cycle: 78),588.5742857142858
-42426,Familia C1,Replenishment,2932.4287108013937,Overdue by 360 days (Typical Max Cycle: 154),1252.3914285714286
-25823,Familia C1,Replenishment,2915.832000000001,Overdue by 838 days (Typical Max Cycle: 135),485.9720000000001
-1000080357,Familia C1,Replenishment,2867.3374999999996,Overdue by 793 days (Typical Max Cycle: 152),573.4675
-41908,Familia C1,Replenishment,2864.5142857142855,Overdue by 1122 days (Typical Max Cycle: 142),572.9028571428571
-28536,Familia C1,Replenishment,2817.7258020581116,Overdue by 585 days (Typical Max Cycle: 236),757.8157142857144
-12585,Familia C2,Replenishment,2805.52238028169,Overdue by 668 days (Typical Max Cycle: 178),496.98625
-26067,Familia C2,Replenishment,2772.5300000000007,Overdue by 954 days (Typical Max Cycle: 177),554.5060000000001
-1000081331,Familia C1,Replenishment,2750.7892857142856,Overdue by 726 days (Typical Max Cycle: 100),366.77190476190475
-12100,Familia C1,Replenishment,2731.013829692069,Overdue by 501 days (Typical Max Cycle: 291),1320.3079999999998
-1000076258,Familia C1,Replenishment,2720.4026315789474,Overdue by 773 days (Typical Max Cycle: 123),544.0805263157895
-1314,Familia C1,Replenishment,2679.522,Overdue by 843 days (Typical Max Cycle: 131),446.587
-8191,Familia C1,Replenishment,2670.7200000000003,Overdue by 1277 days (Typical Max Cycle: 123),356.096
-1000080181,Familia C1,Replenishment,2651.4584999999997,Overdue by 591 days (Typical Max Cycle: 67),441.90975
-22526,Familia C2,Replenishment,2646.8591284271283,Overdue by 494 days (Typical Max Cycle: 173),773.5633333333333
-14664,Familia C2,Replenishment,2643.0163338722714,Overdue by 538 days (Typical Max Cycle: 124),506.41437499999995
-28660,Familia C1,Replenishment,2619.6642857142856,Overdue by 825 days (Typical Max Cycle: 158),436.6107142857143
-27243,Familia C1,Replenishment,2573.7679999999996,Overdue by 587 days (Typical Max Cycle: 116),428.9613333333333
-1000081756,Familia C1,Replenishment,2564.5787230514093,Overdue by 515 days (Typical Max Cycle: 362),1501.399
-10457,Familia C2,Replenishment,2557.183492287529,Overdue by 681 days (Typical Max Cycle: 283),886.8157142857143
-36972,Familia C1,Replenishment,2556.9129408060458,Overdue by 374 days (Typical Max Cycle: 119),542.83125
-41635,Familia C2,Replenishment,2540.9205882352944,Overdue by 789 days (Typical Max Cycle: 62),338.7894117647059
-1000078940,Familia C1,Replenishment,2526.4885714285715,Overdue by 1136 days (Typical Max Cycle: 93),421.0814285714286
-1000081960,Familia C1,Replenishment,2518.612401857324,Overdue by 866 days (Typical Max Cycle: 237),574.1525
-10457,Familia C1,Replenishment,2517.201422577422,Overdue by 723 days (Typical Max Cycle: 159),462.0381818181817
-1000066400,Familia C1,Replenishment,2510.782142857143,Overdue by 621 days (Typical Max Cycle: 114),502.15642857142853
-30209,Familia C2,Replenishment,2501.083190476191,Overdue by 639 days (Typical Max Cycle: 210),821.9522222222223
-11406,Familia C1,Replenishment,2492.50456626506,Overdue by 846 days (Typical Max Cycle: 199),489.073
-24485,Familia C2,Replenishment,2466.5399999999995,Overdue by 983 days (Typical Max Cycle: 105),411.0899999999999
-1000079052,Familia C2,Replenishment,2464.5,Overdue by 972 days (Typical Max Cycle: 129),492.9
-40864,Familia C1,Replenishment,2453.1663809523807,Overdue by 844 days (Typical Max Cycle: 210),610.385
-1000081327,Familia C1,Replenishment,2442.9603191017877,Overdue by 360 days (Typical Max Cycle: 242),1640.5157142857145
-32457,Familia C1,Replenishment,2441.7195652173914,Overdue by 852 days (Typical Max Cycle: 108),325.5626086956522
-4767,Familia C2,Replenishment,2395.9189841937873,Overdue by 160 days (Typical Max Cycle: 59),587.9984507042253
-40832,Familia C1,Replenishment,2395.7722567287788,Overdue by 562 days (Typical Max Cycle: 120),510.27391304347833
-1000082292,Familia C1,Replenishment,2382.815172413793,Overdue by 436 days (Typical Max Cycle: 128),581.13
-5047,Familia C1,Replenishment,2381.9083333333333,Overdue by 1111 days (Typical Max Cycle: 142),476.38166666666666
-1000080434,Familia C1,Replenishment,2365.353989661654,Overdue by 639 days (Typical Max Cycle: 213),787.7109999999999
-14678,Familia C2,Replenishment,2344.670454545455,Overdue by 1000 days (Typical Max Cycle: 99),312.62272727272733
-1000043172,Familia C1,Replenishment,2335.486035930938,Overdue by 634 days (Typical Max Cycle: 429),1052.565
-1000082136,Familia C1,Replenishment,2328.296755447942,Overdue by 997 days (Typical Max Cycle: 206),482.24
-28105,Familia C2,Replenishment,2307.289285714286,Overdue by 962 days (Typical Max Cycle: 191),307.6385714285715
-22526,Familia C1,Replenishment,2303.197416,Overdue by 746 days (Typical Max Cycle: 200),514.566
-35139,Familia C1,Replenishment,2287.951838546069,Overdue by 591 days (Typical Max Cycle: 355),1373.9325
-1000065512,Familia C2,Replenishment,2286.810714285714,Overdue by 690 days (Typical Max Cycle: 125),457.36214285714277
-1000074220,Familia C1,Replenishment,2279.378615568365,Overdue by 590 days (Typical Max Cycle: 275),1062.8085714285714
-8160,Familia C2,Replenishment,2276.2357142857145,Overdue by 1318 days (Typical Max Cycle: 107),455.2471428571429
-14608,Familia C2,Replenishment,2264.1000000000004,Overdue by 899 days (Typical Max Cycle: 128),452.82000000000005
-10255,Familia C1,Replenishment,2256.4602591632733,Overdue by 551 days (Typical Max Cycle: 270),1106.116
-40897,Familia C1,Replenishment,2247.6566294117647,Overdue by 222 days (Typical Max Cycle: 75),506.2289705882353
-39082,Familia C1,Replenishment,2232.6965517241383,Overdue by 562 days (Typical Max Cycle: 66),446.5393103448277
-1000069528,Familia C1,Replenishment,2200.959375,Overdue by 774 days (Typical Max Cycle: 132),440.191875
-16055,Familia C2,Replenishment,2191.244210526316,Overdue by 361 days (Typical Max Cycle: 70),365.20736842105265
-1000080904,Familia C2,Replenishment,2187.8280373831785,Overdue by 352 days (Typical Max Cycle: 160),665.0500000000001
-38918,Familia C1,Replenishment,2184.573860364235,Overdue by 992 days (Typical Max Cycle: 243),535.3527272727273
-41045,Familia C1,Replenishment,2176.235,Overdue by 1088 days (Typical Max Cycle: 141),435.247
-21872,Familia C2,Replenishment,2119.2024111195165,Overdue by 579 days (Typical Max Cycle: 132),322.5775
-5040,Familia C1,Replenishment,2112.6607142857138,Overdue by 531 days (Typical Max Cycle: 83),422.5321428571428
-41829,Familia C1,Replenishment,2109.975,Overdue by 1165 days (Typical Max Cycle: 200),421.99499999999995
-1000071186,Familia C1,Replenishment,2086.105,Overdue by 892 days (Typical Max Cycle: 157),278.14733333333334
-29712,Familia C2,Replenishment,2071.969027611044,Overdue by 390 days (Typical Max Cycle: 268),948.3242857142858
-14674,Familia C1,Replenishment,2070.0733877976713,Overdue by 404 days (Typical Max Cycle: 288),982.6016666666668
-13629,Familia C1,Replenishment,2069.6617462803442,Overdue by 611 days (Typical Max Cycle: 255),865.1253846153845
-1000081084,Familia C2,Replenishment,2062.9398262839877,Overdue by 919 days (Typical Max Cycle: 331),743.0175
-38636,Familia C2,Replenishment,2049.3666666666663,Overdue by 978 days (Typical Max Cycle: 167),409.8733333333333
-9184,Familia C1,Replenishment,2035.5136363636366,Overdue by 1290 days (Typical Max Cycle: 111),407.1027272727273
-1000081424,Familia C1,Replenishment,2027.2652213188799,Overdue by 842 days (Typical Max Cycle: 221),533.0600000000001
-25416,Familia C2,Replenishment,2026.2375000000002,Overdue by 1257 days (Typical Max Cycle: 164),270.165
-1000077720,Familia C2,Replenishment,2018.7646610373943,Overdue by 898 days (Typical Max Cycle: 207),310.608
-1000081414,Familia C1,Replenishment,2011.317473579921,Overdue by 817 days (Typical Max Cycle: 378),621.2025
-12525,Familia C2,Replenishment,1997.13,Overdue by 1263 days (Typical Max Cycle: 78),332.855
-31344,Familia C2,Replenishment,1985.1150000000002,Overdue by 795 days (Typical Max Cycle: 152),264.682
-1000080397,Familia C1,Replenishment,1981.2833333333335,Overdue by 1215 days (Typical Max Cycle: 165),396.2566666666667
-1000058426,Familia C1,Replenishment,1974.1877227722784,Overdue by 338 days (Typical Max Cycle: 242),1179.8400000000001
-1000082454,Familia C2,Replenishment,1971.1851362254763,Overdue by 403 days (Typical Max Cycle: 129),526.8314285714285
-1000069275,Familia C2,Replenishment,1969.646415954416,Overdue by 191 days (Typical Max Cycle: 105),904.903
-1000064044,Familia C2,Replenishment,1968.2077086280058,Overdue by 915 days (Typical Max Cycle: 212),380.1975
-10124,Familia C2,Replenishment,1956.06,Overdue by 1154 days (Typical Max Cycle: 140),260.808
-18796,Familia C2,Replenishment,1946.9030247479375,Overdue by 724 days (Typical Max Cycle: 218),488.96666666666664
-8160,Familia C1,Replenishment,1924.47,Overdue by 1326 days (Typical Max Cycle: 126),384.894
-42490,Familia C1,Replenishment,1913.9,Overdue by 486 days (Typical Max Cycle: 89),382.78000000000003
-4464,Familia C1,Replenishment,1909.0985456986243,Overdue by 894 days (Typical Max Cycle: 255),545.3957142857143
-1000080460,Familia C1,Replenishment,1903.9342467758163,Overdue by 628 days (Typical Max Cycle: 210),424.9492307692307
-13548,Familia C1,Replenishment,1897.9232492997198,Overdue by 849 days (Typical Max Cycle: 226),505.4422222222222
-1000081418,Familia C1,Replenishment,1881.5819433279744,Overdue by 990 days (Typical Max Cycle: 249),472.86625
-12602,Familia C1,Replenishment,1863.5581793924468,Overdue by 646 days (Typical Max Cycle: 244),702.72875
-1000064563,Familia C1,Replenishment,1860.5625,Overdue by 1124 days (Typical Max Cycle: 164),372.1125
-22929,Familia C1,Replenishment,1854.2708661417328,Overdue by 1012 days (Typical Max Cycle: 216),395.59000000000003
-1000080845,Familia C1,Replenishment,1850.745,Overdue by 831 days (Typical Max Cycle: 136),308.4575
-10519,Familia C1,Replenishment,1846.6171188145977,Overdue by 496 days (Typical Max Cycle: 210),652.3038461538462
-1000076778,Familia C2,Replenishment,1845.75,Overdue by 1312 days (Typical Max Cycle: 99),369.15
-18020,Familia C1,Replenishment,1837.877777777778,Overdue by 985 days (Typical Max Cycle: 165),367.5755555555556
-1000068248,Familia C1,Replenishment,1836.2505382693619,Overdue by 604 days (Typical Max Cycle: 130),393.6994117647059
-9184,Familia C2,Replenishment,1826.0,Overdue by 1210 days (Typical Max Cycle: 74),365.2
-1000075995,Familia C1,Replenishment,1824.7844292452833,Overdue by 453 days (Typical Max Cycle: 132),355.82625
-34420,Familia C1,Replenishment,1814.4859155423164,Overdue by 829 days (Typical Max Cycle: 285),624.564
-1000081188,Familia C1,Replenishment,1813.98,Overdue by 880 days (Typical Max Cycle: 84),362.796
-24485,Familia C1,Replenishment,1811.052727272727,Overdue by 573 days (Typical Max Cycle: 65),301.8421212121212
-1000081044,Familia C1,Replenishment,1808.9589743589745,Overdue by 692 days (Typical Max Cycle: 164),428.19
-1000082578,Familia C2,Replenishment,1804.6721126760563,Overdue by 244 days (Typical Max Cycle: 178),875.2166666666667
-34420,Familia C2,Replenishment,1801.1125000000002,Overdue by 1299 days (Typical Max Cycle: 139),360.2225
-10936,Familia C1,Replenishment,1801.0678143295238,Overdue by 879 days (Typical Max Cycle: 359),734.9750000000001
-1000079040,Familia C2,Replenishment,1799.7672842105262,Overdue by 698 days (Typical Max Cycle: 190),489.908
-1000082400,Familia C2,Replenishment,1797.0450670170826,Overdue by 684 days (Typical Max Cycle: 152),333.224
-1000082054,Familia C2,Replenishment,1795.9135556750944,Overdue by 535 days (Typical Max Cycle: 143),480.0292307692308
-1000079999,Familia C1,Replenishment,1793.4591658583897,Overdue by 976 days (Typical Max Cycle: 206),378.905
-8001,Familia C1,Replenishment,1792.3169711985138,Overdue by 264 days (Typical Max Cycle: 161),730.73125
-1000038595,Familia C2,Replenishment,1789.2771428571427,Overdue by 919 days (Typical Max Cycle: 162),298.21285714285716
-34335,Familia C1,Replenishment,1784.5389229636899,Overdue by 408 days (Typical Max Cycle: 204),594.263125
-1000068733,Familia C2,Replenishment,1760.7540186580547,Overdue by 249 days (Typical Max Cycle: 93),437.9492592592592
-4953,Familia C1,Replenishment,1728.2527640264025,Overdue by 586 days (Typical Max Cycle: 242),714.895
-1000076894,Familia C2,Replenishment,1725.1799999999998,Overdue by 926 days (Typical Max Cycle: 126),287.53
-7972,Familia C2,Replenishment,1716.7220373734285,Overdue by 548 days (Typical Max Cycle: 397),829.4357142857143
-36474,Familia C2,Replenishment,1703.4932182490752,Overdue by 878 days (Typical Max Cycle: 324),419.6
-40353,Familia C1,Replenishment,1698.734375,Overdue by 1054 days (Typical Max Cycle: 53),339.746875
-13219,Familia C1,Replenishment,1689.1604692082115,Overdue by 690 days (Typical Max Cycle: 170),417.39400000000006
-1000076654,Familia C1,Replenishment,1680.4951807228915,Overdue by 594 days (Typical Max Cycle: 423),1197.565
-36713,Familia C1,Replenishment,1678.7657894736844,Overdue by 781 days (Typical Max Cycle: 145),335.7531578947369
-1000082332,Familia C2,Replenishment,1676.460181175934,Overdue by 669 days (Typical Max Cycle: 219),366.53249999999997
-1000071519,Familia C1,Replenishment,1666.431730515192,Overdue by 951 days (Typical Max Cycle: 227),397.94599999999997
-14592,Familia C2,Replenishment,1663.8380411544629,Overdue by 669 days (Typical Max Cycle: 187),465.3275
-1000080959,Familia C2,Replenishment,1663.73,Overdue by 649 days (Typical Max Cycle: 78),332.746
-8714,Familia C2,Replenishment,1647.1043200962702,Overdue by 334 days (Typical Max Cycle: 166),819.6070000000002
-1000078754,Familia C2,Replenishment,1646.5476447876447,Overdue by 80 days (Typical Max Cycle: 56),761.5282857142857
-14774,Familia C1,Replenishment,1643.3190281030447,Overdue by 635 days (Typical Max Cycle: 214),552.5175
-41053,Familia C1,Replenishment,1642.9177777777782,Overdue by 380 days (Typical Max Cycle: 171),492.87533333333334
-34044,Familia C1,Replenishment,1623.233602999212,Overdue by 692 days (Typical Max Cycle: 145),339.6592857142858
-18028,Familia C2,Replenishment,1620.9375,Overdue by 1432 days (Typical Max Cycle: 45),324.1875
-20172,Familia C1,Replenishment,1594.3055812848831,Overdue by 689 days (Typical Max Cycle: 241),556.7342857142858
-30677,Familia C2,Replenishment,1580.05,Overdue by 1236 days (Typical Max Cycle: 175),316.01
-9028,Familia C2,Replenishment,1577.727528942116,Overdue by 859 days (Typical Max Cycle: 250),460.09399999999994
-36492,Familia C2,Replenishment,1575.2727272727275,Overdue by 1194 days (Typical Max Cycle: 56),210.03636363636363
-8910,Familia C1,Replenishment,1557.8095532646048,Overdue by 789 days (Typical Max Cycle: 194),383.03555555555556
-14678,Familia C1,Replenishment,1557.6797217391309,Overdue by 188 days (Typical Max Cycle: 144),794.0299999999999
-29402,Familia C2,Replenishment,1556.0704958677688,Overdue by 860 days (Typical Max Cycle: 194),291.91400000000004
-1000100546,Familia C1,Replenishment,1548.15,Overdue by 459 days (Typical Max Cycle: 48),309.63
-1889,Familia C1,Replenishment,1538.2374670184693,Overdue by 878 days (Typical Max Cycle: 265),464.79999999999995
-1000080775,Familia C2,Replenishment,1530.9285714285716,Overdue by 1255 days (Typical Max Cycle: 81),306.1857142857143
-21682,Familia C1,Replenishment,1528.3478047319556,Overdue by 1042 days (Typical Max Cycle: 334),489.7459999999999
-1000081527,Familia C1,Replenishment,1523.1825000000001,Overdue by 942 days (Typical Max Cycle: 104),253.86375
-34402,Familia C1,Replenishment,1521.3020938946443,Overdue by 844 days (Typical Max Cycle: 244),440.34846153846166
-42015,Familia C1,Replenishment,1518.6499999999999,Overdue by 1038 days (Typical Max Cycle: 60),303.72999999999996
-29943,Familia C2,Replenishment,1517.7527614678897,Overdue by 339 days (Typical Max Cycle: 218),813.3483333333334
-21053,Familia C2,Replenishment,1517.673965378884,Overdue by 600 days (Typical Max Cycle: 159),401.1718181818182
-1000080128,Familia C1,Replenishment,1516.9285714285716,Overdue by 1306 days (Typical Max Cycle: 121),303.3857142857143
-21188,Familia C2,Replenishment,1514.7671189376445,Overdue by 230 days (Typical Max Cycle: 173),760.457
-1000065897,Familia C1,Replenishment,1513.6363947128532,Overdue by 590 days (Typical Max Cycle: 219),562.8675000000001
-1000082543,Familia C1,Replenishment,1512.9009601113173,Overdue by 657 days (Typical Max Cycle: 216),496.471
-1000064972,Familia C1,Replenishment,1509.2812042535559,Overdue by 478 days (Typical Max Cycle: 111),351.74461538461526
-1000061247,Familia C1,Replenishment,1508.0001936685287,Overdue by 313 days (Typical Max Cycle: 179),718.6688888888889
-20356,Familia C1,Replenishment,1501.7329166666666,Overdue by 689 days (Typical Max Cycle: 198),431.5575
-1000077820,Familia C2,Replenishment,1501.5675388601037,Overdue by 1067 days (Typical Max Cycle: 270),316.8725
-1000075184,Familia C2,Replenishment,1493.9043309325248,Overdue by 745 days (Typical Max Cycle: 264),528.9825000000001
-28675,Familia C1,Replenishment,1493.6225755599041,Overdue by 437 days (Typical Max Cycle: 307),1047.9283333333333
-19212,Familia C1,Replenishment,1488.8880829493087,Overdue by 104 days (Typical Max Cycle: 70),668.0908064516129
-38691,Familia C2,Replenishment,1488.088517256072,Overdue by 765 days (Typical Max Cycle: 235),456.54166666666674
-41460,Familia C2,Replenishment,1481.7344080100127,Overdue by 576 days (Typical Max Cycle: 200),428.2066666666667
-1000101122,Familia C2,Replenishment,1463.473060796646,Overdue by 137 days (Typical Max Cycle: 80),849.2416666666668
-1000058426,Familia C2,Replenishment,1459.9519037960008,Overdue by 535 days (Typical Max Cycle: 203),461.63588235294117
-1000078586,Familia C1,Replenishment,1456.40625,Overdue by 1262 days (Typical Max Cycle: 115),291.28125
-9243,Familia C2,Replenishment,1440.591101694915,Overdue by 172 days (Typical Max Cycle: 124),691.81875
-13701,Familia C1,Replenishment,1432.1488202866592,Overdue by 583 days (Typical Max Cycle: 227),557.015
-27364,Familia C2,Replenishment,1431.888443087658,Overdue by 998 days (Typical Max Cycle: 229),328.99
-35049,Familia C1,Replenishment,1409.038008325328,Overdue by 583 days (Typical Max Cycle: 278),670.9244444444444
-35853,Familia C2,Replenishment,1408.8562020460358,Overdue by 243 days (Typical Max Cycle: 117),453.385
-6131,Familia C2,Replenishment,1401.2811497326204,Overdue by 1104 days (Typical Max Cycle: 299),379.7675
-1000066450,Familia C1,Replenishment,1394.9019230769227,Overdue by 1161 days (Typical Max Cycle: 127),185.98692307692303
-36153,Familia C1,Replenishment,1393.4159769008668,Overdue by 492 days (Typical Max Cycle: 208),588.5200000000001
-1000078797,Familia C1,Replenishment,1384.8270833333336,Overdue by 759 days (Typical Max Cycle: 54),184.64361111111117
-1000060172,Familia C1,Replenishment,1379.2652173913043,Overdue by 261 days (Typical Max Cycle: 163),862.9655555555555
-37594,Familia C2,Replenishment,1375.7790325497285,Overdue by 415 days (Typical Max Cycle: 198),436.4921428571428
-1000067996,Familia C1,Replenishment,1373.89,Overdue by 1131 days (Typical Max Cycle: 84),274.778
-1000081765,Familia C1,Replenishment,1365.6285714285716,Overdue by 733 days (Typical Max Cycle: 121),273.1257142857143
-34608,Familia C1,Replenishment,1365.5382536801778,Overdue by 593 days (Typical Max Cycle: 331),761.2933333333334
-1000081322,Familia C1,Replenishment,1360.4416666666668,Overdue by 1206 days (Typical Max Cycle: 80),272.08833333333337
-1000079985,Familia C2,Replenishment,1356.9033865248234,Overdue by 479 days (Typical Max Cycle: 188),532.5633333333334
-23589,Familia C2,Replenishment,1347.0895140356174,Overdue by 1049 days (Typical Max Cycle: 331),425.44399999999996
-8441,Familia C1,Replenishment,1345.1684809308338,Overdue by 622 days (Typical Max Cycle: 221),477.94571428571425
-8952,Familia C1,Replenishment,1334.0517139141743,Overdue by 926 days (Typical Max Cycle: 192),276.96700000000004
-1000079592,Familia C1,Replenishment,1329.656198771431,Overdue by 418 days (Typical Max Cycle: 210),667.213846153846
-41126,Familia C2,Replenishment,1328.0696037539103,Overdue by 425 days (Typical Max Cycle: 274),856.2142857142857
-11854,Familia C2,Replenishment,1318.9815535780494,Overdue by 410 days (Typical Max Cycle: 90),289.2108333333333
-16372,Familia C1,Replenishment,1314.8692090741874,Overdue by 432 days (Typical Max Cycle: 233),709.1771428571428
-1000067437,Familia C1,Replenishment,1313.81,Overdue by 1110 days (Typical Max Cycle: 198),218.96833333333333
-15384,Familia C2,Replenishment,1313.3434492481204,Overdue by 143 days (Typical Max Cycle: 84),514.3163157894737
-34990,Familia C1,Replenishment,1311.1747640337805,Overdue by 866 days (Typical Max Cycle: 183),277.07272727272726
-1000061641,Familia C2,Replenishment,1308.5065326633164,Overdue by 900 days (Typical Max Cycle: 298),433.98799999999994
-1000082567,Familia C1,Replenishment,1291.7009060315818,Overdue by 465 days (Typical Max Cycle: 193),536.542
-12697,Familia C2,Replenishment,1288.108769633508,Overdue by 905 days (Typical Max Cycle: 286),271.855
-4254,Familia C2,Replenishment,1286.1,Overdue by 850 days (Typical Max Cycle: 161),257.21999999999997
-26468,Familia C2,Replenishment,1276.8096348614072,Overdue by 261 days (Typical Max Cycle: 134),437.01785714285717
-1000082535,Familia C2,Replenishment,1272.74,Overdue by 861 days (Typical Max Cycle: 21),254.548
-31342,Familia C1,Replenishment,1271.6255319148938,Overdue by 912 days (Typical Max Cycle: 263),366.9866666666667
-25450,Familia C2,Replenishment,1269.2357142857143,Overdue by 754 days (Typical Max Cycle: 142),253.84714285714284
-9028,Familia C1,Replenishment,1266.4133333333334,Overdue by 569 days (Typical Max Cycle: 171),379.92400000000004
-1000081050,Familia C1,Replenishment,1260.1435823929708,Overdue by 436 days (Typical Max Cycle: 223),537.7046153846153
-30618,Familia C2,Replenishment,1249.7100408953943,Overdue by 614 days (Typical Max Cycle: 465),630.4183333333334
-1000074584,Familia C1,Replenishment,1248.0825675299361,Overdue by 536 days (Typical Max Cycle: 137),318.5404761904762
-1000079634,Familia C1,Replenishment,1247.5543315508023,Overdue by 262 days (Typical Max Cycle: 170),809.4818181818181
-28120,Familia C1,Replenishment,1246.2369781312125,Overdue by 558 days (Typical Max Cycle: 352),786.38
-5447,Familia C2,Replenishment,1245.3563977746871,Overdue by 725 days (Typical Max Cycle: 216),370.51500000000004
-1000037454,Familia C1,Replenishment,1240.075,Overdue by 1160 days (Typical Max Cycle: 150),248.01500000000001
-2335,Familia C1,Replenishment,1227.0,Overdue by 958 days (Typical Max Cycle: 113),245.4
-1000080986,Familia C2,Replenishment,1223.9474535935271,Overdue by 335 days (Typical Max Cycle: 96),348.9163636363637
-1000078487,Familia C1,Replenishment,1220.670110701107,Overdue by 864 days (Typical Max Cycle: 244),344.585
-1000068248,Familia C2,Replenishment,1220.4763273125343,Overdue by 557 days (Typical Max Cycle: 244),533.7666666666667
-41954,Familia C1,Replenishment,1214.1499999999999,Overdue by 1335 days (Typical Max Cycle: 98),242.82999999999996
-27852,Familia C1,Replenishment,1203.84972120746,Overdue by 384 days (Typical Max Cycle: 223),698.7971428571428
-1000078435,Familia C1,Replenishment,1194.9131012468827,Overdue by 632 days (Typical Max Cycle: 200),315.902
-1000100069,Familia C2,Replenishment,1191.661786339755,Overdue by 387 days (Typical Max Cycle: 143),439.56000000000006
-5757,Familia C1,Replenishment,1191.46212286357,Overdue by 333 days (Typical Max Cycle: 166),593.4053846153846
-26068,Familia C2,Replenishment,1186.310043956044,Overdue by 248 days (Typical Max Cycle: 182),725.49875
-1000066989,Familia C2,Replenishment,1174.1100000000001,Overdue by 1164 days (Typical Max Cycle: 216),234.82200000000003
-28295,Familia C1,Replenishment,1171.5924528301887,Overdue by 591 days (Typical Max Cycle: 199),394.0
-4748,Familia C2,Replenishment,1169.4928301886794,Overdue by 271 days (Typical Max Cycle: 106),304.96
-1000058195,Familia C2,Replenishment,1169.1210594315244,Overdue by 641 days (Typical Max Cycle: 155),282.34
-4903,Familia C1,Replenishment,1168.6872928176797,Overdue by 528 days (Typical Max Cycle: 199),440.6925
-1000080962,Familia C1,Replenishment,1161.7852685204841,Overdue by 718 days (Typical Max Cycle: 269),435.5885714285714
-1000080355,Familia C2,Replenishment,1150.7532219570405,Overdue by 696 days (Typical Max Cycle: 251),415.66
-22721,Familia C1,Replenishment,1150.4506571087218,Overdue by 472 days (Typical Max Cycle: 260),634.6977777777778
-5154,Familia C2,Replenishment,1143.887640321602,Overdue by 857 days (Typical Max Cycle: 330),439.93625
-1000079096,Familia C1,Replenishment,1141.9997727272728,Overdue by 641 days (Typical Max Cycle: 244),434.7081818181818
-3300,Familia C1,Replenishment,1137.1375,Overdue by 1039 days (Typical Max Cycle: 166),227.4275
-10928,Familia C1,Replenishment,1136.9702967904097,Overdue by 593 days (Typical Max Cycle: 345),661.0916666666666
-1000081873,Familia C1,Replenishment,1123.34140625,Overdue by 544 days (Typical Max Cycle: 205),422.90500000000003
-7698,Familia C2,Replenishment,1123.14,Overdue by 1234 days (Typical Max Cycle: 151),187.19
-1779,Familia C1,Replenishment,1121.5765561407707,Overdue by 853 days (Typical Max Cycle: 209),274.60875
-1000079582,Familia C2,Replenishment,1120.4448761149652,Overdue by 390 days (Typical Max Cycle: 202),483.13199999999995
-1000075277,Familia C1,Replenishment,1120.421806799409,Overdue by 1128 days (Typical Max Cycle: 246),244.7942857142857
-1000080280,Familia C1,Replenishment,1119.009813559322,Overdue by 585 days (Typical Max Cycle: 148),282.1435
-37533,Familia C2,Replenishment,1116.0378142809252,Overdue by 360 days (Typical Max Cycle: 149),462.3806666666666
-40707,Familia C1,Replenishment,1114.56,Overdue by 1332 days (Typical Max Cycle: 79),185.76
-1000078355,Familia C1,Replenishment,1113.2160037484382,Overdue by 215 days (Typical Max Cycle: 137),710.3871428571429
-30469,Familia C1,Replenishment,1112.1857869249395,Overdue by 745 days (Typical Max Cycle: 295),440.39571428571435
-18847,Familia C2,Replenishment,1110.2011751904245,Overdue by 872 days (Typical Max Cycle: 230),292.51
-33040,Familia C1,Replenishment,1104.279068720616,Overdue by 551 days (Typical Max Cycle: 154),308.2361538461538
-1000081855,Familia C1,Replenishment,1099.9305780659104,Overdue by 620 days (Typical Max Cycle: 247),437.8433333333333
-7410,Familia C2,Replenishment,1097.8781791907543,Overdue by 408 days (Typical Max Cycle: 138),372.4175
-1000064044,Familia C1,Replenishment,1097.236708491392,Overdue by 839 days (Typical Max Cycle: 171),186.74166666666667
-30702,Familia C1,Replenishment,1093.0519736842105,Overdue by 783 days (Typical Max Cycle: 228),318.2833333333333
-41982,Familia C1,Replenishment,1092.6060326770005,Overdue by 758 days (Typical Max Cycle: 239),344.07
-41970,Familia C1,Replenishment,1091.9019645424057,Overdue by 607 days (Typical Max Cycle: 209),375.4200000000001
-39038,Familia C2,Replenishment,1088.7710526315789,Overdue by 726 days (Typical Max Cycle: 65),145.16947368421052
-41409,Familia C1,Replenishment,1087.66,Overdue by 1165 days (Typical Max Cycle: 158),217.532
-36827,Familia C2,Replenishment,1083.0686364963503,Overdue by 537 days (Typical Max Cycle: 308),518.088
-35675,Familia C1,Replenishment,1082.5857142857142,Overdue by 1082 days (Typical Max Cycle: 165),216.51714285714283
-1000078656,Familia C1,Replenishment,1081.4274355083458,Overdue by 810 days (Typical Max Cycle: 165),219.95699999999997
-1000073093,Familia C2,Replenishment,1080.7665563909773,Overdue by 576 days (Typical Max Cycle: 285),445.6285714285714
-13219,Familia C2,Replenishment,1073.5587807276304,Overdue by 599 days (Typical Max Cycle: 198),354.4177777777778
-1000070508,Familia C2,Replenishment,1071.433144623708,Overdue by 214 days (Typical Max Cycle: 141),588.9127272727272
-10544,Familia C2,Replenishment,1071.2127662565906,Overdue by 388 days (Typical Max Cycle: 284),785.464
-41536,Familia C1,Replenishment,1069.9440000000002,Overdue by 327 days (Typical Max Cycle: 160),525.1560000000001
-40062,Familia C2,Replenishment,1069.4843885516048,Overdue by 705 days (Typical Max Cycle: 231),291.5166666666667
-14657,Familia C1,Replenishment,1068.6866515013655,Overdue by 478 days (Typical Max Cycle: 157),351.01214285714286
-11829,Familia C2,Replenishment,1067.0070672218917,Overdue by 929 days (Typical Max Cycle: 252),289.608
-1000051951,Familia C1,Replenishment,1064.4464285714282,Overdue by 677 days (Typical Max Cycle: 34),141.92619047619044
-1000070593,Familia C1,Replenishment,1059.5058989837244,Overdue by 222 days (Typical Max Cycle: 114),543.1160869565217
-19111,Familia C2,Replenishment,1049.6831481481481,Overdue by 703 days (Typical Max Cycle: 180),223.97222222222223
-1000100011,Familia C1,Replenishment,1049.2044499381952,Overdue by 384 days (Typical Max Cycle: 162),368.40555555555557
-1000065575,Familia C2,Replenishment,1047.2281933684537,Overdue by 377 days (Typical Max Cycle: 230),640.2814285714286
-376,Familia C2,Replenishment,1046.0653625954199,Overdue by 550 days (Typical Max Cycle: 262),415.25625
-29805,Familia C2,Replenishment,1035.1414958029447,Overdue by 103 days (Typical Max Cycle: 56),374.5269230769231
-1000063305,Familia C2,Replenishment,1034.69,Overdue by 856 days (Typical Max Cycle: 310),374.71250000000003
-17625,Familia C1,Replenishment,1034.600888888889,Overdue by 552 days (Typical Max Cycle: 135),253.02739130434784
-42152,Familia C2,Replenishment,1033.6145177993528,Overdue by 559 days (Typical Max Cycle: 154),285.677
-13422,Familia C1,Replenishment,1033.375,Overdue by 1215 days (Typical Max Cycle: 136),206.675
-924,Familia C1,Replenishment,1029.2061449831972,Overdue by 724 days (Typical Max Cycle: 208),296.11
-1000077513,Familia C2,Replenishment,1028.5849388429751,Overdue by 368 days (Typical Max Cycle: 206),384.3218181818182
-9835,Familia C2,Replenishment,1027.860591133005,Overdue by 424 days (Typical Max Cycle: 203),410.09375
-25972,Familia C2,Replenishment,1019.0913680909447,Overdue by 807 days (Typical Max Cycle: 255),268.4533333333333
-30544,Familia C2,Replenishment,1016.858025830258,Overdue by 255 days (Typical Max Cycle: 108),360.22029411764703
-4989,Familia C1,Replenishment,1016.4465302826378,Overdue by 723 days (Typical Max Cycle: 372),522.2819999999999
-39969,Familia C1,Replenishment,1014.3888782358581,Overdue by 507 days (Typical Max Cycle: 313),417.36
-20026,Familia C1,Replenishment,1014.1273125000001,Overdue by 738 days (Typical Max Cycle: 192),263.838
-1000056995,Familia C2,Replenishment,1011.6664036299071,Overdue by 375 days (Typical Max Cycle: 253),569.793
-1000082754,Familia C2,Replenishment,1005.9833333333335,Overdue by 636 days (Typical Max Cycle: 113),201.1966666666667
-1000041454,Familia C1,Replenishment,1005.7823529411764,Overdue by 1129 days (Typical Max Cycle: 141),201.1564705882353
-21457,Familia C2,Replenishment,1004.8146428571426,Overdue by 270 days (Typical Max Cycle: 112),347.3433333333333
-11955,Familia C1,Replenishment,999.8718738404452,Overdue by 782 days (Typical Max Cycle: 270),344.585
-669,Familia C1,Replenishment,999.1686648334863,Overdue by 436 days (Typical Max Cycle: 218),500.0426666666668
-28051,Familia C2,Replenishment,998.6375,Overdue by 958 days (Typical Max Cycle: 162),199.72750000000002
-1000100557,Familia C1,Replenishment,998.3684424641614,Overdue by 249 days (Typical Max Cycle: 129),517.4275
-12100,Familia C2,Replenishment,987.7326292789512,Overdue by 501 days (Typical Max Cycle: 275),451.15000000000003
-33903,Familia C1,Replenishment,987.1528511655711,Overdue by 552 days (Typical Max Cycle: 358),641.1128571428573
-14592,Familia C1,Replenishment,982.4034932221061,Overdue by 702 days (Typical Max Cycle: 384),536.8233333333333
-1000060078,Familia C1,Replenishment,982.0485542168675,Overdue by 202 days (Typical Max Cycle: 50),242.109
-1000076926,Familia C2,Replenishment,980.6006121687199,Overdue by 727 days (Typical Max Cycle: 268),361.35200000000003
-21599,Familia C1,Replenishment,978.5429647381037,Overdue by 1110 days (Typical Max Cycle: 292),257.5066666666667
-9513,Familia C1,Replenishment,973.085,Overdue by 1269 days (Typical Max Cycle: 83),194.61700000000002
-1000080939,Familia C2,Replenishment,972.5441927710842,Overdue by 828 days (Typical Max Cycle: 311),365.585
-11038,Familia C2,Replenishment,972.1222222222223,Overdue by 1361 days (Typical Max Cycle: 85),194.42444444444445
-14664,Familia C1,Replenishment,969.2022481283424,Overdue by 346 days (Typical Max Cycle: 187),436.51450000000006
-41644,Familia C2,Replenishment,963.3999525841633,Overdue by 388 days (Typical Max Cycle: 281),698.2166666666667
-1000077976,Familia C1,Replenishment,958.9117202268432,Overdue by 466 days (Typical Max Cycle: 317),653.13
-1000082238,Familia C1,Replenishment,958.548960031297,Overdue by 718 days (Typical Max Cycle: 219),292.50428571428574
-1000065512,Familia C1,Replenishment,955.449676823638,Overdue by 688 days (Typical Max Cycle: 180),250.66666666666666
-20619,Familia C1,Replenishment,953.9543719211823,Overdue by 744 days (Typical Max Cycle: 325),416.45750000000004
-1000070089,Familia C1,Replenishment,949.8147058823531,Overdue by 1096 days (Typical Max Cycle: 120),189.96294117647062
-26789,Familia C1,Replenishment,942.5695324690913,Overdue by 353 days (Typical Max Cycle: 139),370.75291666666664
-22675,Familia C2,Replenishment,936.4696303696305,Overdue by 444 days (Typical Max Cycle: 286),603.2214285714286
-1000061715,Familia C1,Replenishment,934.4192307692308,Overdue by 870 days (Typical Max Cycle: 118),186.88384615384615
-41988,Familia C1,Replenishment,934.0540322580646,Overdue by 544 days (Typical Max Cycle: 298),510.9825
-18690,Familia C1,Replenishment,933.3875,Overdue by 1164 days (Typical Max Cycle: 143),186.6775
-35481,Familia C2,Replenishment,931.7716891773374,Overdue by 873 days (Typical Max Cycle: 285),304.24
-1000062151,Familia C2,Replenishment,928.7143874643874,Overdue by 375 days (Typical Max Cycle: 211),434.6383333333333
-1000079458,Familia C1,Replenishment,926.2273749999997,Overdue by 348 days (Typical Max Cycle: 256),567.8022222222221
-38542,Familia C1,Replenishment,925.0850369295699,Overdue by 565 days (Typical Max Cycle: 379),620.7075
-1000078182,Familia C2,Replenishment,925.0365014577261,Overdue by 451 days (Typical Max Cycle: 233),477.3885714285715
-1000081951,Familia C1,Replenishment,921.01708212033,Overdue by 377 days (Typical Max Cycle: 206),503.505625
-1000074435,Familia C1,Replenishment,918.1317961577697,Overdue by 247 days (Typical Max Cycle: 138),514.4511764705883
-1000074144,Familia C1,Replenishment,916.137832272557,Overdue by 831 days (Typical Max Cycle: 267),294.465
-1000080786,Familia C1,Replenishment,915.2032327124814,Overdue by 565 days (Typical Max Cycle: 156),252.2073333333333
-42559,Familia C1,Replenishment,914.9693015373443,Overdue by 109 days (Typical Max Cycle: 75),630.4054545454545
-1000079238,Familia C1,Replenishment,914.6533834852019,Overdue by 551 days (Typical Max Cycle: 327),361.54538461538465
-1000081434,Familia C1,Replenishment,912.8257835545724,Overdue by 802 days (Typical Max Cycle: 181),205.78416666666666
-4944,Familia C1,Replenishment,908.6779591836735,Overdue by 633 days (Typical Max Cycle: 294),422.04
-16109,Familia C2,Replenishment,908.5248730964468,Overdue by 171 days (Typical Max Cycle: 118),523.3315789473685
-41909,Familia C1,Replenishment,906.7919765166339,Overdue by 723 days (Typical Max Cycle: 204),256.35999999999996
-1000080709,Familia C1,Replenishment,899.285294117647,Overdue by 758 days (Typical Max Cycle: 128),179.8570588235294
-1000076307,Familia C1,Replenishment,898.2430582750582,Overdue by 244 days (Typical Max Cycle: 99),303.70923076923077
-37961,Familia C1,Replenishment,893.9261553273426,Overdue by 495 days (Typical Max Cycle: 164),296.1694736842105
-5860,Familia C1,Replenishment,892.4316387582312,Overdue by 571 days (Typical Max Cycle: 266),415.34799999999996
-1000038232,Familia C1,Replenishment,892.191083647165,Overdue by 145 days (Typical Max Cycle: 111),682.3723529411766
-1000066400,Familia C2,Replenishment,891.3629211175021,Overdue by 621 days (Typical Max Cycle: 243),349.36833333333334
-39272,Familia C1,Replenishment,889.6818553888131,Overdue by 606 days (Typical Max Cycle: 293),430.4533333333333
-1000058045,Familia C1,Replenishment,889.204452071119,Overdue by 362 days (Typical Max Cycle: 150),368.08642857142866
-41014,Familia C1,Replenishment,888.1227202072538,Overdue by 255 days (Typical Max Cycle: 193),672.1869999999999
-27245,Familia C2,Replenishment,887.8648166617777,Overdue by 719 days (Typical Max Cycle: 292),300.68857142857144
-1000069483,Familia C1,Replenishment,885.8389979123173,Overdue by 438 days (Typical Max Cycle: 96),161.46
-1000076218,Familia C2,Replenishment,882.1575393848462,Overdue by 300 days (Typical Max Cycle: 133),326.6433333333333
-1000043204,Familia C1,Replenishment,879.527239841582,Overdue by 496 days (Typical Max Cycle: 153),270.7738095238096
-24474,Familia C1,Replenishment,872.5997329773031,Overdue by 304 days (Typical Max Cycle: 187),537.48125
-12006,Familia C1,Replenishment,871.8166461916462,Overdue by 681 days (Typical Max Cycle: 244),312.625
-1000079629,Familia C2,Replenishment,861.1281887755102,Overdue by 165 days (Typical Max Cycle: 123),642.9757142857143
-6757,Familia C2,Replenishment,860.4312579957356,Overdue by 187 days (Typical Max Cycle: 94),431.596
-4897,Familia C1,Replenishment,859.4255266203705,Overdue by 719 days (Typical Max Cycle: 288),344.2483333333334
-1000079027,Familia C1,Replenishment,858.6817708808763,Overdue by 244 days (Typical Max Cycle: 125),367.16857142857145
-1000039979,Familia C2,Replenishment,855.7862199747157,Overdue by 940 days (Typical Max Cycle: 316),240.04500000000002
-1000100624,Familia C1,Replenishment,855.1299369238235,Overdue by 137 days (Typical Max Cycle: 103),643.22
-1000081144,Familia C1,Replenishment,855.0,Overdue by 1244 days (Typical Max Cycle: 155),171.0
-25996,Familia C2,Replenishment,847.4056658678535,Overdue by 457 days (Typical Max Cycle: 292),361.09000000000003
-28486,Familia C1,Replenishment,847.34003783684,Overdue by 821 days (Typical Max Cycle: 181),186.39416666666662
-1000081437,Familia C2,Replenishment,844.992682466245,Overdue by 565 days (Typical Max Cycle: 303),452.5571428571429
-5908,Familia C2,Replenishment,840.1869629244628,Overdue by 601 days (Typical Max Cycle: 289),403.4575
-1000080605,Familia C2,Replenishment,839.9459740259741,Overdue by 768 days (Typical Max Cycle: 346),378.96
-24325,Familia C1,Replenishment,837.864595459837,Overdue by 235 days (Typical Max Cycle: 129),459.39937499999996
-11803,Familia C2,Replenishment,834.7666992266994,Overdue by 353 days (Typical Max Cycle: 205),484.18833333333345
-13162,Familia C1,Replenishment,831.4041666666667,Overdue by 1265 days (Typical Max Cycle: 104),166.28083333333333
-18313,Familia C1,Replenishment,829.3829837570623,Overdue by 383 days (Typical Max Cycle: 189),408.84466666666674
-1000069726,Familia C2,Replenishment,827.9229681452815,Overdue by 621 days (Typical Max Cycle: 336),447.82500000000005
-42756,Familia C1,Replenishment,820.5533271288973,Overdue by 303 days (Typical Max Cycle: 61),166.27714285714288
-28399,Familia C1,Replenishment,819.6562987350547,Overdue by 387 days (Typical Max Cycle: 289),611.1416666666668
-1000079719,Familia C1,Replenishment,819.0550000000001,Overdue by 1129 days (Typical Max Cycle: 120),163.811
-1000076619,Familia C2,Replenishment,817.6875000000001,Overdue by 907 days (Typical Max Cycle: 180),163.53750000000002
-30554,Familia C2,Replenishment,817.3656433978133,Overdue by 690 days (Typical Max Cycle: 238),281.695
-1000081961,Familia C1,Replenishment,816.9166666666666,Overdue by 934 days (Typical Max Cycle: 184),163.38333333333333
-2392,Familia C2,Replenishment,809.8330247191011,Overdue by 423 days (Typical Max Cycle: 289),461.474
-1000075238,Familia C2,Replenishment,808.9622054054057,Overdue by 424 days (Typical Max Cycle: 222),352.96700000000004
-39600,Familia C2,Replenishment,805.4296256299496,Overdue by 129 days (Typical Max Cycle: 93),578.161111111111
-27145,Familia C1,Replenishment,804.0341798606712,Overdue by 837 days (Typical Max Cycle: 316),303.36199999999997
-1000073944,Familia C2,Replenishment,803.2139778416085,Overdue by 689 days (Typical Max Cycle: 487),473.496
-41522,Familia C1,Replenishment,800.2376303691052,Overdue by 366 days (Typical Max Cycle: 166),361.85608695652166
-768,Familia C2,Replenishment,799.3559782608695,Overdue by 430 days (Typical Max Cycle: 258),478.87
-33903,Familia C2,Replenishment,793.6253026634384,Overdue by 552 days (Typical Max Cycle: 283),407.16428571428577
-1221,Familia C1,Replenishment,792.5149661781284,Overdue by 473 days (Typical Max Cycle: 355),594.4699999999999
-23656,Familia C1,Replenishment,791.795944055944,Overdue by 844 days (Typical Max Cycle: 286),268.30999999999995
-29150,Familia C2,Replenishment,791.795863377609,Overdue by 632 days (Typical Max Cycle: 422),352.13199999999995
-1000082626,Familia C2,Replenishment,790.3431833866617,Overdue by 320 days (Typical Max Cycle: 228),562.3785714285715
-9513,Familia C2,Replenishment,788.242857142857,Overdue by 1217 days (Typical Max Cycle: 94),157.64857142857142
-1000079960,Familia C2,Replenishment,785.6961339178956,Overdue by 940 days (Typical Max Cycle: 251),209.714
-35907,Familia C1,Replenishment,783.7018607123871,Overdue by 172 days (Typical Max Cycle: 84),253.94370370370373
-1000076689,Familia C2,Replenishment,778.9269382151033,Overdue by 314 days (Typical Max Cycle: 131),271.01200000000006
-1000082115,Familia C1,Replenishment,770.9875229779412,Overdue by 754 days (Typical Max Cycle: 218),222.5025
-40372,Familia C1,Replenishment,766.5921256441718,Overdue by 359 days (Typical Max Cycle: 204),362.56533333333334
-8976,Familia C1,Replenishment,765.66127519925,Overdue by 347 days (Typical Max Cycle: 261),575.2388888888889
-27626,Familia C1,Replenishment,761.9930769230768,Overdue by 522 days (Typical Max Cycle: 82),126.99884615384615
-1000078288,Familia C2,Replenishment,758.9699989539386,Overdue by 398 days (Typical Max Cycle: 169),321.70411764705887
-31379,Familia C2,Replenishment,755.4760756075607,Overdue by 79 days (Typical Max Cycle: 50),321.9539393939394
-1000063882,Familia C1,Replenishment,754.8753501400561,Overdue by 314 days (Typical Max Cycle: 206),494.75588235294117
-15511,Familia C1,Replenishment,750.5089475839477,Overdue by 361 days (Typical Max Cycle: 163),338.4566666666667
-11576,Familia C1,Replenishment,749.6875,Overdue by 1138 days (Typical Max Cycle: 74),99.95833333333333
-1000080063,Familia C2,Replenishment,745.5870389520854,Overdue by 571 days (Typical Max Cycle: 290),378.8
-7549,Familia C2,Replenishment,737.7081724782068,Overdue by 201 days (Typical Max Cycle: 131),321.5086363636364
-14837,Familia C2,Replenishment,734.8801843317974,Overdue by 360 days (Typical Max Cycle: 260),531.5633333333334
-42334,Familia C1,Replenishment,733.7555555555557,Overdue by 445 days (Typical Max Cycle: 130),213.94333333333336
-26008,Familia C2,Replenishment,732.4813677179152,Overdue by 529 days (Typical Max Cycle: 304),421.4883333333334
-40349,Familia C1,Replenishment,731.7681818181818,Overdue by 1237 days (Typical Max Cycle: 150),146.35363636363635
-16640,Familia C2,Replenishment,731.0982370225271,Overdue by 927 days (Typical Max Cycle: 306),241.57
-41996,Familia C1,Replenishment,729.9913817849688,Overdue by 537 days (Typical Max Cycle: 383),347.27833333333336
-1000069082,Familia C1,Replenishment,727.3239289446187,Overdue by 184 days (Typical Max Cycle: 128),420.31944444444446
-14687,Familia C2,Replenishment,726.825,Overdue by 768 days (Typical Max Cycle: 149),145.365
-8369,Familia C2,Replenishment,724.5248096007386,Overdue by 565 days (Typical Max Cycle: 248),317.50857142857143
-1000077135,Familia C2,Replenishment,723.2661988384954,Overdue by 221 days (Typical Max Cycle: 136),295.85187499999995
-7735,Familia C1,Replenishment,721.5817460317461,Overdue by 635 days (Typical Max Cycle: 428),486.812
-34618,Familia C1,Replenishment,720.9420795306389,Overdue by 957 days (Typical Max Cycle: 307),231.12333333333333
-23568,Familia C1,Replenishment,714.6195976154992,Overdue by 506 days (Typical Max Cycle: 268),379.05909090909086
-1000071606,Familia C2,Replenishment,713.8272479954182,Overdue by 335 days (Typical Max Cycle: 175),372.0425
-1000080760,Familia C2,Replenishment,711.4009667673716,Overdue by 354 days (Typical Max Cycle: 166),332.59000000000003
-1000074688,Familia C1,Replenishment,703.2583688779338,Overdue by 502 days (Typical Max Cycle: 333),466.8542857142857
-39389,Familia C2,Replenishment,703.1001314060447,Overdue by 872 days (Typical Max Cycle: 304),245.44
-2074,Familia C1,Replenishment,702.7373113531128,Overdue by 181 days (Typical Max Cycle: 137),355.1217647058824
-42096,Familia C1,Replenishment,700.2179958246347,Overdue by 401 days (Typical Max Cycle: 120),209.10500000000002
-1000060357,Familia C1,Replenishment,699.1957082893763,Overdue by 398 days (Typical Max Cycle: 171),301.0230769230769
-1000077782,Familia C2,Replenishment,695.1616438356166,Overdue by 208 days (Typical Max Cycle: 146),325.3
-26265,Familia C1,Replenishment,688.8700687387926,Overdue by 726 days (Typical Max Cycle: 335),317.4875
-24860,Familia C1,Replenishment,685.1964094065656,Overdue by 538 days (Typical Max Cycle: 317),403.47625000000005
-42490,Familia C2,Replenishment,684.530806065443,Overdue by 423 days (Typical Max Cycle: 161),260.70428571428573
-1000065325,Familia C1,Replenishment,684.3147428571428,Overdue by 576 days (Typical Max Cycle: 200),237.6092857142857
-1000071090,Familia C2,Replenishment,681.375,Overdue by 984 days (Typical Max Cycle: 152),136.275
-1000079214,Familia C1,Replenishment,680.0579297245966,Overdue by 761 days (Typical Max Cycle: 158),141.15
-1000082043,Familia C2,Replenishment,675.5618991097922,Overdue by 129 days (Typical Max Cycle: 34),117.65599999999999
-21555,Familia C1,Replenishment,672.1463726430169,Overdue by 1060 days (Typical Max Cycle: 313),198.41
-35558,Familia C1,Replenishment,668.0387357052097,Overdue by 451 days (Typical Max Cycle: 315),466.294
-25904,Familia C1,Replenishment,666.9753206909047,Overdue by 355 days (Typical Max Cycle: 244),381.2405882352941
-7648,Familia C2,Replenishment,663.6485206547883,Overdue by 369 days (Typical Max Cycle: 195),350.0790909090909
-22729,Familia C1,Replenishment,663.6073766976413,Overdue by 552 days (Typical Max Cycle: 350),420.465
-6479,Familia C2,Replenishment,663.0447365283741,Overdue by 535 days (Typical Max Cycle: 280),346.5183333333334
-2587,Familia C2,Replenishment,661.1335416309013,Overdue by 548 days (Typical Max Cycle: 291),351.378
-1000079889,Familia C2,Replenishment,659.1110644257705,Overdue by 506 days (Typical Max Cycle: 214),279.01500000000004
-1000079678,Familia C1,Replenishment,657.4428614695015,Overdue by 363 days (Typical Max Cycle: 275),498.33444444444444
-1000076201,Familia C1,Replenishment,655.3439290989661,Overdue by 132 days (Typical Max Cycle: 68),336.1120000000001
-9976,Familia C1,Replenishment,653.9821234567901,Overdue by 465 days (Typical Max Cycle: 304),427.198
-14002,Familia C1,Replenishment,652.46,Overdue by 404 days (Typical Max Cycle: 250),403.75
-1000078114,Familia C2,Replenishment,651.9678151880067,Overdue by 548 days (Typical Max Cycle: 407),403.41499999999996
-7250,Familia C2,Replenishment,651.846758462421,Overdue by 472 days (Typical Max Cycle: 232),320.95166666666665
-1000078311,Familia C1,Replenishment,649.6680717351317,Overdue by 380 days (Typical Max Cycle: 186),318.67928571428564
-1000080898,Familia C1,Replenishment,649.1341188903568,Overdue by 549 days (Typical Max Cycle: 378),447.53600000000006
-1000076681,Familia C2,Replenishment,648.5883706882847,Overdue by 312 days (Typical Max Cycle: 210),363.27185185185186
-24879,Familia C1,Replenishment,647.3943252799056,Overdue by 487 days (Typical Max Cycle: 170),225.59099999999998
-1000076636,Familia C1,Replenishment,638.9554775425916,Overdue by 634 days (Typical Max Cycle: 291),292.82099999999997
-1000081962,Familia C1,Replenishment,636.1150872711792,Overdue by 566 days (Typical Max Cycle: 157),175.9993333333333
-1000079299,Familia C1,Replenishment,633.7792642845104,Overdue by 395 days (Typical Max Cycle: 297),475.97625
-1000077470,Familia C1,Replenishment,630.7121973246036,Overdue by 440 days (Typical Max Cycle: 253),362.80285714285714
-40885,Familia C2,Replenishment,630.5113398692811,Overdue by 199 days (Typical Max Cycle: 108),342.1870588235294
-41807,Familia C2,Replenishment,630.2333333333333,Overdue by 1286 days (Typical Max Cycle: 93),126.04666666666668
-1000081693,Familia C1,Replenishment,628.7266490455213,Overdue by 184 days (Typical Max Cycle: 136),465.3944
-1000079886,Familia C1,Replenishment,628.5816326530613,Overdue by 565 days (Typical Max Cycle: 316),352.0057142857143
-1000077167,Familia C1,Replenishment,627.8405612940948,Overdue by 261 days (Typical Max Cycle: 183),440.81142857142856
-1000071606,Familia C1,Replenishment,625.3929444301519,Overdue by 335 days (Typical Max Cycle: 239),446.54923076923075
-1000076309,Familia C1,Replenishment,625.2453951719576,Overdue by 166 days (Typical Max Cycle: 90),337.48185185185184
-1000065702,Familia C2,Replenishment,624.8278165312948,Overdue by 639 days (Typical Max Cycle: 299),292.36857142857144
-42519,Familia C1,Replenishment,619.7287892376683,Overdue by 369 days (Typical Max Cycle: 201),337.072
-1000081597,Familia C2,Replenishment,613.7661502069783,Overdue by 612 days (Typical Max Cycle: 254),254.382
-1000065883,Familia C1,Replenishment,611.7020078354556,Overdue by 705 days (Typical Max Cycle: 306),265.76500000000004
-42741,Familia C1,Replenishment,611.4011673151751,Overdue by 180 days (Typical Max Cycle: 128),436.4725
-30087,Familia C2,Replenishment,609.5897867564535,Overdue by 457 days (Typical Max Cycle: 297),396.1666666666667
-1000077938,Familia C2,Replenishment,607.187094461373,Overdue by 236 days (Typical Max Cycle: 159),341.75714285714287
-1000079100,Familia C1,Replenishment,605.4502794175521,Overdue by 439 days (Typical Max Cycle: 231),318.5854545454545
-1000081180,Familia C1,Replenishment,605.2707538601271,Overdue by 887 days (Typical Max Cycle: 257),175.3033333333333
-14565,Familia C1,Replenishment,604.3838913148958,Overdue by 388 days (Typical Max Cycle: 137),214.02666666666664
-1000077888,Familia C1,Replenishment,602.9636371685333,Overdue by 272 days (Typical Max Cycle: 161),298.0642857142857
-1000080954,Familia C2,Replenishment,598.1526732416299,Overdue by 577 days (Typical Max Cycle: 385),399.425
-163,Familia C1,Replenishment,597.4285714285714,Overdue by 1410 days (Typical Max Cycle: 113),119.4857142857143
-34933,Familia C1,Replenishment,595.4221088612882,Overdue by 229 days (Typical Max Cycle: 147),383.2542307692308
-1000081597,Familia C1,Replenishment,594.4156107992515,Overdue by 544 days (Typical Max Cycle: 187),204.385
-1000075923,Familia C1,Replenishment,593.5142291371994,Overdue by 548 days (Typical Max Cycle: 227),205.10357142857143
-8323,Familia C1,Replenishment,589.1734182841902,Overdue by 499 days (Typical Max Cycle: 337),398.43
-1000077932,Familia C1,Replenishment,588.9708678828084,Overdue by 341 days (Typical Max Cycle: 181),312.44818181818187
-30459,Familia C1,Replenishment,585.9331703703704,Overdue by 367 days (Typical Max Cycle: 100),159.6548148148148
-27626,Familia C2,Replenishment,582.8562419623719,Overdue by 233 days (Typical Max Cycle: 133),276.4189473684211
-1000078779,Familia C1,Replenishment,580.2720429386112,Overdue by 443 days (Typical Max Cycle: 298),390.472
-15394,Familia C1,Replenishment,579.3735418875929,Overdue by 622 days (Typical Max Cycle: 377),351.35
-1000070080,Familia C2,Replenishment,577.9663692181743,Overdue by 576 days (Typical Max Cycle: 244),245.13399999999996
-4047,Familia C1,Replenishment,574.8153759084952,Overdue by 871 days (Typical Max Cycle: 240),158.25571428571428
-19992,Familia C1,Replenishment,574.8025932815407,Overdue by 261 days (Typical Max Cycle: 192),423.7242105263158
-25122,Familia C1,Replenishment,568.2950021542439,Overdue by 564 days (Typical Max Cycle: 232),233.8675
-1000100072,Familia C1,Replenishment,565.099495145631,Overdue by 72 days (Typical Max Cycle: 52),336.83592592592584
-1000073638,Familia C1,Replenishment,563.0881486934121,Overdue by 487 days (Typical Max Cycle: 209),241.6538461538462
-23582,Familia C1,Replenishment,559.8915314685315,Overdue by 681 days (Typical Max Cycle: 286),235.138
-34641,Familia C1,Replenishment,558.2125,Overdue by 1133 days (Typical Max Cycle: 164),111.6425
-33366,Familia C2,Replenishment,555.4143933441184,Overdue by 608 days (Typical Max Cycle: 433),395.276
-27294,Familia C1,Replenishment,555.0342641509434,Overdue by 312 days (Typical Max Cycle: 212),377.1386666666667
-1000100159,Familia C1,Replenishment,554.0429014675053,Overdue by 236 days (Typical Max Cycle: 132),311.0622222222222
-25219,Familia C2,Replenishment,552.515941753117,Overdue by 535 days (Typical Max Cycle: 300),258.35714285714283
-42160,Familia C1,Replenishment,550.1536979785968,Overdue by 171 days (Typical Max Cycle: 52),139.95137931034483
-36431,Familia C1,Replenishment,549.8202591407438,Overdue by 492 days (Typical Max Cycle: 347),387.33272727272725
-31509,Familia C2,Replenishment,549.7226777330652,Overdue by 563 days (Typical Max Cycle: 398),388.22333333333336
-39287,Familia C2,Replenishment,546.4718403547672,Overdue by 460 days (Typical Max Cycle: 226),267.89
-1000100157,Familia C1,Replenishment,545.6269130717538,Overdue by 181 days (Typical Max Cycle: 132),397.3128571428571
-37533,Familia C1,Replenishment,545.0520018694501,Overdue by 360 days (Typical Max Cycle: 229),347.0921428571429
-1000073231,Familia C2,Replenishment,543.0675,Overdue by 570 days (Typical Max Cycle: 368),350.61199999999997
-41924,Familia C1,Replenishment,541.6129305238215,Overdue by 550 days (Typical Max Cycle: 227),223.78461538461536
-1000076619,Familia C1,Replenishment,536.6106211180124,Overdue by 607 days (Typical Max Cycle: 322),284.65999999999997
-1000058131,Familia C1,Replenishment,531.4376115588351,Overdue by 593 days (Typical Max Cycle: 347),310.5728571428572
-26923,Familia C2,Replenishment,530.5637566137566,Overdue by 207 days (Typical Max Cycle: 146),373.70142857142855
-1000080841,Familia C1,Replenishment,530.0775086505191,Overdue by 164 days (Typical Max Cycle: 58),186.82000000000005
-1000079764,Familia C2,Replenishment,526.5860530973453,Overdue by 494 days (Typical Max Cycle: 322),286.0780000000001
-36095,Familia C1,Replenishment,526.3882117882118,Overdue by 80 days (Typical Max Cycle: 31),135.1063076923077
-1000080522,Familia C1,Replenishment,524.9294848111658,Overdue by 219 days (Typical Max Cycle: 139),333.65380952380946
-1000070964,Familia C1,Replenishment,524.8289234268385,Overdue by 366 days (Typical Max Cycle: 264),378.27833333333336
-1000079763,Familia C1,Replenishment,519.9684418145958,Overdue by 775 days (Typical Max Cycle: 296),198.42666666666665
-9908,Familia C1,Replenishment,517.2456120312203,Overdue by 536 days (Typical Max Cycle: 350),337.94666666666666
-1000067455,Familia C1,Replenishment,515.6304854368932,Overdue by 114 days (Typical Max Cycle: 77),349.4075
-1000100385,Familia C1,Replenishment,513.1856845444632,Overdue by 124 days (Typical Max Cycle: 92),379.50909090909096
-19211,Familia C1,Replenishment,513.140350877193,Overdue by 360 days (Typical Max Cycle: 205),292.49
-1000080874,Familia C1,Replenishment,511.9228861330327,Overdue by 341 days (Typical Max Cycle: 177),221.93333333333337
-2555,Familia C1,Replenishment,511.8948589626933,Overdue by 319 days (Typical Max Cycle: 220),293.925
-9051,Familia C1,Replenishment,508.7444859813084,Overdue by 447 days (Typical Max Cycle: 321),365.34
-39302,Familia C1,Replenishment,507.1285714285715,Overdue by 577 days (Typical Max Cycle: 12),101.42571428571429
-41062,Familia C2,Replenishment,506.02500000000003,Overdue by 1432 days (Typical Max Cycle: 65),67.47
-37653,Familia C1,Replenishment,500.5412719069929,Overdue by 83 days (Typical Max Cycle: 34),136.29196078431372
-1000079022,Familia C1,Replenishment,500.47883635888735,Overdue by 178 days (Typical Max Cycle: 118),331.21576923076924
-1842,Familia C1,Replenishment,498.85885565052234,Overdue by 278 days (Typical Max Cycle: 187),335.9222222222222
-11020,Familia C1,Replenishment,492.4998477248299,Overdue by 404 days (Typical Max Cycle: 279),340.239375
-1000058080,Familia C1,Replenishment,489.6556433823529,Overdue by 383 days (Typical Max Cycle: 272),347.74499999999995
-39800,Familia C1,Replenishment,489.4934081527349,Overdue by 229 days (Typical Max Cycle: 122),261.6331578947369
-30272,Familia C1,Replenishment,484.9344032334761,Overdue by 536 days (Typical Max Cycle: 210),190.264375
-1460,Familia C2,Replenishment,484.62600131319766,Overdue by 741 days (Typical Max Cycle: 457),298.82
-12558,Familia C2,Replenishment,483.0727540983608,Overdue by 359 days (Typical Max Cycle: 244),328.328
-41948,Familia C1,Replenishment,481.3558823529412,Overdue by 948 days (Typical Max Cycle: 74),96.27117647058824
-1000081181,Familia C1,Replenishment,479.2732620139242,Overdue by 601 days (Typical Max Cycle: 226),180.62461538461537
-30544,Familia C1,Replenishment,476.11878899747853,Overdue by 193 days (Typical Max Cycle: 129),265.4012765957447
-1000100163,Familia C2,Replenishment,475.1685706623759,Overdue by 244 days (Typical Max Cycle: 124),242.0633333333333
-2946,Familia C1,Replenishment,474.71666666666664,Overdue by 1060 days (Typical Max Cycle: 138),94.94333333333333
-9401,Familia C1,Replenishment,472.06841498559083,Overdue by 454 days (Typical Max Cycle: 347),360.81
-8854,Familia C1,Replenishment,467.1655092592593,Overdue by 510 days (Typical Max Cycle: 292),267.10875
-15049,Familia C1,Replenishment,466.9988928687725,Overdue by 702 days (Typical Max Cycle: 307),204.29538461538462
-1000067847,Familia C2,Replenishment,462.4814695550352,Overdue by 501 days (Typical Max Cycle: 256),236.5025
-38671,Familia C1,Replenishment,459.136918767507,Overdue by 403 days (Typical Max Cycle: 273),311.0282352941176
-22710,Familia C2,Replenishment,455.6540911101283,Overdue by 181 days (Typical Max Cycle: 120),301.3358823529412
-22244,Familia C1,Replenishment,454.16821396993817,Overdue by 755 days (Typical Max Cycle: 264),158.74833333333333
-1000071615,Familia C1,Replenishment,453.9382137737613,Overdue by 214 days (Typical Max Cycle: 160),283.623
-25896,Familia C1,Replenishment,449.2917617107943,Overdue by 383 days (Typical Max Cycle: 196),191.995
-40500,Familia C1,Replenishment,449.17306540764633,Overdue by 522 days (Typical Max Cycle: 109),93.405625
-12537,Familia C1,Replenishment,443.81221032660255,Overdue by 879 days (Typical Max Cycle: 369),186.285
-2114,Familia C1,Replenishment,443.36955818965527,Overdue by 417 days (Typical Max Cycle: 186),197.3366666666667
-33445,Familia C2,Replenishment,438.69717405266545,Overdue by 580 days (Typical Max Cycle: 415),314.0466666666667
-1000081604,Familia C1,Replenishment,436.0242857142857,Overdue by 297 days (Typical Max Cycle: 147),215.81000000000003
-1000082627,Familia C1,Replenishment,434.6851203126909,Overdue by 374 days (Typical Max Cycle: 273),317.1806666666667
-28892,Familia C2,Replenishment,431.3011714517876,Overdue by 829 days (Typical Max Cycle: 369),192.08249999999998
-1000080857,Familia C1,Replenishment,430.58952708231067,Overdue by 611 days (Typical Max Cycle: 170),119.6277777777778
-1000081733,Familia C2,Replenishment,428.5072742995503,Overdue by 257 days (Typical Max Cycle: 124),172.1532142857143
-33322,Familia C1,Replenishment,427.3641254393079,Overdue by 506 days (Typical Max Cycle: 370),312.41499999999996
-1000079652,Familia C1,Replenishment,426.9605299262562,Overdue by 431 days (Typical Max Cycle: 167),165.03857142857143
-1000081634,Familia C1,Replenishment,424.1729314316088,Overdue by 451 days (Typical Max Cycle: 282),265.41375
-39721,Familia C1,Replenishment,421.3589701808702,Overdue by 528 days (Typical Max Cycle: 307),163.25
-1000080584,Familia C1,Replenishment,420.2600061387354,Overdue by 971 days (Typical Max Cycle: 272),117.50833333333333
-1000074005,Familia C1,Replenishment,416.96739433348824,Overdue by 914 days (Typical Max Cycle: 215),98.22000000000001
-1000081160,Familia C2,Replenishment,415.69562567713973,Overdue by 482 days (Typical Max Cycle: 369),318.41249999999997
-42718,Familia C1,Replenishment,409.2032818009222,Overdue by 166 days (Typical Max Cycle: 123),302.9583333333333
-1000079899,Familia C1,Replenishment,406.2281615598886,Overdue by 209 days (Typical Max Cycle: 144),232.59315789473686
-1000066667,Familia C2,Replenishment,405.1757755102041,Overdue by 676 days (Typical Max Cycle: 392),195.79500000000002
-1000082210,Familia C1,Replenishment,402.75668880308876,Overdue by 361 days (Typical Max Cycle: 231),257.9985714285714
-1000080508,Familia C2,Replenishment,398.4227558528427,Overdue by 348 days (Typical Max Cycle: 230),263.32538461538456
-1000065497,Familia C1,Replenishment,396.44625098658236,Overdue by 550 days (Typical Max Cycle: 226),163.0835714285714
-30149,Familia C2,Replenishment,384.4082038308638,Overdue by 370 days (Typical Max Cycle: 277),287.475
-42310,Familia C1,Replenishment,383.8352848101266,Overdue by 208 days (Typical Max Cycle: 63),116.62687500000001
-26633,Familia C1,Replenishment,381.9647857502941,Overdue by 557 days (Typical Max Cycle: 270),185.49636363636367
-25605,Familia C1,Replenishment,376.84547511312223,Overdue by 702 days (Typical Max Cycle: 287),154.22750000000002
-25129,Familia C1,Replenishment,371.4039372599232,Overdue by 501 days (Typical Max Cycle: 312),231.59
-1000059423,Familia C2,Replenishment,368.9741161616161,Overdue by 82 days (Typical Max Cycle: 59),178.1875
-1000080412,Familia C1,Replenishment,368.1963518304926,Overdue by 548 days (Typical Max Cycle: 260),174.75888888888892
-23180,Familia C1,Replenishment,366.8331244598098,Overdue by 1067 days (Typical Max Cycle: 231),79.55499999999999
-300,Familia C1,Replenishment,364.5154140127389,Overdue by 313 days (Typical Max Cycle: 157),182.84000000000003
-17828,Familia C1,Replenishment,364.37920288373056,Overdue by 439 days (Typical Max Cycle: 279),231.90785714285718
-7931,Familia C1,Replenishment,364.0169868079704,Overdue by 191 days (Typical Max Cycle: 134),255.7648148148148
-12422,Familia C1,Replenishment,363.8946902654867,Overdue by 535 days (Typical Max Cycle: 396),224.175
-1000073407,Familia C1,Replenishment,344.5548245614035,Overdue by 450 days (Typical Max Cycle: 256),196.39625
-42219,Familia C1,Replenishment,343.2566666666667,Overdue by 1129 days (Typical Max Cycle: 26),68.65133333333334
-1000038447,Familia C2,Replenishment,342.03724230254346,Overdue by 201 days (Typical Max Cycle: 149),254.23066666666668
-1262,Familia C1,Replenishment,336.92935370152765,Overdue by 606 days (Typical Max Cycle: 383),212.916
-14986,Familia C1,Replenishment,336.18857142857144,Overdue by 324 days (Typical Max Cycle: 204),211.363
-8751,Familia C1,Replenishment,329.7269862420468,Overdue by 1094 days (Typical Max Cycle: 273),82.25090909090909
-37754,Familia C1,Replenishment,328.5025883111129,Overdue by 192 days (Typical Max Cycle: 134),191.34135135135134
-1000079818,Familia C1,Replenishment,327.89521643052126,Overdue by 403 days (Typical Max Cycle: 275),223.54642857142858
-13444,Familia C2,Replenishment,321.845673726904,Overdue by 562 days (Typical Max Cycle: 222),127.0775
-18774,Familia C2,Replenishment,317.90682567876166,Overdue by 534 days (Typical Max Cycle: 394),234.61999999999998
-40974,Familia C1,Replenishment,312.3862854408422,Overdue by 216 days (Typical Max Cycle: 161),232.48192307692307
-1000080226,Familia C1,Replenishment,298.8961325966851,Overdue by 594 days (Typical Max Cycle: 217),109.29333333333334
-12744,Familia C2,Replenishment,289.3556818181819,Overdue by 713 days (Typical Max Cycle: 546),221.42000000000002
-6963,Familia C1,Replenishment,286.5300870942201,Overdue by 625 days (Typical Max Cycle: 379),173.706
-1000082056,Familia C1,Replenishment,276.25509719638166,Overdue by 179 days (Typical Max Cycle: 120),185.0446153846154
-1000081468,Familia C1,Replenishment,260.8864924262117,Overdue by 573 days (Typical Max Cycle: 385),175.15363636363637
-1000082712,Familia C1,Replenishment,254.89072543618005,Overdue by 416 days (Typical Max Cycle: 218),133.45
-15098,Familia C1,Replenishment,249.77596483516487,Overdue by 164 days (Typical Max Cycle: 124),156.74457142857145
-1000100425,Familia C1,Replenishment,241.03356299212604,Overdue by 255 days (Typical Max Cycle: 190),180.06625000000003
-1000081532,Familia C2,Replenishment,239.51738821859476,Overdue by 767 days (Typical Max Cycle: 423),132.0
-2821,Familia C1,Replenishment,231.57252357948005,Overdue by 271 days (Typical Max Cycle: 189),161.50260869565213
-19757,Familia C1,Replenishment,224.40150948103795,Overdue by 275 days (Typical Max Cycle: 200),163.52750000000003
-31066,Familia C1,Replenishment,211.09909850628418,Overdue by 605 days (Typical Max Cycle: 326),113.62714285714287
-2309,Familia C1,Replenishment,208.21677838290748,Overdue by 194 days (Typical Max Cycle: 136),146.3957142857143
-1000077814,Familia C1,Replenishment,205.69505178365938,Overdue by 480 days (Typical Max Cycle: 348),148.95749999999998
-23508,Familia C1,Replenishment,200.72999999999996,Overdue by 1165 days (Typical Max Cycle: 191),40.145999999999994
-1000042752,Familia C2,Replenishment,192.26986471562677,Overdue by 829 days (Typical Max Cycle: 362),84.00499999999998
-1000080513,Familia C1,Replenishment,190.9264951542974,Overdue by 181 days (Typical Max Cycle: 131),137.86791666666667
-1000079889,Familia C1,Replenishment,184.97881278538816,Overdue by 506 days (Typical Max Cycle: 256),93.40333333333335
-1000071395,Familia C1,Replenishment,151.33122028526148,Overdue by 360 days (Typical Max Cycle: 252),106.10000000000001
-42469,Familia C1,Replenishment,147.0,Overdue by 861 days (Typical Max Cycle: 16),29.400000000000002
-42809,Familia C1,Replenishment,123.34778533635678,Overdue by 68 days (Typical Max Cycle: 44),79.99466666666666
-1000080693,Familia C1,Replenishment,96.51786766675598,Overdue by 727 days (Typical Max Cycle: 373),49.56
-33980,Familia C1,Replenishment,69.63888888888887,Overdue by 1367 days (Typical Max Cycle: 84),13.927777777777774
+26122,Familia C1,Replenishment,9455.173333333334,"Overdue by 1132 days (Typical Max Cycle: 91, Conf: 0.60)",787.9311111111111
+1000043173,Familia C2,Replenishment,9293.371269153897,"Overdue by 411 days (Typical Max Cycle: 126, Conf: 1.00)",1429.0536842105264
+8849,Familia C1,Replenishment,8682.943750000002,"Overdue by 628 days (Typical Max Cycle: 102, Conf: 1.00)",578.8629166666667
+1000059994,Familia C2,Replenishment,7609.647500000001,"Overdue by 1405 days (Typical Max Cycle: 66, Conf: 0.30)",1170.7150000000001
+10927,Familia C2,Replenishment,7018.873334112696,"Overdue by 339 days (Typical Max Cycle: 132, Conf: 1.00)",1362.3653846153845
+27678,Familia C1,Replenishment,5784.594333333333,"Overdue by 688 days (Typical Max Cycle: 123, Conf: 0.90)",608.9046666666667
+1000051951,Familia C2,Replenishment,5102.695454545455,"Overdue by 731 days (Typical Max Cycle: 34, Conf: 1.00)",510.2695454545455
+31978,Familia C1,Replenishment,4836.195,"Overdue by 1012 days (Typical Max Cycle: 201, Conf: 0.30)",1240.05
+35972,Familia C2,Replenishment,4835.629411764706,"Overdue by 542 days (Typical Max Cycle: 84, Conf: 1.00)",483.5629411764706
+4767,Familia C2,Replenishment,4791.837968387575,"Overdue by 160 days (Typical Max Cycle: 59, Conf: 1.00)",587.9984507042253
+35572,Familia C1,Replenishment,4784.053782287823,"Overdue by 534 days (Typical Max Cycle: 108, Conf: 1.00)",647.4300000000001
+5789,Familia C2,Replenishment,4684.757489265746,"Overdue by 173 days (Typical Max Cycle: 98, Conf: 1.00)",1328.250606060606
+1000081558,Familia C1,Replenishment,4671.873543035995,"Overdue by 472 days (Typical Max Cycle: 170, Conf: 0.70)",1653.5544444444447
+40897,Familia C1,Replenishment,4495.313258823529,"Overdue by 222 days (Typical Max Cycle: 75, Conf: 1.00)",506.2289705882353
+35686,Familia C1,Replenishment,4466.35420865019,"Overdue by 530 days (Typical Max Cycle: 263, Conf: 0.40)",2110.78375
+8979,Familia C1,Replenishment,4409.5628541532515,"Overdue by 481 days (Typical Max Cycle: 311, Conf: 0.30)",2190.325
+1000081208,Familia C2,Replenishment,4107.61111111111,"Overdue by 493 days (Typical Max Cycle: 62, Conf: 1.00)",410.76111111111106
+1000081331,Familia C2,Replenishment,4048.6375,"Overdue by 705 days (Typical Max Cycle: 57, Conf: 1.00)",404.86375
+1000081935,Familia C2,Replenishment,3959.4526829268298,"Overdue by 619 days (Typical Max Cycle: 62, Conf: 1.00)",659.908780487805
+32014,Familia C2,Replenishment,3805.6750000000006,"Overdue by 831 days (Typical Max Cycle: 103, Conf: 1.00)",634.2791666666668
+1000073191,Familia C2,Replenishment,3754.525714285714,"Overdue by 1468 days (Typical Max Cycle: 27, Conf: 0.60)",782.1928571428572
+1000062003,Familia C1,Replenishment,3747.34226371511,"Overdue by 971 days (Typical Max Cycle: 208, Conf: 0.30)",1233.7759999999998
+41044,Familia C1,Replenishment,3716.3452941176465,"Overdue by 1087 days (Typical Max Cycle: 42, Conf: 1.00)",619.3908823529412
+1000081331,Familia C1,Replenishment,3667.7190476190476,"Overdue by 726 days (Typical Max Cycle: 100, Conf: 1.00)",366.77190476190475
+40220,Familia C2,Replenishment,3559.6959999999995,"Overdue by 1090 days (Typical Max Cycle: 173, Conf: 0.40)",508.52799999999996
+40433,Familia C1,Replenishment,3219.9504601421113,"Overdue by 688 days (Typical Max Cycle: 146, Conf: 1.00)",681.1973684210527
+36492,Familia C2,Replenishment,3150.545454545455,"Overdue by 1194 days (Typical Max Cycle: 56, Conf: 1.00)",210.03636363636363
+1000100656,Familia C1,Replenishment,3026.453243564356,"Overdue by 136 days (Typical Max Cycle: 101, Conf: 0.40)",2675.6983333333333
+30222,Familia C1,Replenishment,3006.570377050709,"Overdue by 697 days (Typical Max Cycle: 268, Conf: 0.30)",1779.8525
+30199,Familia C2,Replenishment,3005.05,"Overdue by 1031 days (Typical Max Cycle: 133, Conf: 0.50)",400.67333333333335
+1000067277,Familia C2,Replenishment,2817.936,"Overdue by 1168 days (Typical Max Cycle: 219, Conf: 0.20)",939.3120000000001
+1000080859,Familia C1,Replenishment,2810.7374999999997,"Overdue by 1199 days (Typical Max Cycle: 66, Conf: 0.70)",661.35
+22568,Familia C2,Replenishment,2731.1742857142854,"Overdue by 1101 days (Typical Max Cycle: 124, Conf: 0.60)",455.19571428571425
+1000076258,Familia C1,Replenishment,2720.4026315789474,"Overdue by 773 days (Typical Max Cycle: 123, Conf: 1.00)",544.0805263157895
+1000037345,Familia C2,Replenishment,2713.2209999999995,"Overdue by 1493 days (Typical Max Cycle: 36, Conf: 0.40)",775.2059999999999
+40047,Familia C1,Replenishment,2711.312044798268,"Overdue by 901 days (Typical Max Cycle: 192, Conf: 0.50)",769.5592307692308
+1000064270,Familia C1,Replenishment,2667.1983333333333,"Overdue by 724 days (Typical Max Cycle: 116, Conf: 0.40)",762.0566666666667
+34537,Familia C2,Replenishment,2665.8631833600007,"Overdue by 964 days (Typical Max Cycle: 312, Conf: 0.30)",664.764
+14678,Familia C2,Replenishment,2657.2931818181823,"Overdue by 1000 days (Typical Max Cycle: 99, Conf: 0.70)",312.62272727272733
+1000080181,Familia C1,Replenishment,2651.4584999999997,"Overdue by 591 days (Typical Max Cycle: 67, Conf: 1.00)",441.90975
+14664,Familia C2,Replenishment,2643.0163338722714,"Overdue by 538 days (Typical Max Cycle: 124, Conf: 1.00)",506.41437499999995
+1000078799,Familia C1,Replenishment,2604.105,"Overdue by 982 days (Typical Max Cycle: 144, Conf: 0.20)",723.3625
+34363,Familia C2,Replenishment,2580.2954382368016,"Overdue by 928 days (Typical Max Cycle: 195, Conf: 0.30)",417.28749999999997
+27243,Familia C1,Replenishment,2573.7679999999996,"Overdue by 587 days (Typical Max Cycle: 116, Conf: 1.00)",428.9613333333333
+36972,Familia C1,Replenishment,2556.9129408060458,"Overdue by 374 days (Typical Max Cycle: 119, Conf: 1.00)",542.83125
+41635,Familia C2,Replenishment,2540.9205882352944,"Overdue by 789 days (Typical Max Cycle: 62, Conf: 1.00)",338.7894117647059
+1000066400,Familia C1,Replenishment,2510.782142857143,"Overdue by 621 days (Typical Max Cycle: 114, Conf: 1.00)",502.15642857142853
+1000081808,Familia C1,Replenishment,2478.6703125000004,"Overdue by 1089 days (Typical Max Cycle: 138, Conf: 0.50)",660.97875
+32457,Familia C1,Replenishment,2441.7195652173914,"Overdue by 852 days (Typical Max Cycle: 108, Conf: 1.00)",325.5626086956522
+40832,Familia C1,Replenishment,2395.7722567287788,"Overdue by 562 days (Typical Max Cycle: 120, Conf: 1.00)",510.27391304347833
+1000082292,Familia C1,Replenishment,2382.815172413793,"Overdue by 436 days (Typical Max Cycle: 128, Conf: 1.00)",581.13
+22526,Familia C2,Replenishment,2382.1732155844156,"Overdue by 494 days (Typical Max Cycle: 173, Conf: 0.80)",773.5633333333333
+1000065512,Familia C2,Replenishment,2286.810714285714,"Overdue by 690 days (Typical Max Cycle: 125, Conf: 1.00)",457.36214285714277
+1314,Familia C1,Replenishment,2277.5937,"Overdue by 843 days (Typical Max Cycle: 131, Conf: 0.70)",446.587
+1000075402,Familia C2,Replenishment,2269.044,"Overdue by 1280 days (Typical Max Cycle: 171, Conf: 0.20)",630.29
+28536,Familia C1,Replenishment,2254.180641646489,"Overdue by 585 days (Typical Max Cycle: 236, Conf: 0.60)",757.8157142857144
+12585,Familia C2,Replenishment,2244.4179042253522,"Overdue by 668 days (Typical Max Cycle: 178, Conf: 0.60)",496.98625
+1000080267,Familia C2,Replenishment,2236.2093750000004,"Overdue by 1145 days (Typical Max Cycle: 128, Conf: 0.50)",397.54833333333335
+39082,Familia C1,Replenishment,2232.6965517241383,"Overdue by 562 days (Typical Max Cycle: 66, Conf: 1.00)",446.5393103448277
+28660,Familia C1,Replenishment,2226.7146428571427,"Overdue by 825 days (Typical Max Cycle: 158, Conf: 0.70)",436.6107142857143
+24485,Familia C2,Replenishment,2219.8859999999995,"Overdue by 983 days (Typical Max Cycle: 105, Conf: 0.80)",411.0899999999999
+42426,Familia C1,Replenishment,2199.321533101045,"Overdue by 360 days (Typical Max Cycle: 154, Conf: 0.50)",1252.3914285714286
+1000066138,Familia C1,Replenishment,2196.5483889695215,"Overdue by 87 days (Typical Max Cycle: 69, Conf: 1.00)",869.7826666666668
+1000078754,Familia C2,Replenishment,2195.3968597168596,"Overdue by 80 days (Typical Max Cycle: 56, Conf: 1.00)",761.5282857142857
+16055,Familia C2,Replenishment,2191.244210526316,"Overdue by 361 days (Typical Max Cycle: 70, Conf: 1.00)",365.20736842105265
+41053,Familia C1,Replenishment,2190.5570370370374,"Overdue by 380 days (Typical Max Cycle: 171, Conf: 1.00)",492.87533333333334
+1000080904,Familia C2,Replenishment,2187.8280373831785,"Overdue by 352 days (Typical Max Cycle: 160, Conf: 1.00)",665.0500000000001
+1000080357,Familia C1,Replenishment,2150.5031249999997,"Overdue by 793 days (Typical Max Cycle: 152, Conf: 0.50)",573.4675
+5040,Familia C1,Replenishment,2112.6607142857138,"Overdue by 531 days (Typical Max Cycle: 83, Conf: 1.00)",422.5321428571428
+41531,Familia C1,Replenishment,2094.0806249999996,"Overdue by 1083 days (Typical Max Cycle: 180, Conf: 0.40)",598.3087499999999
+14678,Familia C1,Replenishment,2076.9062956521743,"Overdue by 188 days (Typical Max Cycle: 144, Conf: 1.00)",794.0299999999999
+37516,Familia C1,Replenishment,2060.01,"Overdue by 1265 days (Typical Max Cycle: 78, Conf: 0.40)",588.5742857142858
+25823,Familia C1,Replenishment,2041.0824000000005,"Overdue by 838 days (Typical Max Cycle: 135, Conf: 0.40)",485.9720000000001
+1000080460,Familia C1,Replenishment,2030.8631965608708,"Overdue by 628 days (Typical Max Cycle: 210, Conf: 0.60)",424.9492307692307
+21188,Familia C2,Replenishment,2019.6894919168592,"Overdue by 230 days (Typical Max Cycle: 173, Conf: 1.00)",760.457
+10457,Familia C1,Replenishment,2013.7611380619376,"Overdue by 723 days (Typical Max Cycle: 159, Conf: 0.60)",462.0381818181817
+41908,Familia C1,Replenishment,2005.1599999999996,"Overdue by 1122 days (Typical Max Cycle: 142, Conf: 0.40)",572.9028571428571
+30209,Familia C2,Replenishment,2000.8665523809527,"Overdue by 639 days (Typical Max Cycle: 210, Conf: 0.60)",821.9522222222223
+19212,Familia C1,Replenishment,1985.1841105990784,"Overdue by 104 days (Typical Max Cycle: 70, Conf: 1.00)",668.0908064516129
+1000069275,Familia C2,Replenishment,1969.646415954416,"Overdue by 191 days (Typical Max Cycle: 105, Conf: 1.00)",904.903
+1000081327,Familia C1,Replenishment,1954.3682552814303,"Overdue by 360 days (Typical Max Cycle: 242, Conf: 0.60)",1640.5157142857145
+26067,Familia C2,Replenishment,1940.7710000000004,"Overdue by 954 days (Typical Max Cycle: 177, Conf: 0.40)",554.5060000000001
+14674,Familia C1,Replenishment,1932.0684952778263,"Overdue by 404 days (Typical Max Cycle: 288, Conf: 0.40)",982.6016666666668
+14608,Familia C2,Replenishment,1924.4850000000004,"Overdue by 899 days (Typical Max Cycle: 128, Conf: 0.70)",452.82000000000005
+40885,Familia C1,Replenishment,1920.8802543035993,"Overdue by 985 days (Typical Max Cycle: 256, Conf: 0.30)",766.852
+9243,Familia C2,Replenishment,1920.7881355932202,"Overdue by 172 days (Typical Max Cycle: 124, Conf: 1.00)",691.81875
+10457,Familia C2,Replenishment,1917.8876192156467,"Overdue by 681 days (Typical Max Cycle: 283, Conf: 0.50)",886.8157142857143
+12100,Familia C1,Replenishment,1911.7096807844482,"Overdue by 501 days (Typical Max Cycle: 291, Conf: 0.40)",1320.3079999999998
+1000078940,Familia C1,Replenishment,1894.8664285714285,"Overdue by 1136 days (Typical Max Cycle: 93, Conf: 0.50)",421.0814285714286
+1000080434,Familia C1,Replenishment,1892.2831917293233,"Overdue by 639 days (Typical Max Cycle: 213, Conf: 0.60)",787.7109999999999
+1000042244,Familia C2,Replenishment,1881.67423266032,"Overdue by 206 days (Typical Max Cycle: 174, Conf: 0.90)",1392.5863636363636
+35853,Familia C2,Replenishment,1878.474936061381,"Overdue by 243 days (Typical Max Cycle: 117, Conf: 1.00)",453.385
+1000069528,Familia C1,Replenishment,1870.8154687499998,"Overdue by 774 days (Typical Max Cycle: 132, Conf: 0.70)",440.191875
+1000078797,Familia C1,Replenishment,1846.4361111111116,"Overdue by 759 days (Typical Max Cycle: 54, Conf: 1.00)",184.64361111111117
+1000068248,Familia C1,Replenishment,1836.2505382693619,"Overdue by 604 days (Typical Max Cycle: 130, Conf: 1.00)",393.6994117647059
+1000075995,Familia C1,Replenishment,1824.7844292452833,"Overdue by 453 days (Typical Max Cycle: 132, Conf: 1.00)",355.82625
+1000081188,Familia C1,Replenishment,1813.98,"Overdue by 880 days (Typical Max Cycle: 84, Conf: 1.00)",362.796
+24485,Familia C1,Replenishment,1811.052727272727,"Overdue by 573 days (Typical Max Cycle: 65, Conf: 1.00)",301.8421212121212
+21872,Familia C2,Replenishment,1801.322049451589,"Overdue by 579 days (Typical Max Cycle: 132, Conf: 0.70)",322.5775
+1000082054,Familia C2,Replenishment,1795.9135556750944,"Overdue by 535 days (Typical Max Cycle: 143, Conf: 1.00)",480.0292307692308
+1000081756,Familia C1,Replenishment,1795.2051061359864,"Overdue by 515 days (Typical Max Cycle: 362, Conf: 0.40)",1501.399
+8001,Familia C1,Replenishment,1792.3169711985138,"Overdue by 264 days (Typical Max Cycle: 161, Conf: 1.00)",730.73125
+1000081213,Familia C1,Replenishment,1775.1599999999999,"Overdue by 986 days (Typical Max Cycle: 177, Conf: 0.20)",493.1
+1000068733,Familia C2,Replenishment,1760.7540186580547,"Overdue by 249 days (Typical Max Cycle: 93, Conf: 1.00)",437.9492592592592
+1000080845,Familia C1,Replenishment,1758.2077499999998,"Overdue by 831 days (Typical Max Cycle: 136, Conf: 0.90)",308.4575
+25416,Familia C2,Replenishment,1756.0725000000002,"Overdue by 1257 days (Typical Max Cycle: 164, Conf: 0.30)",270.165
+15384,Familia C2,Replenishment,1751.1245989974939,"Overdue by 143 days (Typical Max Cycle: 84, Conf: 1.00)",514.3163157894737
+30618,Familia C2,Replenishment,1749.594057253552,"Overdue by 614 days (Typical Max Cycle: 465, Conf: 0.40)",630.4183333333334
+11406,Familia C1,Replenishment,1744.753196385542,"Overdue by 846 days (Typical Max Cycle: 199, Conf: 0.40)",489.073
+8191,Familia C1,Replenishment,1735.9680000000003,"Overdue by 1277 days (Typical Max Cycle: 123, Conf: 0.30)",356.096
+22526,Familia C1,Replenishment,1727.398062,"Overdue by 746 days (Typical Max Cycle: 200, Conf: 0.50)",514.566
+1000079052,Familia C2,Replenishment,1725.1499999999999,"Overdue by 972 days (Typical Max Cycle: 129, Conf: 0.40)",492.9
+8160,Familia C2,Replenishment,1707.1767857142859,"Overdue by 1318 days (Typical Max Cycle: 107, Conf: 0.50)",455.2471428571429
+40353,Familia C1,Replenishment,1698.734375,"Overdue by 1054 days (Typical Max Cycle: 53, Conf: 1.00)",339.746875
+1000058426,Familia C1,Replenishment,1678.0595643564366,"Overdue by 338 days (Typical Max Cycle: 242, Conf: 0.70)",1179.8400000000001
+1000071186,Familia C1,Replenishment,1668.884,"Overdue by 892 days (Typical Max Cycle: 157, Conf: 0.60)",278.14733333333334
+5047,Familia C1,Replenishment,1667.3358333333333,"Overdue by 1111 days (Typical Max Cycle: 142, Conf: 0.40)",476.38166666666666
+29712,Familia C2,Replenishment,1657.5752220888353,"Overdue by 390 days (Typical Max Cycle: 268, Conf: 0.60)",948.3242857142858
+1000081960,Familia C1,Replenishment,1637.0980612072608,"Overdue by 866 days (Typical Max Cycle: 237, Conf: 0.30)",574.1525
+28105,Familia C2,Replenishment,1615.1025000000002,"Overdue by 962 days (Typical Max Cycle: 191, Conf: 0.40)",307.6385714285715
+1000081414,Familia C1,Replenishment,1609.0539788639367,"Overdue by 817 days (Typical Max Cycle: 378, Conf: 0.20)",621.2025
+1000074220,Familia C1,Replenishment,1595.5650308978554,"Overdue by 590 days (Typical Max Cycle: 275, Conf: 0.40)",1062.8085714285714
+40864,Familia C1,Replenishment,1594.5581476190475,"Overdue by 844 days (Typical Max Cycle: 210, Conf: 0.30)",610.385
+12602,Familia C1,Replenishment,1584.0244524835798,"Overdue by 646 days (Typical Max Cycle: 244, Conf: 0.70)",702.72875
+10255,Familia C1,Replenishment,1579.5221814142913,"Overdue by 551 days (Typical Max Cycle: 270, Conf: 0.40)",1106.116
+1000082454,Familia C2,Replenishment,1576.9481089803812,"Overdue by 403 days (Typical Max Cycle: 129, Conf: 0.60)",526.8314285714285
+8714,Familia C2,Replenishment,1564.7491040914565,"Overdue by 334 days (Typical Max Cycle: 166, Conf: 0.90)",819.6070000000002
+1000079674,Familia C1,Replenishment,1556.2254063703842,"Overdue by 90 days (Typical Max Cycle: 73, Conf: 1.00)",423.0627586206897
+13629,Familia C1,Replenishment,1552.2463097102582,"Overdue by 611 days (Typical Max Cycle: 255, Conf: 0.50)",865.1253846153845
+38636,Familia C2,Replenishment,1537.0249999999996,"Overdue by 978 days (Typical Max Cycle: 167, Conf: 0.50)",409.8733333333333
+15652,Familia C1,Replenishment,1535.510869888476,"Overdue by 193 days (Typical Max Cycle: 161, Conf: 1.00)",642.0504
+42015,Familia C1,Replenishment,1518.6499999999999,"Overdue by 1038 days (Typical Max Cycle: 60, Conf: 1.00)",303.72999999999996
+1000043172,Familia C1,Replenishment,1518.0659233551098,"Overdue by 634 days (Typical Max Cycle: 429, Conf: 0.30)",1052.565
+21053,Familia C2,Replenishment,1517.673965378884,"Overdue by 600 days (Typical Max Cycle: 159, Conf: 1.00)",401.1718181818182
+34335,Familia C1,Replenishment,1516.8580845191364,"Overdue by 408 days (Typical Max Cycle: 204, Conf: 0.70)",594.263125
+1000082136,Familia C1,Replenishment,1513.3928910411623,"Overdue by 997 days (Typical Max Cycle: 206, Conf: 0.30)",482.24
+36713,Familia C1,Replenishment,1510.889210526316,"Overdue by 781 days (Typical Max Cycle: 145, Conf: 0.80)",335.7531578947369
+1000064972,Familia C1,Replenishment,1509.2812042535559,"Overdue by 478 days (Typical Max Cycle: 111, Conf: 1.00)",351.74461538461526
+7972,Familia C2,Replenishment,1487.8257657236381,"Overdue by 548 days (Typical Max Cycle: 397, Conf: 0.30)",829.4357142857143
+35139,Familia C1,Replenishment,1487.1686950549451,"Overdue by 591 days (Typical Max Cycle: 355, Conf: 0.30)",1373.9325
+10519,Familia C1,Replenishment,1477.2936950516782,"Overdue by 496 days (Typical Max Cycle: 210, Conf: 0.60)",652.3038461538462
+1000077542,Familia C2,Replenishment,1472.1057512953373,"Overdue by 188 days (Typical Max Cycle: 154, Conf: 1.00)",1007.5050000000002
+18796,Familia C2,Replenishment,1460.177268560953,"Overdue by 724 days (Typical Max Cycle: 218, Conf: 0.50)",488.96666666666664
+39038,Familia C2,Replenishment,1451.6947368421052,"Overdue by 726 days (Typical Max Cycle: 65, Conf: 1.00)",145.16947368421052
+1000077135,Familia C2,Replenishment,1446.5323976769907,"Overdue by 221 days (Typical Max Cycle: 136, Conf: 1.00)",295.85187499999995
+1000082578,Familia C2,Replenishment,1443.7376901408452,"Overdue by 244 days (Typical Max Cycle: 178, Conf: 0.60)",875.2166666666667
+42490,Familia C1,Replenishment,1435.4250000000002,"Overdue by 486 days (Typical Max Cycle: 89, Conf: 0.50)",382.78000000000003
+1000051951,Familia C1,Replenishment,1419.2619047619044,"Overdue by 677 days (Typical Max Cycle: 34, Conf: 1.00)",141.92619047619044
+41045,Familia C1,Replenishment,1414.55275,"Overdue by 1088 days (Typical Max Cycle: 141, Conf: 0.30)",435.247
+14592,Familia C2,Replenishment,1414.2623349812934,"Overdue by 669 days (Typical Max Cycle: 187, Conf: 0.70)",465.3275
+1000077720,Familia C2,Replenishment,1413.1352627261758,"Overdue by 898 days (Typical Max Cycle: 207, Conf: 0.40)",310.608
+31344,Familia C2,Replenishment,1389.5805,"Overdue by 795 days (Typical Max Cycle: 152, Conf: 0.40)",264.682
+29805,Familia C2,Replenishment,1380.188661070593,"Overdue by 103 days (Typical Max Cycle: 56, Conf: 1.00)",374.5269230769231
+34044,Familia C1,Replenishment,1379.7485625493302,"Overdue by 692 days (Typical Max Cycle: 145, Conf: 0.70)",339.6592857142858
+37594,Familia C2,Replenishment,1375.7790325497285,"Overdue by 415 days (Typical Max Cycle: 198, Conf: 1.00)",436.4921428571428
+41829,Familia C1,Replenishment,1371.48375,"Overdue by 1165 days (Typical Max Cycle: 200, Conf: 0.30)",421.99499999999995
+9184,Familia C2,Replenishment,1369.5,"Overdue by 1210 days (Typical Max Cycle: 74, Conf: 0.50)",365.2
+1000081765,Familia C1,Replenishment,1365.6285714285716,"Overdue by 733 days (Typical Max Cycle: 121, Conf: 1.00)",273.1257142857143
+1000081044,Familia C1,Replenishment,1356.7192307692308,"Overdue by 692 days (Typical Max Cycle: 164, Conf: 0.50)",428.19
+13219,Familia C1,Replenishment,1351.3283753665692,"Overdue by 690 days (Typical Max Cycle: 170, Conf: 0.60)",417.39400000000006
+1000081084,Familia C2,Replenishment,1340.910887084592,"Overdue by 919 days (Typical Max Cycle: 331, Conf: 0.30)",743.0175
+41460,Familia C2,Replenishment,1333.5609672090113,"Overdue by 576 days (Typical Max Cycle: 200, Conf: 0.80)",428.2066666666667
+9184,Familia C1,Replenishment,1323.0838636363637,"Overdue by 1290 days (Typical Max Cycle: 111, Conf: 0.30)",407.1027272727273
+1000077782,Familia C2,Replenishment,1320.8071232876714,"Overdue by 208 days (Typical Max Cycle: 146, Conf: 0.90)",325.3
+11854,Familia C2,Replenishment,1318.9815535780494,"Overdue by 410 days (Typical Max Cycle: 90, Conf: 1.00)",289.2108333333333
+1000081424,Familia C1,Replenishment,1317.722393857272,"Overdue by 842 days (Typical Max Cycle: 221, Conf: 0.30)",533.0600000000001
+14774,Familia C1,Replenishment,1314.6552224824359,"Overdue by 635 days (Typical Max Cycle: 214, Conf: 0.60)",552.5175
+1000058426,Familia C2,Replenishment,1313.9567134164008,"Overdue by 535 days (Typical Max Cycle: 203, Conf: 0.80)",461.63588235294117
+38918,Familia C1,Replenishment,1310.744316218541,"Overdue by 992 days (Typical Max Cycle: 243, Conf: 0.20)",535.3527272727273
+1000064563,Familia C1,Replenishment,1302.39375,"Overdue by 1124 days (Typical Max Cycle: 164, Conf: 0.40)",372.1125
+1000066450,Familia C1,Replenishment,1301.908461538461,"Overdue by 1161 days (Typical Max Cycle: 127, Conf: 0.40)",185.98692307692303
+12525,Familia C2,Replenishment,1298.1345000000001,"Overdue by 1263 days (Typical Max Cycle: 78, Conf: 0.30)",332.855
+22929,Familia C1,Replenishment,1297.989606299213,"Overdue by 1012 days (Typical Max Cycle: 216, Conf: 0.40)",395.59000000000003
+4953,Familia C1,Replenishment,1296.1895730198019,"Overdue by 586 days (Typical Max Cycle: 242, Conf: 0.50)",714.895
+1000081527,Familia C1,Replenishment,1294.7051250000002,"Overdue by 942 days (Typical Max Cycle: 104, Conf: 0.70)",253.86375
+1000080397,Familia C1,Replenishment,1287.8341666666668,"Overdue by 1215 days (Typical Max Cycle: 165, Conf: 0.30)",396.2566666666667
+18020,Familia C1,Replenishment,1286.5144444444445,"Overdue by 985 days (Typical Max Cycle: 165, Conf: 0.40)",367.5755555555556
+1000064044,Familia C2,Replenishment,1279.335010608204,"Overdue by 915 days (Typical Max Cycle: 212, Conf: 0.30)",380.1975
+26468,Familia C2,Replenishment,1276.8096348614072,"Overdue by 261 days (Typical Max Cycle: 134, Conf: 1.00)",437.01785714285717
+10124,Familia C2,Replenishment,1271.439,"Overdue by 1154 days (Typical Max Cycle: 140, Conf: 0.30)",260.808
+34420,Familia C1,Replenishment,1270.1401408796214,"Overdue by 829 days (Typical Max Cycle: 285, Conf: 0.40)",624.564
+1000079040,Familia C2,Replenishment,1259.8370989473683,"Overdue by 698 days (Typical Max Cycle: 190, Conf: 0.40)",489.908
+1000082400,Familia C2,Replenishment,1257.9315469119576,"Overdue by 684 days (Typical Max Cycle: 152, Conf: 0.40)",333.224
+8160,Familia C1,Replenishment,1250.9055,"Overdue by 1326 days (Typical Max Cycle: 126, Conf: 0.30)",384.894
+1000074584,Familia C1,Replenishment,1248.0825675299361,"Overdue by 536 days (Typical Max Cycle: 137, Conf: 1.00)",318.5404761904762
+1000079634,Familia C1,Replenishment,1247.5543315508023,"Overdue by 262 days (Typical Max Cycle: 170, Conf: 1.00)",809.4818181818181
+1000060172,Familia C1,Replenishment,1241.338695652174,"Overdue by 261 days (Typical Max Cycle: 163, Conf: 0.80)",862.9655555555555
+4464,Familia C1,Replenishment,1240.9140547041059,"Overdue by 894 days (Typical Max Cycle: 255, Conf: 0.30)",545.3957142857143
+1000077513,Familia C2,Replenishment,1234.30192661157,"Overdue by 368 days (Typical Max Cycle: 206, Conf: 0.80)",384.3218181818182
+13548,Familia C1,Replenishment,1233.650112044818,"Overdue by 849 days (Typical Max Cycle: 226, Conf: 0.30)",505.4422222222222
+1000080986,Familia C2,Replenishment,1223.9474535935271,"Overdue by 335 days (Typical Max Cycle: 96, Conf: 1.00)",348.9163636363637
+1000081418,Familia C1,Replenishment,1223.0282631631833,"Overdue by 990 days (Typical Max Cycle: 249, Conf: 0.30)",472.86625
+26068,Familia C2,Replenishment,1186.310043956044,"Overdue by 248 days (Typical Max Cycle: 182, Conf: 1.00)",725.49875
+34420,Familia C2,Replenishment,1170.7231250000002,"Overdue by 1299 days (Typical Max Cycle: 139, Conf: 0.30)",360.2225
+10936,Familia C1,Replenishment,1170.6940793141905,"Overdue by 879 days (Typical Max Cycle: 359, Conf: 0.30)",734.9750000000001
+4748,Familia C2,Replenishment,1169.4928301886794,"Overdue by 271 days (Typical Max Cycle: 106, Conf: 0.50)",304.96
+8910,Familia C1,Replenishment,1168.3571649484536,"Overdue by 789 days (Typical Max Cycle: 194, Conf: 0.50)",383.03555555555556
+1000079999,Familia C1,Replenishment,1165.7484578079534,"Overdue by 976 days (Typical Max Cycle: 206, Conf: 0.30)",378.905
+1000038595,Familia C2,Replenishment,1163.030142857143,"Overdue by 919 days (Typical Max Cycle: 162, Conf: 0.30)",298.21285714285716
+1000079985,Familia C2,Replenishment,1153.3678785461,"Overdue by 479 days (Typical Max Cycle: 188, Conf: 0.70)",532.5633333333334
+1000080775,Familia C2,Replenishment,1148.1964285714287,"Overdue by 1255 days (Typical Max Cycle: 81, Conf: 0.50)",306.1857142857143
+13701,Familia C1,Replenishment,1145.7190562293274,"Overdue by 583 days (Typical Max Cycle: 227, Conf: 0.60)",557.015
+29943,Familia C2,Replenishment,1138.3145711009174,"Overdue by 339 days (Typical Max Cycle: 218, Conf: 0.50)",813.3483333333334
+1000061247,Familia C1,Replenishment,1131.0001452513966,"Overdue by 313 days (Typical Max Cycle: 179, Conf: 0.50)",718.6688888888889
+20356,Familia C1,Replenishment,1126.2996875,"Overdue by 689 days (Typical Max Cycle: 198, Conf: 0.50)",431.5575
+1000076894,Familia C2,Replenishment,1121.367,"Overdue by 926 days (Typical Max Cycle: 126, Conf: 0.30)",287.53
+1000080280,Familia C1,Replenishment,1119.009813559322,"Overdue by 585 days (Typical Max Cycle: 148, Conf: 1.00)",282.1435
+37533,Familia C2,Replenishment,1116.0378142809252,"Overdue by 360 days (Typical Max Cycle: 149, Conf: 1.00)",462.3806666666666
+20172,Familia C1,Replenishment,1116.013906899418,"Overdue by 689 days (Typical Max Cycle: 241, Conf: 0.40)",556.7342857142858
+36153,Familia C1,Replenishment,1114.7327815206934,"Overdue by 492 days (Typical Max Cycle: 208, Conf: 0.60)",588.5200000000001
+1000078355,Familia C1,Replenishment,1113.2160037484382,"Overdue by 215 days (Typical Max Cycle: 137, Conf: 1.00)",710.3871428571429
+1000076778,Familia C2,Replenishment,1107.45,"Overdue by 1312 days (Typical Max Cycle: 99, Conf: 0.20)",369.15
+36474,Familia C2,Replenishment,1107.270591861899,"Overdue by 878 days (Typical Max Cycle: 324, Conf: 0.30)",419.6
+9028,Familia C2,Replenishment,1104.409270259481,"Overdue by 859 days (Typical Max Cycle: 250, Conf: 0.40)",460.09399999999994
+1000067996,Familia C1,Replenishment,1099.112,"Overdue by 1131 days (Typical Max Cycle: 84, Conf: 0.60)",274.778
+1000076654,Familia C1,Replenishment,1092.3218674698796,"Overdue by 594 days (Typical Max Cycle: 423, Conf: 0.30)",1197.565
+1000082332,Familia C2,Replenishment,1089.6991177643572,"Overdue by 669 days (Typical Max Cycle: 219, Conf: 0.30)",366.53249999999997
+29402,Familia C2,Replenishment,1089.249347107438,"Overdue by 860 days (Typical Max Cycle: 194, Conf: 0.40)",291.91400000000004
+27852,Familia C1,Replenishment,1083.4647490867142,"Overdue by 384 days (Typical Max Cycle: 223, Conf: 0.80)",698.7971428571428
+1000080959,Familia C2,Replenishment,1081.4245,"Overdue by 649 days (Typical Max Cycle: 78, Conf: 0.30)",332.746
+9028,Familia C1,Replenishment,1076.4513333333334,"Overdue by 569 days (Typical Max Cycle: 171, Conf: 0.70)",379.92400000000004
+8441,Familia C1,Replenishment,1076.134784744667,"Overdue by 622 days (Typical Max Cycle: 221, Conf: 0.60)",477.94571428571425
+5757,Familia C1,Replenishment,1072.315910577213,"Overdue by 333 days (Typical Max Cycle: 166, Conf: 0.80)",593.4053846153846
+41536,Familia C1,Replenishment,1069.9440000000002,"Overdue by 327 days (Typical Max Cycle: 160, Conf: 1.00)",525.1560000000001
+1000079582,Familia C2,Replenishment,1064.4226323092169,"Overdue by 390 days (Typical Max Cycle: 202, Conf: 0.90)",483.13199999999995
+1000079592,Familia C1,Replenishment,1063.7249590171448,"Overdue by 418 days (Typical Max Cycle: 210, Conf: 0.60)",667.213846153846
+41126,Familia C2,Replenishment,1062.4556830031283,"Overdue by 425 days (Typical Max Cycle: 274, Conf: 0.60)",856.2142857142857
+1000070593,Familia C1,Replenishment,1059.5058989837244,"Overdue by 222 days (Typical Max Cycle: 114, Conf: 1.00)",543.1160869565217
+18028,Familia C2,Replenishment,1053.609375,"Overdue by 1432 days (Typical Max Cycle: 45, Conf: 0.30)",324.1875
+1000058195,Familia C2,Replenishment,1052.208953488372,"Overdue by 641 days (Typical Max Cycle: 155, Conf: 0.80)",282.34
+16372,Familia C1,Replenishment,1051.89536725935,"Overdue by 432 days (Typical Max Cycle: 233, Conf: 0.60)",709.1771428571428
+33040,Familia C1,Replenishment,1049.065115284585,"Overdue by 551 days (Typical Max Cycle: 154, Conf: 0.90)",308.2361538461538
+28675,Familia C1,Replenishment,1045.535802891933,"Overdue by 437 days (Typical Max Cycle: 307, Conf: 0.40)",1047.9283333333333
+35907,Familia C1,Replenishment,1044.9358142831827,"Overdue by 172 days (Typical Max Cycle: 84, Conf: 1.00)",253.94370370370373
+17625,Familia C1,Replenishment,1034.600888888889,"Overdue by 552 days (Typical Max Cycle: 135, Conf: 1.00)",253.02739130434784
+31770,Familia C2,Replenishment,1033.319235095613,"Overdue by 104 days (Typical Max Cycle: 89, Conf: 1.00)",883.2892307692308
+4254,Familia C2,Replenishment,1028.8799999999999,"Overdue by 850 days (Typical Max Cycle: 161, Conf: 0.60)",257.21999999999997
+30677,Familia C2,Replenishment,1027.0325,"Overdue by 1236 days (Typical Max Cycle: 175, Conf: 0.30)",316.01
+1000081322,Familia C1,Replenishment,1020.3312500000002,"Overdue by 1206 days (Typical Max Cycle: 80, Conf: 0.50)",272.08833333333337
+1000078586,Familia C1,Replenishment,1019.4843749999999,"Overdue by 1262 days (Typical Max Cycle: 115, Conf: 0.40)",291.28125
+30544,Familia C2,Replenishment,1016.858025830258,"Overdue by 255 days (Typical Max Cycle: 108, Conf: 1.00)",360.22029411764703
+25450,Familia C2,Replenishment,1015.3885714285715,"Overdue by 754 days (Typical Max Cycle: 142, Conf: 0.60)",253.84714285714284
+1000081050,Familia C1,Replenishment,1008.1148659143767,"Overdue by 436 days (Typical Max Cycle: 223, Conf: 0.60)",537.7046153846153
+31379,Familia C2,Replenishment,1007.3014341434143,"Overdue by 79 days (Typical Max Cycle: 50, Conf: 1.00)",321.9539393939394
+21457,Familia C2,Replenishment,1004.8146428571426,"Overdue by 270 days (Typical Max Cycle: 112, Conf: 1.00)",347.3433333333333
+8952,Familia C1,Replenishment,1000.5387854356308,"Overdue by 926 days (Typical Max Cycle: 192, Conf: 0.50)",276.96700000000004
+1000071519,Familia C1,Replenishment,999.8590383091151,"Overdue by 951 days (Typical Max Cycle: 227, Conf: 0.20)",397.94599999999997
+1889,Familia C1,Replenishment,999.854353562005,"Overdue by 878 days (Typical Max Cycle: 265, Conf: 0.30)",464.79999999999995
+21682,Familia C1,Replenishment,993.4260730757712,"Overdue by 1042 days (Typical Max Cycle: 334, Conf: 0.30)",489.7459999999999
+4903,Familia C1,Replenishment,993.3841988950277,"Overdue by 528 days (Typical Max Cycle: 199, Conf: 0.70)",440.6925
+34402,Familia C1,Replenishment,988.8463610315188,"Overdue by 844 days (Typical Max Cycle: 244, Conf: 0.30)",440.34846153846166
+35049,Familia C1,Replenishment,986.3266058277296,"Overdue by 583 days (Typical Max Cycle: 278, Conf: 0.40)",670.9244444444444
+1000080128,Familia C1,Replenishment,986.0035714285715,"Overdue by 1306 days (Typical Max Cycle: 121, Conf: 0.30)",303.3857142857143
+1000065897,Familia C1,Replenishment,983.8636565633547,"Overdue by 590 days (Typical Max Cycle: 219, Conf: 0.30)",562.8675000000001
+1000082543,Familia C1,Replenishment,983.3856240723563,"Overdue by 657 days (Typical Max Cycle: 216, Conf: 0.30)",496.471
+34990,Familia C1,Replenishment,983.3810730253354,"Overdue by 866 days (Typical Max Cycle: 183, Conf: 0.50)",277.07272727272726
+1000060078,Familia C1,Replenishment,982.0485542168675,"Overdue by 202 days (Typical Max Cycle: 50, Conf: 1.00)",242.109
+1000077820,Familia C2,Replenishment,976.0189002590674,"Overdue by 1067 days (Typical Max Cycle: 270, Conf: 0.30)",316.8725
+1000075184,Familia C2,Replenishment,971.0378151061411,"Overdue by 745 days (Typical Max Cycle: 264, Conf: 0.30)",528.9825000000001
+38691,Familia C2,Replenishment,967.2575362164469,"Overdue by 765 days (Typical Max Cycle: 235, Conf: 0.30)",456.54166666666674
+1000070508,Familia C2,Replenishment,964.2898301613371,"Overdue by 214 days (Typical Max Cycle: 141, Conf: 0.80)",588.9127272727272
+34608,Familia C1,Replenishment,955.8767775761244,"Overdue by 593 days (Typical Max Cycle: 331, Conf: 0.40)",761.2933333333334
+1000081873,Familia C1,Replenishment,954.8401953125001,"Overdue by 544 days (Typical Max Cycle: 205, Conf: 0.70)",422.90500000000003
+1000101122,Familia C2,Replenishment,951.25748951782,"Overdue by 137 days (Typical Max Cycle: 80, Conf: 0.30)",849.2416666666668
+669,Familia C1,Replenishment,949.210231591812,"Overdue by 436 days (Typical Max Cycle: 218, Conf: 0.90)",500.0426666666668
+26789,Familia C1,Replenishment,942.5695324690913,"Overdue by 353 days (Typical Max Cycle: 139, Conf: 1.00)",370.75291666666664
+28295,Familia C1,Replenishment,937.273962264151,"Overdue by 591 days (Typical Max Cycle: 199, Conf: 0.60)",394.0
+7410,Familia C2,Replenishment,933.1964523121411,"Overdue by 408 days (Typical Max Cycle: 138, Conf: 0.70)",372.4175
+13105,Familia C1,Replenishment,933.1186050808313,"Overdue by 241 days (Typical Max Cycle: 195, Conf: 0.80)",698.5483333333333
+27364,Familia C2,Replenishment,930.7274880069778,"Overdue by 998 days (Typical Max Cycle: 229, Conf: 0.30)",328.99
+41970,Familia C1,Replenishment,928.1166698610448,"Overdue by 607 days (Typical Max Cycle: 209, Conf: 0.70)",375.4200000000001
+14664,Familia C1,Replenishment,920.7421357219253,"Overdue by 346 days (Typical Max Cycle: 187, Conf: 0.90)",436.51450000000006
+1000074435,Familia C1,Replenishment,918.1317961577697,"Overdue by 247 days (Typical Max Cycle: 138, Conf: 1.00)",514.4511764705883
+1000068248,Familia C2,Replenishment,915.3572454844007,"Overdue by 557 days (Typical Max Cycle: 244, Conf: 0.50)",533.7666666666667
+1000056995,Familia C2,Replenishment,910.4997632669164,"Overdue by 375 days (Typical Max Cycle: 253, Conf: 0.80)",569.793
+16109,Familia C2,Replenishment,908.5248730964468,"Overdue by 171 days (Typical Max Cycle: 118, Conf: 1.00)",523.3315789473685
+14657,Familia C1,Replenishment,908.3836537761607,"Overdue by 478 days (Typical Max Cycle: 157, Conf: 0.70)",351.01214285714286
+1000082567,Familia C1,Replenishment,904.1906342221072,"Overdue by 465 days (Typical Max Cycle: 193, Conf: 0.40)",536.542
+1000076307,Familia C1,Replenishment,898.2430582750582,"Overdue by 244 days (Typical Max Cycle: 99, Conf: 1.00)",303.70923076923077
+37961,Familia C1,Replenishment,893.9261553273426,"Overdue by 495 days (Typical Max Cycle: 164, Conf: 1.00)",296.1694736842105
+1000038232,Familia C1,Replenishment,892.191083647165,"Overdue by 145 days (Typical Max Cycle: 111, Conf: 1.00)",682.3723529411766
+1000058045,Familia C1,Replenishment,889.204452071119,"Overdue by 362 days (Typical Max Cycle: 150, Conf: 1.00)",368.08642857142866
+1000076218,Familia C2,Replenishment,882.1575393848462,"Overdue by 300 days (Typical Max Cycle: 133, Conf: 1.00)",326.6433333333333
+23589,Familia C2,Replenishment,875.6081841231513,"Overdue by 1049 days (Typical Max Cycle: 331, Conf: 0.30)",425.44399999999996
+24474,Familia C1,Replenishment,872.5997329773031,"Overdue by 304 days (Typical Max Cycle: 187, Conf: 1.00)",537.48125
+1000078656,Familia C1,Replenishment,865.1419484066766,"Overdue by 810 days (Typical Max Cycle: 165, Conf: 0.60)",219.95699999999997
+1000073093,Familia C2,Replenishment,864.6132451127819,"Overdue by 576 days (Typical Max Cycle: 285, Conf: 0.60)",445.6285714285714
+1000080355,Familia C2,Replenishment,863.0649164677804,"Overdue by 696 days (Typical Max Cycle: 251, Conf: 0.50)",415.66
+1000079629,Familia C2,Replenishment,861.1281887755102,"Overdue by 165 days (Typical Max Cycle: 123, Conf: 1.00)",642.9757142857143
+13219,Familia C2,Replenishment,858.8470245821044,"Overdue by 599 days (Typical Max Cycle: 198, Conf: 0.60)",354.4177777777778
+1000079027,Familia C1,Replenishment,858.6817708808763,"Overdue by 244 days (Typical Max Cycle: 125, Conf: 1.00)",367.16857142857145
+1000079096,Familia C1,Replenishment,856.4998295454545,"Overdue by 641 days (Typical Max Cycle: 244, Conf: 0.50)",434.7081818181818
+1000080709,Familia C1,Replenishment,854.3210294117646,"Overdue by 758 days (Typical Max Cycle: 128, Conf: 0.90)",179.8570588235294
+1000067437,Familia C1,Replenishment,853.9765,"Overdue by 1110 days (Typical Max Cycle: 198, Conf: 0.30)",218.96833333333333
+3300,Familia C1,Replenishment,852.8531250000001,"Overdue by 1039 days (Typical Max Cycle: 166, Conf: 0.50)",227.4275
+1000100546,Familia C1,Replenishment,851.4825000000001,"Overdue by 459 days (Typical Max Cycle: 48, Conf: 0.10)",309.63
+1000061641,Familia C2,Replenishment,850.5292462311558,"Overdue by 900 days (Typical Max Cycle: 298, Conf: 0.30)",433.98799999999994
+41954,Familia C1,Replenishment,849.9049999999999,"Overdue by 1335 days (Typical Max Cycle: 98, Conf: 0.40)",242.82999999999996
+41014,Familia C1,Replenishment,843.7165841968911,"Overdue by 255 days (Typical Max Cycle: 193, Conf: 0.90)",672.1869999999999
+1000061715,Familia C1,Replenishment,840.9773076923077,"Overdue by 870 days (Typical Max Cycle: 118, Conf: 0.80)",186.88384615384615
+6131,Familia C2,Replenishment,840.7686898395722,"Overdue by 1104 days (Typical Max Cycle: 299, Conf: 0.20)",379.7675
+24325,Familia C1,Replenishment,837.864595459837,"Overdue by 235 days (Typical Max Cycle: 129, Conf: 1.00)",459.39937499999996
+1000065575,Familia C2,Replenishment,837.782554694763,"Overdue by 377 days (Typical Max Cycle: 230, Conf: 0.60)",640.2814285714286
+12697,Familia C2,Replenishment,837.2707002617802,"Overdue by 905 days (Typical Max Cycle: 286, Conf: 0.30)",271.855
+376,Familia C2,Replenishment,836.852290076336,"Overdue by 550 days (Typical Max Cycle: 262, Conf: 0.60)",415.25625
+40707,Familia C1,Replenishment,835.92,"Overdue by 1332 days (Typical Max Cycle: 79, Conf: 0.50)",185.76
+11803,Familia C2,Replenishment,834.7666992266994,"Overdue by 353 days (Typical Max Cycle: 205, Conf: 1.00)",484.18833333333345
+1000100069,Familia C2,Replenishment,834.1632504378285,"Overdue by 387 days (Typical Max Cycle: 143, Conf: 0.40)",439.56000000000006
+1000082535,Familia C2,Replenishment,827.2810000000001,"Overdue by 861 days (Typical Max Cycle: 21, Conf: 0.30)",254.548
+42152,Familia C2,Replenishment,826.8916142394824,"Overdue by 559 days (Typical Max Cycle: 154, Conf: 0.60)",285.677
+31342,Familia C1,Replenishment,826.556595744681,"Overdue by 912 days (Typical Max Cycle: 263, Conf: 0.30)",366.9866666666667
+1000081855,Familia C1,Replenishment,824.9479335494327,"Overdue by 620 days (Typical Max Cycle: 247, Conf: 0.50)",437.8433333333333
+9835,Familia C2,Replenishment,822.2884729064041,"Overdue by 424 days (Typical Max Cycle: 203, Conf: 0.60)",410.09375
+30702,Familia C1,Replenishment,819.7889802631578,"Overdue by 783 days (Typical Max Cycle: 228, Conf: 0.50)",318.2833333333333
+41644,Familia C2,Replenishment,818.8899596965388,"Overdue by 388 days (Typical Max Cycle: 281, Conf: 0.70)",698.2166666666667
+1000080962,Familia C1,Replenishment,813.2496879643388,"Overdue by 718 days (Typical Max Cycle: 269, Conf: 0.40)",435.5885714285714
+35675,Familia C1,Replenishment,811.9392857142857,"Overdue by 1082 days (Typical Max Cycle: 165, Conf: 0.50)",216.51714285714283
+20026,Familia C1,Replenishment,811.3018500000002,"Overdue by 738 days (Typical Max Cycle: 192, Conf: 0.60)",263.838
+28120,Familia C1,Replenishment,810.0540357852882,"Overdue by 558 days (Typical Max Cycle: 352, Conf: 0.30)",786.38
+5447,Familia C2,Replenishment,809.4816585535467,"Overdue by 725 days (Typical Max Cycle: 216, Conf: 0.30)",370.51500000000004
+1000037454,Familia C1,Replenishment,806.04875,"Overdue by 1160 days (Typical Max Cycle: 150, Conf: 0.30)",248.01500000000001
+22721,Familia C1,Replenishment,805.3154599761052,"Overdue by 472 days (Typical Max Cycle: 260, Conf: 0.40)",634.6977777777778
+1000041454,Familia C1,Replenishment,804.6258823529412,"Overdue by 1129 days (Typical Max Cycle: 141, Conf: 0.60)",201.1564705882353
+41522,Familia C1,Replenishment,800.2376303691052,"Overdue by 366 days (Typical Max Cycle: 166, Conf: 1.00)",361.85608695652166
+1000082769,Familia C1,Replenishment,798.7491496598641,"Overdue by 135 days (Typical Max Cycle: 113, Conf: 1.00)",670.9492857142857
+1000069483,Familia C1,Replenishment,797.2550981210856,"Overdue by 438 days (Typical Max Cycle: 96, Conf: 0.80)",161.46
+41988,Familia C1,Replenishment,793.9459274193549,"Overdue by 544 days (Typical Max Cycle: 298, Conf: 0.70)",510.9825
+1000078487,Familia C1,Replenishment,793.4355719557195,"Overdue by 864 days (Typical Max Cycle: 244, Conf: 0.30)",344.585
+10791,Familia C2,Replenishment,793.3862784560257,"Overdue by 262 days (Typical Max Cycle: 212, Conf: 0.80)",475.2018181818181
+1000043204,Familia C1,Replenishment,791.5745158574238,"Overdue by 496 days (Typical Max Cycle: 153, Conf: 0.80)",270.7738095238096
+19111,Familia C2,Replenishment,787.2623611111111,"Overdue by 703 days (Typical Max Cycle: 180, Conf: 0.50)",223.97222222222223
+1779,Familia C1,Replenishment,785.1035892985394,"Overdue by 853 days (Typical Max Cycle: 209, Conf: 0.40)",274.60875
+1000075277,Familia C1,Replenishment,784.2952647595863,"Overdue by 1128 days (Typical Max Cycle: 246, Conf: 0.40)",244.7942857142857
+1000081951,Familia C1,Replenishment,782.8645198022805,"Overdue by 377 days (Typical Max Cycle: 206, Conf: 0.70)",503.505625
+1000076689,Familia C2,Replenishment,778.9269382151033,"Overdue by 314 days (Typical Max Cycle: 131, Conf: 1.00)",271.01200000000006
+1000080786,Familia C1,Replenishment,777.9227478056092,"Overdue by 565 days (Typical Max Cycle: 156, Conf: 0.70)",252.2073333333333
+42559,Familia C1,Replenishment,777.7239063067427,"Overdue by 109 days (Typical Max Cycle: 75, Conf: 0.70)",630.4054545454545
+18847,Familia C2,Replenishment,777.140822633297,"Overdue by 872 days (Typical Max Cycle: 230, Conf: 0.40)",292.51
+1000078435,Familia C1,Replenishment,776.6935158104737,"Overdue by 632 days (Typical Max Cycle: 200, Conf: 0.30)",315.902
+1000081434,Familia C1,Replenishment,775.9019160213865,"Overdue by 802 days (Typical Max Cycle: 181, Conf: 0.70)",205.78416666666666
+1000079687,Familia C1,Replenishment,768.7644009216591,"Overdue by 184 days (Typical Max Cycle: 149, Conf: 1.00)",621.6964285714286
+1000064044,Familia C1,Replenishment,768.0656959439743,"Overdue by 839 days (Typical Max Cycle: 171, Conf: 0.40)",186.74166666666667
+41982,Familia C1,Replenishment,764.8242228739003,"Overdue by 758 days (Typical Max Cycle: 239, Conf: 0.40)",344.07
+1000065512,Familia C1,Replenishment,764.3597414589104,"Overdue by 688 days (Typical Max Cycle: 180, Conf: 0.60)",250.66666666666666
+25266,Familia C1,Replenishment,764.0202168473728,"Overdue by 388 days (Typical Max Cycle: 300, Conf: 0.60)",737.80625
+1000066989,Familia C2,Replenishment,763.1715000000002,"Overdue by 1164 days (Typical Max Cycle: 216, Conf: 0.30)",234.82200000000003
+27626,Familia C1,Replenishment,761.9930769230768,"Overdue by 522 days (Typical Max Cycle: 82, Conf: 1.00)",126.99884615384615
+1000078288,Familia C2,Replenishment,758.9699989539386,"Overdue by 398 days (Typical Max Cycle: 169, Conf: 1.00)",321.70411764705887
+36827,Familia C2,Replenishment,758.1480455474452,"Overdue by 537 days (Typical Max Cycle: 308, Conf: 0.40)",518.088
+1000081894,Familia C1,Replenishment,754.3817993981944,"Overdue by 191 days (Typical Max Cycle: 150, Conf: 0.40)",703.1775
+40062,Familia C2,Replenishment,748.6390719861233,"Overdue by 705 days (Typical Max Cycle: 231, Conf: 0.40)",291.5166666666667
+39697,Familia C1,Replenishment,747.5023549245786,"Overdue by 198 days (Typical Max Cycle: 161, Conf: 1.00)",506.5146428571429
+11829,Familia C2,Replenishment,746.9049470553241,"Overdue by 929 days (Typical Max Cycle: 252, Conf: 0.40)",289.608
+18313,Familia C1,Replenishment,746.4446853813561,"Overdue by 383 days (Typical Max Cycle: 189, Conf: 0.80)",408.84466666666674
+5154,Familia C2,Replenishment,743.5269662090413,"Overdue by 857 days (Typical Max Cycle: 330, Conf: 0.30)",439.93625
+12100,Familia C2,Replenishment,740.7994719592134,"Overdue by 501 days (Typical Max Cycle: 275, Conf: 0.50)",451.15000000000003
+1000078182,Familia C2,Replenishment,740.0292011661809,"Overdue by 451 days (Typical Max Cycle: 233, Conf: 0.60)",477.3885714285715
+10928,Familia C1,Replenishment,739.0306929137664,"Overdue by 593 days (Typical Max Cycle: 345, Conf: 0.30)",661.0916666666666
+7549,Familia C2,Replenishment,737.7081724782068,"Overdue by 201 days (Typical Max Cycle: 131, Conf: 1.00)",321.5086363636364
+2335,Familia C1,Replenishment,736.1999999999999,"Overdue by 958 days (Typical Max Cycle: 113, Conf: 0.20)",245.4
+1000100011,Familia C1,Replenishment,734.4431149567366,"Overdue by 384 days (Typical Max Cycle: 162, Conf: 0.40)",368.40555555555557
+6757,Familia C2,Replenishment,731.3665692963752,"Overdue by 187 days (Typical Max Cycle: 94, Conf: 0.70)",431.596
+1000069328,Familia C2,Replenishment,731.0246964586845,"Overdue by 186 days (Typical Max Cycle: 148, Conf: 1.00)",582.6581249999999
+7698,Familia C2,Replenishment,730.041,"Overdue by 1234 days (Typical Max Cycle: 151, Conf: 0.30)",187.19
+1000069082,Familia C1,Replenishment,727.3239289446187,"Overdue by 184 days (Typical Max Cycle: 128, Conf: 1.00)",420.31944444444446
+39600,Familia C2,Replenishment,724.8866630669546,"Overdue by 129 days (Typical Max Cycle: 93, Conf: 0.80)",578.161111111111
+30469,Familia C1,Replenishment,722.9207615012107,"Overdue by 745 days (Typical Max Cycle: 295, Conf: 0.30)",440.39571428571435
+10793,Familia C2,Replenishment,720.0668554425033,"Overdue by 676 days (Typical Max Cycle: 521, Conf: 0.30)",426.8125
+1000063882,Familia C1,Replenishment,717.1315826330532,"Overdue by 314 days (Typical Max Cycle: 206, Conf: 0.90)",494.75588235294117
+15511,Familia C1,Replenishment,712.9835002047503,"Overdue by 361 days (Typical Max Cycle: 163, Conf: 0.90)",338.4566666666667
+1000070089,Familia C1,Replenishment,712.3610294117648,"Overdue by 1096 days (Typical Max Cycle: 120, Conf: 0.50)",189.96294117647062
+1000080760,Familia C2,Replenishment,711.4009667673716,"Overdue by 354 days (Typical Max Cycle: 166, Conf: 1.00)",332.59000000000003
+39969,Familia C1,Replenishment,710.0722147651006,"Overdue by 507 days (Typical Max Cycle: 313, Conf: 0.40)",417.36
+41409,Familia C1,Replenishment,706.979,"Overdue by 1165 days (Typical Max Cycle: 158, Conf: 0.30)",217.532
+2074,Familia C1,Replenishment,702.7373113531128,"Overdue by 181 days (Typical Max Cycle: 137, Conf: 1.00)",355.1217647058824
+22675,Familia C2,Replenishment,702.3522227772229,"Overdue by 444 days (Typical Max Cycle: 286, Conf: 0.50)",603.2214285714286
+42096,Familia C1,Replenishment,700.2179958246347,"Overdue by 401 days (Typical Max Cycle: 120, Conf: 1.00)",209.10500000000002
+1000060357,Familia C1,Replenishment,699.1957082893763,"Overdue by 398 days (Typical Max Cycle: 171, Conf: 1.00)",301.0230769230769
+1000062151,Familia C2,Replenishment,696.5357905982905,"Overdue by 375 days (Typical Max Cycle: 211, Conf: 0.50)",434.6383333333333
+10544,Familia C2,Replenishment,696.2882980667839,"Overdue by 388 days (Typical Max Cycle: 284, Conf: 0.30)",785.464
+1000075238,Familia C2,Replenishment,687.6178745945948,"Overdue by 424 days (Typical Max Cycle: 222, Conf: 0.70)",352.96700000000004
+1000076926,Familia C2,Replenishment,686.4204285181039,"Overdue by 727 days (Typical Max Cycle: 268, Conf: 0.40)",361.35200000000003
+29150,Familia C2,Replenishment,686.2230815939278,"Overdue by 632 days (Typical Max Cycle: 422, Conf: 0.30)",352.13199999999995
+9513,Familia C1,Replenishment,681.1595,"Overdue by 1269 days (Typical Max Cycle: 83, Conf: 0.40)",194.61700000000002
+1000080939,Familia C2,Replenishment,680.7809349397589,"Overdue by 828 days (Typical Max Cycle: 311, Conf: 0.40)",365.585
+11038,Familia C2,Replenishment,680.4855555555555,"Overdue by 1361 days (Typical Max Cycle: 85, Conf: 0.40)",194.42444444444445
+41909,Familia C1,Replenishment,680.0939823874754,"Overdue by 723 days (Typical Max Cycle: 204, Conf: 0.50)",256.35999999999996
+1000063305,Familia C2,Replenishment,672.5485000000001,"Overdue by 856 days (Typical Max Cycle: 310, Conf: 0.30)",374.71250000000003
+13422,Familia C1,Replenishment,671.69375,"Overdue by 1215 days (Typical Max Cycle: 136, Conf: 0.30)",206.675
+1000077976,Familia C1,Replenishment,671.2382041587902,"Overdue by 466 days (Typical Max Cycle: 317, Conf: 0.40)",653.13
+924,Familia C1,Replenishment,668.9839942390782,"Overdue by 724 days (Typical Max Cycle: 208, Conf: 0.30)",296.11
+1000066400,Familia C2,Replenishment,668.5221908381266,"Overdue by 621 days (Typical Max Cycle: 243, Conf: 0.50)",349.36833333333334
+13162,Familia C1,Replenishment,665.1233333333334,"Overdue by 1265 days (Typical Max Cycle: 104, Conf: 0.60)",166.28083333333333
+25972,Familia C2,Replenishment,662.409389259114,"Overdue by 807 days (Typical Max Cycle: 255, Conf: 0.30)",268.4533333333333
+435,Familia C2,Replenishment,661.0888052954472,"Overdue by 191 days (Typical Max Cycle: 163, Conf: 1.00)",376.1168421052632
+28043,Familia C2,Replenishment,661.0126850351163,"Overdue by 142 days (Typical Max Cycle: 123, Conf: 1.00)",478.6911111111111
+4989,Familia C1,Replenishment,660.6902446837146,"Overdue by 723 days (Typical Max Cycle: 372, Conf: 0.30)",522.2819999999999
+1000076201,Familia C1,Replenishment,655.3439290989661,"Overdue by 132 days (Typical Max Cycle: 68, Conf: 1.00)",336.1120000000001
+1000082754,Familia C2,Replenishment,653.8891666666668,"Overdue by 636 days (Typical Max Cycle: 113, Conf: 0.30)",201.1966666666667
+12006,Familia C1,Replenishment,653.8624846437347,"Overdue by 681 days (Typical Max Cycle: 244, Conf: 0.50)",312.625
+35481,Familia C2,Replenishment,652.2401824241362,"Overdue by 873 days (Typical Max Cycle: 285, Conf: 0.40)",304.24
+8976,Familia C1,Replenishment,650.8120839193625,"Overdue by 347 days (Typical Max Cycle: 261, Conf: 0.70)",575.2388888888889
+11955,Familia C1,Replenishment,649.9167179962894,"Overdue by 782 days (Typical Max Cycle: 270, Conf: 0.30)",344.585
+28051,Familia C2,Replenishment,649.114375,"Overdue by 958 days (Typical Max Cycle: 162, Conf: 0.30)",199.72750000000002
+1000100557,Familia C1,Replenishment,648.939487601705,"Overdue by 249 days (Typical Max Cycle: 129, Conf: 0.30)",517.4275
+1000076681,Familia C2,Replenishment,648.5883706882847,"Overdue by 312 days (Typical Max Cycle: 210, Conf: 1.00)",363.27185185185186
+1000079458,Familia C1,Replenishment,648.3591624999998,"Overdue by 348 days (Typical Max Cycle: 256, Conf: 0.40)",567.8022222222221
+33903,Familia C1,Replenishment,641.6493532576212,"Overdue by 552 days (Typical Max Cycle: 358, Conf: 0.30)",641.1128571428573
+1000079238,Familia C1,Replenishment,640.2573684396413,"Overdue by 551 days (Typical Max Cycle: 327, Conf: 0.40)",361.54538461538465
+14592,Familia C1,Replenishment,638.562270594369,"Overdue by 702 days (Typical Max Cycle: 384, Conf: 0.30)",536.8233333333333
+4944,Familia C1,Replenishment,636.0745714285714,"Overdue by 633 days (Typical Max Cycle: 294, Conf: 0.40)",422.04
+21599,Familia C1,Replenishment,636.0529270797674,"Overdue by 1110 days (Typical Max Cycle: 292, Conf: 0.30)",257.5066666666667
+28486,Familia C1,Replenishment,635.50502837763,"Overdue by 821 days (Typical Max Cycle: 181, Conf: 0.50)",186.39416666666662
+23159,Familia C2,Replenishment,633.0111928898764,"Overdue by 142 days (Typical Max Cycle: 114, Conf: 1.00)",422.37894736842105
+40885,Familia C2,Replenishment,630.5113398692811,"Overdue by 199 days (Typical Max Cycle: 108, Conf: 1.00)",342.1870588235294
+1000081693,Familia C1,Replenishment,628.7266490455213,"Overdue by 184 days (Typical Max Cycle: 136, Conf: 1.00)",465.3944
+23908,Familia C2,Replenishment,625.9745347826088,"Overdue by 89 days (Typical Max Cycle: 74, Conf: 1.00)",431.3832
+1000076309,Familia C1,Replenishment,625.2453951719576,"Overdue by 166 days (Typical Max Cycle: 90, Conf: 1.00)",337.48185185185184
+5860,Familia C1,Replenishment,624.7021471307618,"Overdue by 571 days (Typical Max Cycle: 266, Conf: 0.40)",415.34799999999996
+1000082238,Familia C1,Replenishment,623.0568240203431,"Overdue by 718 days (Typical Max Cycle: 219, Conf: 0.30)",292.50428571428574
+27245,Familia C2,Replenishment,621.5053716632443,"Overdue by 719 days (Typical Max Cycle: 292, Conf: 0.40)",300.68857142857144
+20619,Familia C1,Replenishment,620.0703417487686,"Overdue by 744 days (Typical Max Cycle: 325, Conf: 0.30)",416.45750000000004
+1000078311,Familia C1,Replenishment,617.1846681483751,"Overdue by 380 days (Typical Max Cycle: 186, Conf: 0.90)",318.67928571428564
+1000082115,Familia C1,Replenishment,616.7900183823531,"Overdue by 754 days (Typical Max Cycle: 218, Conf: 0.60)",222.5025
+1000079719,Familia C1,Replenishment,614.29125,"Overdue by 1129 days (Typical Max Cycle: 120, Conf: 0.50)",163.811
+40372,Familia C1,Replenishment,613.2737005153375,"Overdue by 359 days (Typical Max Cycle: 204, Conf: 0.60)",362.56533333333334
+30554,Familia C2,Replenishment,613.02423254836,"Overdue by 690 days (Typical Max Cycle: 238, Conf: 0.50)",281.695
+1000077938,Familia C2,Replenishment,607.187094461373,"Overdue by 236 days (Typical Max Cycle: 159, Conf: 1.00)",341.75714285714287
+1000071606,Familia C2,Replenishment,606.7531607961055,"Overdue by 335 days (Typical Max Cycle: 175, Conf: 0.70)",372.0425
+18690,Familia C1,Replenishment,606.7018750000001,"Overdue by 1164 days (Typical Max Cycle: 143, Conf: 0.30)",186.6775
+1000081962,Familia C1,Replenishment,604.3093329076202,"Overdue by 566 days (Typical Max Cycle: 157, Conf: 0.90)",175.9993333333333
+1000077888,Familia C1,Replenishment,602.9636371685333,"Overdue by 272 days (Typical Max Cycle: 161, Conf: 1.00)",298.0642857142857
+4897,Familia C1,Replenishment,601.5978686342594,"Overdue by 719 days (Typical Max Cycle: 288, Conf: 0.40)",344.2483333333334
+38542,Familia C1,Replenishment,601.3052740042205,"Overdue by 565 days (Typical Max Cycle: 379, Conf: 0.30)",620.7075
+768,Familia C2,Replenishment,599.5169836956521,"Overdue by 430 days (Typical Max Cycle: 258, Conf: 0.50)",478.87
+7648,Familia C2,Replenishment,597.2836685893095,"Overdue by 369 days (Typical Max Cycle: 195, Conf: 0.80)",350.0790909090909
+1000074144,Familia C1,Replenishment,595.489590977162,"Overdue by 831 days (Typical Max Cycle: 267, Conf: 0.30)",294.465
+34933,Familia C1,Replenishment,595.4221088612882,"Overdue by 229 days (Typical Max Cycle: 147, Conf: 1.00)",383.2542307692308
+33903,Familia C2,Replenishment,595.2189769975788,"Overdue by 552 days (Typical Max Cycle: 283, Conf: 0.50)",407.16428571428577
+1000081437,Familia C2,Replenishment,591.4948777263714,"Overdue by 565 days (Typical Max Cycle: 303, Conf: 0.40)",452.5571428571429
+9513,Familia C2,Replenishment,591.1821428571427,"Overdue by 1217 days (Typical Max Cycle: 94, Conf: 0.50)",157.64857142857142
+37601,Familia C1,Replenishment,589.2851991758243,"Overdue by 108 days (Typical Max Cycle: 90, Conf: 1.00)",488.88846153846157
+1000080605,Familia C2,Replenishment,587.9621818181819,"Overdue by 768 days (Typical Max Cycle: 346, Conf: 0.40)",378.96
+42334,Familia C1,Replenishment,587.0044444444446,"Overdue by 445 days (Typical Max Cycle: 130, Conf: 0.60)",213.94333333333336
+30459,Familia C1,Replenishment,585.9331703703704,"Overdue by 367 days (Typical Max Cycle: 100, Conf: 1.00)",159.6548148148148
+1000082043,Familia C2,Replenishment,585.4869792284866,"Overdue by 129 days (Typical Max Cycle: 34, Conf: 0.30)",117.65599999999999
+12558,Familia C1,Replenishment,583.7949196927375,"Overdue by 359 days (Typical Max Cycle: 286, Conf: 0.50)",620.98
+27626,Familia C2,Replenishment,582.8562419623719,"Overdue by 233 days (Typical Max Cycle: 133, Conf: 1.00)",276.4189473684211
+24879,Familia C1,Replenishment,582.6548927519151,"Overdue by 487 days (Typical Max Cycle: 170, Conf: 0.80)",225.59099999999998
+1000069726,Familia C2,Replenishment,579.5460777016971,"Overdue by 621 days (Typical Max Cycle: 336, Conf: 0.40)",447.82500000000005
+39272,Familia C1,Replenishment,578.2932060027285,"Overdue by 606 days (Typical Max Cycle: 293, Conf: 0.30)",430.4533333333333
+28399,Familia C1,Replenishment,573.7594091145382,"Overdue by 387 days (Typical Max Cycle: 289, Conf: 0.40)",611.1416666666668
+1000081961,Familia C1,Replenishment,571.8416666666666,"Overdue by 934 days (Typical Max Cycle: 184, Conf: 0.40)",163.38333333333333
+2392,Familia C2,Replenishment,566.8831173033707,"Overdue by 423 days (Typical Max Cycle: 289, Conf: 0.40)",461.474
+1000100072,Familia C1,Replenishment,565.099495145631,"Overdue by 72 days (Typical Max Cycle: 52, Conf: 1.00)",336.83592592592584
+1000039979,Familia C2,Replenishment,556.2610429835652,"Overdue by 940 days (Typical Max Cycle: 316, Conf: 0.30)",240.04500000000002
+1000100624,Familia C1,Replenishment,555.8344590004853,"Overdue by 137 days (Typical Max Cycle: 103, Conf: 0.30)",643.22
+1000081144,Familia C1,Replenishment,555.75,"Overdue by 1244 days (Typical Max Cycle: 155, Conf: 0.30)",171.0
+23656,Familia C1,Replenishment,554.2571608391607,"Overdue by 844 days (Typical Max Cycle: 286, Conf: 0.40)",268.30999999999995
+1000082626,Familia C2,Replenishment,553.2402283706632,"Overdue by 320 days (Typical Max Cycle: 228, Conf: 0.40)",562.3785714285715
+14837,Familia C2,Replenishment,551.160138248848,"Overdue by 360 days (Typical Max Cycle: 260, Conf: 0.50)",531.5633333333334
+25996,Familia C2,Replenishment,550.8136828141048,"Overdue by 457 days (Typical Max Cycle: 292, Conf: 0.30)",361.09000000000003
+42160,Familia C1,Replenishment,550.1536979785968,"Overdue by 171 days (Typical Max Cycle: 52, Conf: 1.00)",139.95137931034483
+1000079960,Familia C2,Replenishment,549.9872937425268,"Overdue by 940 days (Typical Max Cycle: 251, Conf: 0.40)",209.714
+26008,Familia C2,Replenishment,549.3610257884363,"Overdue by 529 days (Typical Max Cycle: 304, Conf: 0.50)",421.4883333333334
+1000065325,Familia C1,Replenishment,547.4517942857143,"Overdue by 576 days (Typical Max Cycle: 200, Conf: 0.60)",237.6092857142857
+5908,Familia C2,Replenishment,546.1215259009009,"Overdue by 601 days (Typical Max Cycle: 289, Conf: 0.30)",403.4575
+8369,Familia C2,Replenishment,543.393607200554,"Overdue by 565 days (Typical Max Cycle: 248, Conf: 0.50)",317.50857142857143
+40767,Familia C1,Replenishment,539.744624217119,"Overdue by 363 days (Typical Max Cycle: 287, Conf: 0.50)",569.78
+34983,Familia C2,Replenishment,536.1950174880765,"Overdue by 53 days (Typical Max Cycle: 42, Conf: 1.00)",286.6451351351352
+23568,Familia C1,Replenishment,535.9646982116244,"Overdue by 506 days (Typical Max Cycle: 268, Conf: 0.50)",379.05909090909086
+25904,Familia C1,Replenishment,533.5802565527238,"Overdue by 355 days (Typical Max Cycle: 244, Conf: 0.60)",381.2405882352941
+42756,Familia C1,Replenishment,533.3596626337833,"Overdue by 303 days (Typical Max Cycle: 61, Conf: 0.30)",166.27714285714288
+1000063886,Familia C1,Replenishment,532.2670906177674,"Overdue by 89 days (Typical Max Cycle: 68, Conf: 1.00)",341.38853658536584
+1000071606,Familia C1,Replenishment,531.5840027656292,"Overdue by 335 days (Typical Max Cycle: 239, Conf: 0.70)",446.54923076923075
+26923,Familia C2,Replenishment,530.5637566137566,"Overdue by 207 days (Typical Max Cycle: 146, Conf: 1.00)",373.70142857142855
+1000080841,Familia C1,Replenishment,530.0775086505191,"Overdue by 164 days (Typical Max Cycle: 58, Conf: 1.00)",186.82000000000005
+2587,Familia C2,Replenishment,528.9068333047211,"Overdue by 548 days (Typical Max Cycle: 291, Conf: 0.60)",351.378
+36095,Familia C1,Replenishment,526.3882117882118,"Overdue by 80 days (Typical Max Cycle: 31, Conf: 1.00)",135.1063076923077
+1000080522,Familia C1,Replenishment,524.9294848111658,"Overdue by 219 days (Typical Max Cycle: 139, Conf: 1.00)",333.65380952380946
+27145,Familia C1,Replenishment,522.6222169094362,"Overdue by 837 days (Typical Max Cycle: 316, Conf: 0.30)",303.36199999999997
+1000073944,Familia C2,Replenishment,522.0890855970456,"Overdue by 689 days (Typical Max Cycle: 487, Conf: 0.30)",473.496
+10533,Familia C1,Replenishment,519.781189618644,"Overdue by 453 days (Typical Max Cycle: 354, Conf: 0.30)",624.9024999999999
+1221,Familia C1,Replenishment,515.1347280157835,"Overdue by 473 days (Typical Max Cycle: 355, Conf: 0.30)",594.4699999999999
+24860,Familia C1,Replenishment,513.8973070549242,"Overdue by 538 days (Typical Max Cycle: 317, Conf: 0.50)",403.47625000000005
+29712,Familia C1,Replenishment,513.297000222673,"Overdue by 354 days (Typical Max Cycle: 289, Conf: 0.70)",328.3235714285714
+1000081597,Familia C1,Replenishment,505.2532691793637,"Overdue by 544 days (Typical Max Cycle: 187, Conf: 0.70)",204.385
+39475,Familia C1,Replenishment,501.39666666666665,"Overdue by 349 days (Typical Max Cycle: 282, Conf: 0.60)",506.425
+1000077932,Familia C1,Replenishment,500.6252377003871,"Overdue by 341 days (Typical Max Cycle: 181, Conf: 0.70)",312.44818181818187
+37653,Familia C1,Replenishment,500.5412719069929,"Overdue by 83 days (Typical Max Cycle: 34, Conf: 1.00)",136.29196078431372
+1000079022,Familia C1,Replenishment,500.47883635888735,"Overdue by 178 days (Typical Max Cycle: 118, Conf: 1.00)",331.21576923076924
+1000082665,Familia C1,Replenishment,500.4467778278503,"Overdue by 40 days (Typical Max Cycle: 32, Conf: 1.00)",330.50339285714284
+1000079856,Familia C1,Replenishment,498.60165125523,"Overdue by 387 days (Typical Max Cycle: 299, Conf: 0.40)",366.57375
+6479,Familia C2,Replenishment,497.2835523962806,"Overdue by 535 days (Typical Max Cycle: 280, Conf: 0.50)",346.5183333333334
+36643,Familia C2,Replenishment,495.81278345996503,"Overdue by 439 days (Typical Max Cycle: 342, Conf: 0.50)",515.3140000000001
+1000079889,Familia C2,Replenishment,494.3332983193278,"Overdue by 506 days (Typical Max Cycle: 214, Conf: 0.50)",279.01500000000004
+1000074688,Familia C1,Replenishment,492.28085821455363,"Overdue by 502 days (Typical Max Cycle: 333, Conf: 0.40)",466.8542857142857
+1000076619,Familia C2,Replenishment,490.61250000000007,"Overdue by 907 days (Typical Max Cycle: 180, Conf: 0.20)",163.53750000000002
+39800,Familia C1,Replenishment,489.4934081527349,"Overdue by 229 days (Typical Max Cycle: 122, Conf: 1.00)",261.6331578947369
+14002,Familia C1,Replenishment,489.345,"Overdue by 404 days (Typical Max Cycle: 250, Conf: 0.50)",403.75
+7250,Familia C2,Replenishment,488.8850688468158,"Overdue by 472 days (Typical Max Cycle: 232, Conf: 0.50)",320.95166666666665
+19992,Familia C1,Replenishment,488.5822042893096,"Overdue by 261 days (Typical Max Cycle: 192, Conf: 0.70)",423.7242105263158
+21581,Familia C2,Replenishment,487.5130642832588,"Overdue by 361 days (Typical Max Cycle: 291, Conf: 0.80)",436.496
+1000080874,Familia C1,Replenishment,486.32674182638107,"Overdue by 341 days (Typical Max Cycle: 177, Conf: 0.90)",221.93333333333337
+1000080063,Familia C2,Replenishment,484.63157531885554,"Overdue by 571 days (Typical Max Cycle: 290, Conf: 0.30)",378.8
+41948,Familia C1,Replenishment,481.3558823529412,"Overdue by 948 days (Typical Max Cycle: 74, Conf: 1.00)",96.27117647058824
+26287,Familia C1,Replenishment,480.11357745865183,"Overdue by 261 days (Typical Max Cycle: 212, Conf: 0.80)",433.0015384615385
+30544,Familia C1,Replenishment,476.11878899747853,"Overdue by 193 days (Typical Max Cycle: 129, Conf: 1.00)",265.4012765957447
+40349,Familia C1,Replenishment,475.64931818181816,"Overdue by 1237 days (Typical Max Cycle: 150, Conf: 0.30)",146.35363636363635
+16640,Familia C2,Replenishment,475.21385406464265,"Overdue by 927 days (Typical Max Cycle: 306, Conf: 0.30)",241.57
+1000075923,Familia C1,Replenishment,474.81138330975955,"Overdue by 548 days (Typical Max Cycle: 227, Conf: 0.60)",205.10357142857143
+41996,Familia C1,Replenishment,474.4943981602297,"Overdue by 537 days (Typical Max Cycle: 383, Conf: 0.30)",347.27833333333336
+1842,Familia C1,Replenishment,473.9159128679962,"Overdue by 278 days (Typical Max Cycle: 187, Conf: 0.90)",335.9222222222222
+41807,Familia C2,Replenishment,472.675,"Overdue by 1286 days (Typical Max Cycle: 93, Conf: 0.50)",126.04666666666668
+14687,Familia C2,Replenishment,472.43625000000003,"Overdue by 768 days (Typical Max Cycle: 149, Conf: 0.30)",145.365
+1000100159,Familia C1,Replenishment,470.9364662473795,"Overdue by 236 days (Typical Max Cycle: 132, Conf: 0.70)",311.0622222222222
+7735,Familia C1,Replenishment,469.02813492063495,"Overdue by 635 days (Typical Max Cycle: 428, Conf: 0.30)",486.812
+34618,Familia C1,Replenishment,468.61235169491533,"Overdue by 957 days (Typical Max Cycle: 307, Conf: 0.30)",231.12333333333333
+35558,Familia C1,Replenishment,467.6271149936467,"Overdue by 451 days (Typical Max Cycle: 315, Conf: 0.40)",466.294
+22729,Familia C1,Replenishment,464.52516368834887,"Overdue by 552 days (Typical Max Cycle: 350, Conf: 0.40)",420.465
+1000079678,Familia C1,Replenishment,460.21000302865104,"Overdue by 363 days (Typical Max Cycle: 275, Conf: 0.40)",498.33444444444444
+9976,Familia C1,Replenishment,457.787486419753,"Overdue by 465 days (Typical Max Cycle: 304, Conf: 0.40)",427.198
+30087,Familia C2,Replenishment,457.19234006734007,"Overdue by 457 days (Typical Max Cycle: 297, Conf: 0.50)",396.1666666666667
+39389,Familia C2,Replenishment,457.0150854139291,"Overdue by 872 days (Typical Max Cycle: 304, Conf: 0.30)",245.44
+22710,Familia C2,Replenishment,455.6540911101283,"Overdue by 181 days (Typical Max Cycle: 120, Conf: 1.00)",301.3358823529412
+1000080898,Familia C1,Replenishment,454.39388322324976,"Overdue by 549 days (Typical Max Cycle: 378, Conf: 0.40)",447.53600000000006
+1000079100,Familia C1,Replenishment,454.0877095631641,"Overdue by 439 days (Typical Max Cycle: 231, Conf: 0.50)",318.5854545454545
+1000071615,Familia C1,Replenishment,453.9382137737613,"Overdue by 214 days (Typical Max Cycle: 160, Conf: 1.00)",283.623
+9447,Familia C1,Replenishment,451.5711499348108,"Overdue by 244 days (Typical Max Cycle: 192, Conf: 0.40)",506.9599999999999
+1000073638,Familia C1,Replenishment,450.4705189547297,"Overdue by 487 days (Typical Max Cycle: 209, Conf: 0.60)",241.6538461538462
+11576,Familia C1,Replenishment,449.8125,"Overdue by 1138 days (Typical Max Cycle: 74, Conf: 0.20)",99.95833333333333
+40500,Familia C1,Replenishment,449.17306540764633,"Overdue by 522 days (Typical Max Cycle: 109, Conf: 1.00)",93.405625
+26265,Familia C1,Replenishment,447.7655446802152,"Overdue by 726 days (Typical Max Cycle: 335, Conf: 0.30)",317.4875
+1000076636,Familia C1,Replenishment,447.2688342798141,"Overdue by 634 days (Typical Max Cycle: 291, Conf: 0.40)",292.82099999999997
+42490,Familia C2,Replenishment,444.945023942538,"Overdue by 423 days (Typical Max Cycle: 161, Conf: 0.30)",260.70428571428573
+27294,Familia C1,Replenishment,444.0274113207547,"Overdue by 312 days (Typical Max Cycle: 212, Conf: 0.60)",377.1386666666667
+1000079299,Familia C1,Replenishment,443.64548499915725,"Overdue by 395 days (Typical Max Cycle: 297, Conf: 0.40)",475.97625
+1000079214,Familia C1,Replenishment,442.0376543209878,"Overdue by 761 days (Typical Max Cycle: 158, Conf: 0.30)",141.15
+1000077470,Familia C1,Replenishment,441.4985381272225,"Overdue by 440 days (Typical Max Cycle: 253, Conf: 0.40)",362.80285714285714
+1000077167,Familia C1,Replenishment,439.4883929058663,"Overdue by 261 days (Typical Max Cycle: 183, Conf: 0.40)",440.81142857142856
+41062,Familia C2,Replenishment,438.55500000000006,"Overdue by 1432 days (Typical Max Cycle: 65, Conf: 0.30)",67.47
+1000065702,Familia C2,Replenishment,437.3794715719064,"Overdue by 639 days (Typical Max Cycle: 299, Conf: 0.40)",292.36857142857144
+39287,Familia C2,Replenishment,437.1774722838138,"Overdue by 460 days (Typical Max Cycle: 226, Conf: 0.60)",267.89
+1000100157,Familia C1,Replenishment,436.5015304574031,"Overdue by 181 days (Typical Max Cycle: 132, Conf: 0.60)",397.3128571428571
+19211,Familia C1,Replenishment,436.169298245614,"Overdue by 360 days (Typical Max Cycle: 205, Conf: 0.70)",292.49
+37533,Familia C1,Replenishment,436.04160149556014,"Overdue by 360 days (Typical Max Cycle: 229, Conf: 0.60)",347.0921428571429
+2555,Familia C1,Replenishment,435.1106301182893,"Overdue by 319 days (Typical Max Cycle: 220, Conf: 0.70)",293.925
+41924,Familia C1,Replenishment,433.29034441905725,"Overdue by 550 days (Typical Max Cycle: 227, Conf: 0.60)",223.78461538461536
+27919,Familia C2,Replenishment,432.94184619694636,"Overdue by 208 days (Typical Max Cycle: 162, Conf: 1.00)",337.7154545454546
+1000081733,Familia C2,Replenishment,428.5072742995503,"Overdue by 257 days (Typical Max Cycle: 124, Conf: 1.00)",172.1532142857143
+1000065883,Familia C1,Replenishment,428.19140548481886,"Overdue by 705 days (Typical Max Cycle: 306, Conf: 0.40)",265.76500000000004
+1000078114,Familia C2,Replenishment,423.7790798722044,"Overdue by 548 days (Typical Max Cycle: 407, Conf: 0.30)",403.41499999999996
+11020,Familia C1,Replenishment,418.6248705661054,"Overdue by 404 days (Typical Max Cycle: 279, Conf: 0.70)",340.239375
+25219,Familia C2,Replenishment,414.38695631483773,"Overdue by 535 days (Typical Max Cycle: 300, Conf: 0.50)",258.35714285714283
+1000081604,Familia C1,Replenishment,414.2230714285714,"Overdue by 297 days (Typical Max Cycle: 147, Conf: 0.90)",215.81000000000003
+1000067455,Familia C1,Replenishment,412.50438834951456,"Overdue by 114 days (Typical Max Cycle: 77, Conf: 0.60)",349.4075
+8323,Familia C1,Replenishment,412.42139279893314,"Overdue by 499 days (Typical Max Cycle: 337, Conf: 0.40)",398.43
+36431,Familia C1,Replenishment,412.36519435555783,"Overdue by 492 days (Typical Max Cycle: 347, Conf: 0.50)",387.33272727272725
+30272,Familia C1,Replenishment,412.19424274845466,"Overdue by 536 days (Typical Max Cycle: 210, Conf: 0.70)",190.264375
+12558,Familia C2,Replenishment,410.61184098360667,"Overdue by 359 days (Typical Max Cycle: 244, Conf: 0.70)",328.328
+1000071090,Familia C2,Replenishment,408.825,"Overdue by 984 days (Typical Max Cycle: 152, Conf: 0.20)",136.275
+1000079886,Familia C1,Replenishment,408.5780612244899,"Overdue by 565 days (Typical Max Cycle: 316, Conf: 0.30)",352.0057142857143
+1000078779,Familia C1,Replenishment,406.1904300570278,"Overdue by 443 days (Typical Max Cycle: 298, Conf: 0.40)",390.472
+4759,Familia C1,Replenishment,403.96772508390484,"Overdue by 494 days (Typical Max Cycle: 392, Conf: 0.50)",355.81142857142856
+21555,Familia C1,Replenishment,403.28782358581014,"Overdue by 1060 days (Typical Max Cycle: 313, Conf: 0.20)",198.41
+42519,Familia C1,Replenishment,402.8237130044844,"Overdue by 369 days (Typical Max Cycle: 201, Conf: 0.30)",337.072
+1000076619,Familia C1,Replenishment,402.4579658385093,"Overdue by 607 days (Typical Max Cycle: 322, Conf: 0.50)",284.65999999999997
+2114,Familia C1,Replenishment,399.03260237068974,"Overdue by 417 days (Typical Max Cycle: 186, Conf: 0.80)",197.3366666666667
+1000081597,Familia C2,Replenishment,398.9479976345359,"Overdue by 612 days (Typical Max Cycle: 254, Conf: 0.30)",254.382
+25122,Familia C1,Replenishment,397.8065015079707,"Overdue by 564 days (Typical Max Cycle: 232, Conf: 0.40)",233.8675
+42741,Familia C1,Replenishment,397.4107587548639,"Overdue by 180 days (Typical Max Cycle: 128, Conf: 0.30)",436.4725
+4473,Familia C1,Replenishment,396.17047188755026,"Overdue by 206 days (Typical Max Cycle: 166, Conf: 1.00)",319.2441666666667
+27726,Familia C1,Replenishment,394.3179503786369,"Overdue by 181 days (Typical Max Cycle: 154, Conf: 1.00)",336.36846153846153
+1000070964,Familia C1,Replenishment,393.62169257012886,"Overdue by 366 days (Typical Max Cycle: 264, Conf: 0.50)",378.27833333333336
+1000081180,Familia C1,Replenishment,393.4259900090826,"Overdue by 887 days (Typical Max Cycle: 257, Conf: 0.30)",175.3033333333333
+1000080954,Familia C2,Replenishment,388.79923760705947,"Overdue by 577 days (Typical Max Cycle: 385, Conf: 0.30)",399.425
+33366,Familia C2,Replenishment,388.7900753408828,"Overdue by 608 days (Typical Max Cycle: 433, Conf: 0.40)",395.276
+1000079899,Familia C1,Replenishment,385.91675348189415,"Overdue by 209 days (Typical Max Cycle: 144, Conf: 0.90)",232.59315789473686
+36940,Familia C1,Replenishment,385.8317008014248,"Overdue by 201 days (Typical Max Cycle: 168, Conf: 1.00)",323.35
+31509,Familia C2,Replenishment,384.8058744131456,"Overdue by 563 days (Typical Max Cycle: 398, Conf: 0.40)",388.22333333333336
+1000079652,Familia C1,Replenishment,384.2644769336306,"Overdue by 431 days (Typical Max Cycle: 167, Conf: 0.80)",165.03857142857143
+42310,Familia C1,Replenishment,383.8352848101266,"Overdue by 208 days (Typical Max Cycle: 63, Conf: 1.00)",116.62687500000001
+1000081181,Familia C1,Replenishment,383.41860961113935,"Overdue by 601 days (Typical Max Cycle: 226, Conf: 0.60)",180.62461538461537
+1000073231,Familia C2,Replenishment,380.14725,"Overdue by 570 days (Typical Max Cycle: 368, Conf: 0.40)",350.61199999999997
+1000080508,Familia C2,Replenishment,378.5016180602006,"Overdue by 348 days (Typical Max Cycle: 230, Conf: 0.90)",263.32538461538456
+15394,Familia C1,Replenishment,376.59280222693536,"Overdue by 622 days (Typical Max Cycle: 377, Conf: 0.30)",351.35
+1000070080,Familia C2,Replenishment,375.67813999181334,"Overdue by 576 days (Typical Max Cycle: 244, Conf: 0.30)",245.13399999999996
+4047,Familia C1,Replenishment,373.6299943405219,"Overdue by 871 days (Typical Max Cycle: 240, Conf: 0.30)",158.25571428571428
+1000058131,Familia C1,Replenishment,372.00632809118457,"Overdue by 593 days (Typical Max Cycle: 347, Conf: 0.40)",310.5728571428572
+1000059423,Familia C2,Replenishment,368.9741161616161,"Overdue by 82 days (Typical Max Cycle: 59, Conf: 1.00)",178.1875
+1000079764,Familia C2,Replenishment,368.6102371681417,"Overdue by 494 days (Typical Max Cycle: 322, Conf: 0.40)",286.0780000000001
+38671,Familia C1,Replenishment,367.30953501400563,"Overdue by 403 days (Typical Max Cycle: 273, Conf: 0.60)",311.0282352941176
+1000058080,Familia C1,Replenishment,367.24173253676463,"Overdue by 383 days (Typical Max Cycle: 272, Conf: 0.50)",347.74499999999995
+7931,Familia C1,Replenishment,364.0169868079704,"Overdue by 191 days (Typical Max Cycle: 134, Conf: 1.00)",255.7648148148148
+1000079763,Familia C1,Replenishment,363.9779092702171,"Overdue by 775 days (Typical Max Cycle: 296, Conf: 0.40)",198.42666666666665
+23582,Familia C1,Replenishment,363.92949545454553,"Overdue by 681 days (Typical Max Cycle: 286, Conf: 0.30)",235.138
+34641,Familia C1,Replenishment,362.838125,"Overdue by 1133 days (Typical Max Cycle: 164, Conf: 0.30)",111.6425
+14565,Familia C1,Replenishment,362.63033478893743,"Overdue by 388 days (Typical Max Cycle: 137, Conf: 0.20)",214.02666666666664
+28337,Familia C2,Replenishment,359.2778694404592,"Overdue by 360 days (Typical Max Cycle: 279, Conf: 0.90)",292.88500000000005
+1000100385,Familia C1,Replenishment,359.22997918112424,"Overdue by 124 days (Typical Max Cycle: 92, Conf: 0.40)",379.50909090909096
+163,Familia C1,Replenishment,358.45714285714286,"Overdue by 1410 days (Typical Max Cycle: 113, Conf: 0.20)",119.4857142857143
+9051,Familia C1,Replenishment,356.12114018691585,"Overdue by 447 days (Typical Max Cycle: 321, Conf: 0.40)",365.34
+2946,Familia C1,Replenishment,356.03749999999997,"Overdue by 1060 days (Typical Max Cycle: 138, Conf: 0.50)",94.94333333333333
+1000081817,Familia C1,Replenishment,355.0843277148384,"Overdue by 457 days (Typical Max Cycle: 362, Conf: 0.30)",432.604
+8854,Familia C1,Replenishment,350.37413194444446,"Overdue by 510 days (Typical Max Cycle: 292, Conf: 0.50)",267.10875
+1000076452,Familia C1,Replenishment,349.81193020804864,"Overdue by 269 days (Typical Max Cycle: 226, Conf: 0.80)",326.6211764705882
+1000080857,Familia C1,Replenishment,344.47162166584855,"Overdue by 611 days (Typical Max Cycle: 170, Conf: 0.60)",119.6277777777778
+1000038447,Familia C2,Replenishment,342.03724230254346,"Overdue by 201 days (Typical Max Cycle: 149, Conf: 1.00)",254.23066666666668
+9908,Familia C1,Replenishment,336.2096478202932,"Overdue by 536 days (Typical Max Cycle: 350, Conf: 0.30)",337.94666666666666
+37754,Familia C1,Replenishment,328.5025883111129,"Overdue by 192 days (Typical Max Cycle: 134, Conf: 1.00)",191.34135135135134
+15049,Familia C1,Replenishment,326.8992250081407,"Overdue by 702 days (Typical Max Cycle: 307, Conf: 0.40)",204.29538461538462
+1000082210,Familia C1,Replenishment,322.205351042471,"Overdue by 361 days (Typical Max Cycle: 231, Conf: 0.60)",257.9985714285714
+37985,Familia C2,Replenishment,319.1589693784278,"Overdue by 411 days (Typical Max Cycle: 328, Conf: 0.40)",364.08750000000003
+1000081634,Familia C1,Replenishment,318.1296985737066,"Overdue by 451 days (Typical Max Cycle: 282, Conf: 0.50)",265.41375
+22244,Familia C1,Replenishment,317.9177497789567,"Overdue by 755 days (Typical Max Cycle: 264, Conf: 0.40)",158.74833333333333
+33195,Familia C2,Replenishment,316.11160396039605,"Overdue by 390 days (Typical Max Cycle: 303, Conf: 0.60)",255.82750000000001
+1460,Familia C2,Replenishment,315.0069008535785,"Overdue by 741 days (Typical Max Cycle: 457, Conf: 0.30)",298.82
+1000079798,Familia C1,Replenishment,313.0985439838222,"Overdue by 58 days (Typical Max Cycle: 49, Conf: 1.00)",266.94350000000003
+41551,Familia C1,Replenishment,312.662,"Overdue by 460 days (Typical Max Cycle: 369, Conf: 0.40)",298.58250000000004
+40974,Familia C1,Replenishment,312.3862854408422,"Overdue by 216 days (Typical Max Cycle: 161, Conf: 1.00)",232.48192307692307
+1000081160,Familia C2,Replenishment,311.7717192578548,"Overdue by 482 days (Typical Max Cycle: 369, Conf: 0.50)",318.41249999999997
+12537,Familia C1,Replenishment,310.6685472286218,"Overdue by 879 days (Typical Max Cycle: 369, Conf: 0.40)",186.285
+1000100163,Familia C2,Replenishment,308.85957093054435,"Overdue by 244 days (Typical Max Cycle: 124, Conf: 0.30)",242.0633333333333
+9401,Familia C1,Replenishment,306.84446974063405,"Overdue by 454 days (Typical Max Cycle: 347, Conf: 0.30)",360.81
+26633,Familia C1,Replenishment,305.5718286002353,"Overdue by 557 days (Typical Max Cycle: 270, Conf: 0.60)",185.49636363636367
+39302,Familia C1,Replenishment,304.2771428571429,"Overdue by 577 days (Typical Max Cycle: 12, Conf: 0.20)",101.42571428571429
+13894,Familia C1,Replenishment,302.6206405124099,"Overdue by 486 days (Typical Max Cycle: 375, Conf: 0.30)",358.94888888888886
+1000067847,Familia C2,Replenishment,300.6129552107729,"Overdue by 501 days (Typical Max Cycle: 256, Conf: 0.30)",236.5025
+1000065497,Familia C1,Replenishment,297.3346882399368,"Overdue by 550 days (Typical Max Cycle: 226, Conf: 0.50)",163.0835714285714
+39721,Familia C1,Replenishment,294.9512791266091,"Overdue by 528 days (Typical Max Cycle: 307, Conf: 0.40)",163.25
+1000080584,Familia C1,Replenishment,294.18200429711476,"Overdue by 971 days (Typical Max Cycle: 272, Conf: 0.40)",117.50833333333333
+1000073407,Familia C1,Replenishment,292.871600877193,"Overdue by 450 days (Typical Max Cycle: 256, Conf: 0.70)",196.39625
+25896,Familia C1,Replenishment,292.0396451120163,"Overdue by 383 days (Typical Max Cycle: 196, Conf: 0.30)",191.995
+14986,Familia C1,Replenishment,285.7602857142857,"Overdue by 324 days (Typical Max Cycle: 204, Conf: 0.70)",211.363
+33445,Familia C2,Replenishment,285.15316313423256,"Overdue by 580 days (Typical Max Cycle: 415, Conf: 0.30)",314.0466666666667
+1000082627,Familia C1,Replenishment,282.5453282032491,"Overdue by 374 days (Typical Max Cycle: 273, Conf: 0.30)",317.1806666666667
+33322,Familia C1,Replenishment,277.78668153555014,"Overdue by 506 days (Typical Max Cycle: 370, Conf: 0.30)",312.41499999999996
+1000082056,Familia C1,Replenishment,276.25509719638166,"Overdue by 179 days (Typical Max Cycle: 120, Conf: 1.00)",185.0446153846154
+300,Familia C1,Replenishment,273.3865605095542,"Overdue by 313 days (Typical Max Cycle: 157, Conf: 0.50)",182.84000000000003
+17828,Familia C1,Replenishment,273.2844021627979,"Overdue by 439 days (Typical Max Cycle: 279, Conf: 0.50)",231.90785714285718
+25605,Familia C1,Replenishment,263.79183257918555,"Overdue by 702 days (Typical Max Cycle: 287, Conf: 0.40)",154.22750000000002
+1000066667,Familia C2,Replenishment,263.3642540816327,"Overdue by 676 days (Typical Max Cycle: 392, Conf: 0.30)",195.79500000000002
+42222,Familia C1,Replenishment,263.2139958840679,"Overdue by 207 days (Typical Max Cycle: 167, Conf: 0.90)",222.99238095238096
+1000079818,Familia C1,Replenishment,262.316173144417,"Overdue by 403 days (Typical Max Cycle: 275, Conf: 0.60)",223.54642857142858
+25129,Familia C1,Replenishment,259.98275608194626,"Overdue by 501 days (Typical Max Cycle: 312, Conf: 0.40)",231.59
+28892,Familia C2,Replenishment,258.78070287107255,"Overdue by 829 days (Typical Max Cycle: 369, Conf: 0.20)",192.08249999999998
+23750,Familia C1,Replenishment,252.1399665586078,"Overdue by 366 days (Typical Max Cycle: 293, Conf: 0.40)",288.40600000000006
+38577,Familia C1,Replenishment,250.4150085763293,"Overdue by 39 days (Typical Max Cycle: 32, Conf: 1.00)",102.09227272727273
+1000074005,Familia C1,Replenishment,250.18043660009295,"Overdue by 914 days (Typical Max Cycle: 215, Conf: 0.20)",98.22000000000001
+30149,Familia C2,Replenishment,249.86533249006146,"Overdue by 370 days (Typical Max Cycle: 277, Conf: 0.30)",287.475
+15098,Familia C1,Replenishment,249.77596483516487,"Overdue by 164 days (Typical Max Cycle: 124, Conf: 1.00)",156.74457142857145
+42718,Familia C1,Replenishment,245.5219690805533,"Overdue by 166 days (Typical Max Cycle: 123, Conf: 0.20)",302.9583333333333
+1000039979,Familia C1,Replenishment,245.0642634623944,"Overdue by 53 days (Typical Max Cycle: 43, Conf: 1.00)",164.91746031746035
+23180,Familia C1,Replenishment,238.44153089887638,"Overdue by 1067 days (Typical Max Cycle: 231, Conf: 0.30)",79.55499999999999
+1000076338,Familia C1,Replenishment,237.39609756097562,"Overdue by 121 days (Typical Max Cycle: 96, Conf: 1.00)",189.32829268292684
+12422,Familia C1,Replenishment,236.53154867256637,"Overdue by 535 days (Typical Max Cycle: 396, Conf: 0.30)",224.175
+1262,Familia C1,Replenishment,235.85054759106933,"Overdue by 606 days (Typical Max Cycle: 383, Conf: 0.40)",212.916
+2821,Familia C1,Replenishment,231.57252357948005,"Overdue by 271 days (Typical Max Cycle: 189, Conf: 1.00)",161.50260869565213
+8751,Familia C1,Replenishment,230.80889036943273,"Overdue by 1094 days (Typical Max Cycle: 273, Conf: 0.40)",82.25090909090909
+1000080226,Familia C1,Replenishment,224.17209944751383,"Overdue by 594 days (Typical Max Cycle: 217, Conf: 0.50)",109.29333333333334
+42219,Familia C1,Replenishment,223.11683333333337,"Overdue by 1129 days (Typical Max Cycle: 26, Conf: 0.30)",68.65133333333334
+1000080412,Familia C1,Replenishment,220.91781109829554,"Overdue by 548 days (Typical Max Cycle: 260, Conf: 0.20)",174.75888888888892
+1000078753,Familia C1,Replenishment,216.4613155086221,"Overdue by 110 days (Typical Max Cycle: 94, Conf: 1.00)",153.65473684210525
+19757,Familia C1,Replenishment,213.18143400698605,"Overdue by 275 days (Typical Max Cycle: 200, Conf: 0.90)",163.52750000000003
+13444,Familia C2,Replenishment,209.1996879224876,"Overdue by 562 days (Typical Max Cycle: 222, Conf: 0.30)",127.0775
+2309,Familia C1,Replenishment,208.21677838290748,"Overdue by 194 days (Typical Max Cycle: 136, Conf: 1.00)",146.3957142857143
+18774,Familia C2,Replenishment,206.6394366911951,"Overdue by 534 days (Typical Max Cycle: 394, Conf: 0.30)",234.61999999999998
+6963,Familia C1,Replenishment,200.57106096595408,"Overdue by 625 days (Typical Max Cycle: 379, Conf: 0.40)",173.706
+37656,Familia C1,Replenishment,199.34834696944398,"Overdue by 39 days (Typical Max Cycle: 34, Conf: 1.00)",115.5198113207547
+1000080641,Familia C1,Replenishment,191.4924048582996,"Overdue by 348 days (Typical Max Cycle: 276, Conf: 0.60)",189.49769230769232
+1000080513,Familia C1,Replenishment,190.9264951542974,"Overdue by 181 days (Typical Max Cycle: 131, Conf: 1.00)",137.86791666666667
+1000078468,Familia C1,Replenishment,188.76100579664728,"Overdue by 180 days (Typical Max Cycle: 147, Conf: 1.00)",102.97961538461537
+12744,Familia C2,Replenishment,188.08119318181824,"Overdue by 713 days (Typical Max Cycle: 546, Conf: 0.30)",221.42000000000002
+1000081468,Familia C1,Replenishment,169.57622007703762,"Overdue by 573 days (Typical Max Cycle: 385, Conf: 0.30)",175.15363636363637
+1000100425,Familia C1,Replenishment,156.67181594488193,"Overdue by 255 days (Typical Max Cycle: 190, Conf: 0.30)",180.06625000000003
+1000081532,Familia C2,Replenishment,155.6863023420866,"Overdue by 767 days (Typical Max Cycle: 423, Conf: 0.30)",132.0
+1000081523,Familia C2,Replenishment,155.13545323741005,"Overdue by 440 days (Typical Max Cycle: 348, Conf: 0.30)",188.495
+1000077814,Familia C1,Replenishment,154.27128883774452,"Overdue by 480 days (Typical Max Cycle: 348, Conf: 0.50)",148.95749999999998
+1000082712,Familia C1,Replenishment,152.93443526170802,"Overdue by 416 days (Typical Max Cycle: 218, Conf: 0.20)",133.45
+1000078905,Familia C1,Replenishment,146.83353846153847,"Overdue by 114 days (Typical Max Cycle: 98, Conf: 1.00)",125.58131578947369
+1000079889,Familia C1,Replenishment,138.7341095890411,"Overdue by 506 days (Typical Max Cycle: 256, Conf: 0.50)",93.40333333333335
+31066,Familia C1,Replenishment,137.2144140290847,"Overdue by 605 days (Typical Max Cycle: 326, Conf: 0.30)",113.62714285714287
+23508,Familia C1,Replenishment,130.47449999999998,"Overdue by 1165 days (Typical Max Cycle: 191, Conf: 0.30)",40.145999999999994
+42549,Familia C1,Replenishment,126.25577716297788,"Overdue by 179 days (Typical Max Cycle: 142, Conf: 0.50)",133.5442857142857
+1000042752,Familia C2,Replenishment,124.9754120651574,"Overdue by 829 days (Typical Max Cycle: 362, Conf: 0.30)",84.00499999999998
+42809,Familia C1,Replenishment,123.34778533635678,"Overdue by 68 days (Typical Max Cycle: 44, Conf: 1.00)",79.99466666666666
+42909,Familia C1,Replenishment,117.72592307692307,"Overdue by 83 days (Typical Max Cycle: 65, Conf: 0.50)",122.92666666666666
+1000071395,Familia C1,Replenishment,98.36529318541997,"Overdue by 360 days (Typical Max Cycle: 252, Conf: 0.30)",106.10000000000001
+42469,Familia C1,Replenishment,80.85000000000001,"Overdue by 861 days (Typical Max Cycle: 16, Conf: 0.10)",29.400000000000002
+1000080693,Familia C1,Replenishment,62.736613983391386,"Overdue by 727 days (Typical Max Cycle: 373, Conf: 0.30)",49.56
+33980,Familia C1,Replenishment,48.747222222222206,"Overdue by 1367 days (Typical Max Cycle: 84, Conf: 0.40)",13.927777777777774

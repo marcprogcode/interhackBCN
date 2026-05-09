@@ -55,6 +55,11 @@ class RetroactiveSimulator:
                 recent_ipts = history_ipt.tail(15)
                 base_cycle = recent_ipts.quantile(0.85)
                 
+                # Confidence and Dynamic margin
+                real_cycles = len(history_ipt[history_ipt >= 7])
+                confidence = min(1.0, real_cycles / 10.0)
+                margin = 0.30 - (0.15 * confidence)
+                
                 last_purchase = unique_dates.iloc[-1]
                 dslp = (current_sim_date - last_purchase).days
                 
@@ -70,7 +75,7 @@ class RetroactiveSimulator:
                 if expected_date.month == 8:
                     threshold = base_cycle + 30
                 else:
-                    threshold = base_cycle * 1.30
+                    threshold = base_cycle * (1.0 + margin)
                 
                 is_triggered = dslp > threshold
                 
@@ -86,6 +91,8 @@ class RetroactiveSimulator:
                     'Threshold': threshold,
                     'Old_Threshold': old_threshold,
                     'Base_Cycle': base_cycle,
+                    'Margin': margin,
+                    'Confidence': confidence,
                     'Triggered': is_triggered
                 })
             
@@ -142,11 +149,14 @@ class RetroactiveSimulator:
             first_t = trigger_dates[0]
             days_overdue = sim_df[sim_df['Date'] == first_t]['DSLP'].values[0]
             thresh = sim_df[sim_df['Date'] == first_t]['Threshold'].values[0]
+            conf = sim_df[sim_df['Date'] == first_t]['Confidence'].values[0]
+            marg = sim_df[sim_df['Date'] == first_t]['Margin'].values[0]
             explanation = (f"FIRST TRIGGER: {first_t.strftime('%B %d, %Y')}\n\n"
                           f"WHY: Client missed their usual pattern.\n"
                           f"They reached {days_overdue:.0f} days without\n"
                           f"purchasing, crossing the threshold of {thresh:.0f}\n"
-                          f"days (1.15x their typical max cycle).\n"
+                          f"days ({(1.0+marg):.2f}x their typical max cycle).\n"
+                          f"Confidence Score: {conf:.2f}\n"
                           f"Total triggers: {len(trigger_dates)}")
             
             props = dict(boxstyle='round', facecolor='#1e1e1e', alpha=0.9, edgecolor='#00f2ff')

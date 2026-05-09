@@ -19,7 +19,7 @@ plt.rcParams['grid.color'] = '#333333'
 def run_test():
     TEST_DATE_STR = '2025-06-01'
     TEST_DATE = pd.to_datetime(TEST_DATE_STR)
-    PLOT_DIR = 'plots/retro_test'
+    PLOT_DIR = 'plots/retro_test_v2'
     
     if not os.path.exists(PLOT_DIR):
         os.makedirs(PLOT_DIR)
@@ -67,6 +67,11 @@ def run_test():
             continue
             
         ipts = unique_dates.diff().dt.days.dropna()
+        
+        real_cycles = len(ipts[ipts >= 7])
+        confidence = min(1.0, real_cycles / 10.0)
+        margin = 0.30 - (0.15 * confidence)
+        
         base_cycle = ipts.tail(15).quantile(0.85)
         
         last_purchase = unique_dates.iloc[-1]
@@ -74,7 +79,7 @@ def run_test():
         if expected_date.month == 8:
             test_threshold = base_cycle + 30
         else:
-            test_threshold = base_cycle * 1.30
+            test_threshold = base_cycle * (1.0 + margin)
             
         # Generate DSLP for the entire timeline (past and future)
         sim_results = []
@@ -113,14 +118,19 @@ def run_test():
         # Vertical line for TEST_DATE
         ax1.axvline(x=TEST_DATE, color='#ff00ff', linewidth=3, linestyle='--', label=f'Test Date: {TEST_DATE_STR}', alpha=0.8)
         
-        # Draw threshold projection from TEST_DATE forward
-        future_df = sim_df[sim_df['Date'] >= TEST_DATE]
+        # Draw threshold projection from last_purchase forward
+        future_df = sim_df[sim_df['Date'] >= last_purchase]
         ax1.plot(future_df['Date'], [test_threshold] * len(future_df), color='#ffaa00', linestyle='-', 
                  label=f'Frozen Threshold ({test_threshold:.1f} days)', linewidth=3, alpha=0.9)
                  
+        # Highlight exact date they became overdue
+        breach_date = last_purchase + timedelta(days=test_threshold)
+        if breach_date <= TEST_DATE:
+            ax1.scatter(breach_date, test_threshold, color='#ffaa00', s=300, marker='*', zorder=6, edgecolors='black', label='Became Overdue')
+                 
         # Highlight the trigger point on TEST_DATE
         test_dslp = sim_df[sim_df['Date'] == TEST_DATE]['DSLP'].values[0]
-        ax1.scatter(TEST_DATE, test_dslp, color='#ff0055', s=200, zorder=5, edgecolors='white', label='Alert Fired')
+        ax1.scatter(TEST_DATE, test_dslp, color='#ff0055', s=200, zorder=5, edgecolors='white', label='Alert Evaluated')
         
         plt.title(f"Retroactive Test: Client {client_id} | {family}", fontsize=20, color='#00f2ff', pad=25)
         plt.xlabel("Date", fontsize=12, color='#888888')
@@ -136,7 +146,8 @@ def run_test():
         explanation = (f"TEST DATE: {TEST_DATE_STR}\n"
                       f"Engine only saw data to the left.\n"
                       f"Calculated Base Cycle: {base_cycle:.0f} days\n"
-                      f"Threshold (Base * 1.30): {test_threshold:.0f} days\n"
+                      f"Confidence Score: {confidence:.2f} (Margin: {(1.0+margin):.2f}x)\n"
+                      f"Threshold: {test_threshold:.0f} days\n"
                       f"Client was overdue by {test_dslp:.0f} days\n\n"
                       f"Look right to see if they bought later!")
         
