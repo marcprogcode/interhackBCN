@@ -55,7 +55,7 @@ def detect_recurring_patterns(df):
             
     return recurring_clients
 
-def plot_signals(recurring_clients, reference_date, top_n=5):
+def plot_signals(recurring_clients, reference_date, top_n=15):
     print(f"--- GENERATING SIGNAL PLOT (Top {top_n} clients with signals) ---")
     
     clients_with_signals = []
