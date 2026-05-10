@@ -22,6 +22,9 @@ RUN mkdir -p /app/outputs
 # The API expects to be run from src/ so data_loader uses relative path "data"
 WORKDIR /app/src
 
+# Symlink data and outputs so relative paths resolve correctly from /app/src/
+RUN ln -s /app/data /app/src/data && ln -s /app/outputs /app/src/outputs
+
 EXPOSE 8000
 
 CMD ["python", "api.py"]
