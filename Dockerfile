@@ -16,6 +16,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src/ ./src/
 COPY data/ ./data/
 
+# Create outputs directory (the engine will generate the CSV at runtime)
+RUN mkdir -p /app/outputs
+
 # The API expects to be run from src/ so data_loader uses relative path "data"
 WORKDIR /app/src
 
