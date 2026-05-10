@@ -50,7 +50,7 @@ class PrioritizationEngine:
                 return 1.5  # Some potential
         return 1.0
 
-    def process_commodities(self, df_com, current_date, ltv_df, df_potencial):
+    def process_commodities(self, df_com, current_date, ltv_df, df_potencial, is_technical=False):
         alerts = []
         from tqdm import tqdm
         # Group by Client and Family
@@ -93,7 +93,11 @@ class PrioritizationEngine:
             dslp = (current_date - last_purchase_date).days
             
             # 2. Dynamic margin & Threshold
-            margin = 0.30 - (0.15 * confidence) # Scales from 30% down to 15%
+            # Technical products get wider tolerances (more irregular cycles)
+            if is_technical:
+                margin = 0.50 - (0.20 * confidence) # Scales from 50% down to 30%
+            else:
+                margin = 0.30 - (0.15 * confidence) # Scales from 30% down to 15%
             
             expected_date = last_purchase_date + timedelta(days=base_cycle)
             # August seasonality adjustment
@@ -115,6 +119,12 @@ class PrioritizationEngine:
                 # Decays as they get further past their expected date
                 overdue_beyond = max(0, dslp - adjusted_threshold)
                 recoverability = 1.0 / (1.0 + 0.5 * (overdue_beyond / base_cycle))
+                
+                # Hard cliff after 90 days overdue — chances of recovery drop sharply
+                if overdue_beyond > 90:
+                    days_past_cliff = overdue_beyond - 90
+                    cliff_penalty = max(0.1, 1.0 - days_past_cliff / 120.0)
+                    recoverability *= cliff_penalty
                 
                 # 5. LTV with family relevance
                 ltv_row = ltv_df[ltv_df['Id. Cliente'] == client]
@@ -166,6 +176,7 @@ class PrioritizationEngine:
                         hist_adj = hist_bc + 30 if hist_exp.month == 8 else hist_bc * (1.0 + hist_marg)
                         threshold_history[p_date] = (hist_bc, hist_adj)
                 
+                actual_last_purchase = last_purchase_date.date()
                 past_dates = [d for d in purchase_dates if d <= start_date.date()]
                 current_last_purchase = max(past_dates) if past_dates else None
                 
@@ -191,8 +202,12 @@ class PrioritizationEngine:
                     if i == 0:
                         point["is_current_date"] = True
                         point["is_alert_evaluated"] = True
+                    
+                    # Only mark overdue on the CURRENT cycle (last purchase)
+                    # so the "Endarrerit" label doesn't appear on past cycles
+                    is_current_cycle = (current_last_purchase == actual_last_purchase)
                         
-                    if days_since_purchase == int(hist_adjusted_threshold):
+                    if days_since_purchase == int(hist_adjusted_threshold) and is_current_cycle:
                         point["is_overdue_date"] = True
                         point["event"] = "Overdue"
                     elif days_since_purchase == int(hist_base_cycle):
@@ -313,10 +328,29 @@ class PrioritizationEngine:
         com_alerts = self.process_commodities(df_com, current_date, ltv_df, df_potencial)
         
         print("Processing technical products...")
-        tech_alerts = self.process_technical(df_tech, current_date, ltv_df, df_potencial)
+        tech_alerts = self.process_commodities(df_tech, current_date, ltv_df, df_potencial, is_technical=True)
         
-        all_alerts = com_alerts + tech_alerts
-        alerts_df = pd.DataFrame(all_alerts)
+        # Per-type percentile normalization: rank within each type independently
+        # so that commodity and technical alerts compete on equal footing
+        com_df = pd.DataFrame(com_alerts)
+        tech_df = pd.DataFrame(tech_alerts)
+        
+        def normalize_scores(df):
+            if df.empty or len(df) < 1:
+                return df
+            df['Raw_Score'] = df['Priority_Score']
+            s_min = df['Priority_Score'].min()
+            s_max = df['Priority_Score'].max()
+            if s_max > s_min:
+                df['Priority_Score'] = (df['Priority_Score'] - s_min) / (s_max - s_min)
+            else:
+                df['Priority_Score'] = 1.0 # Only one alert or all same, set to max
+            return df
+        
+        com_df = normalize_scores(com_df)
+        tech_df = normalize_scores(tech_df)
+        
+        alerts_df = pd.concat([com_df, tech_df], ignore_index=True)
         
         if not alerts_df.empty:
             alerts_df = alerts_df.sort_values('Priority_Score', ascending=False)
