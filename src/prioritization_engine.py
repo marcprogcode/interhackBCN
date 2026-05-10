@@ -307,7 +307,7 @@ class PrioritizationEngine:
         
         bloque_col = [c for c in df.columns if 'loque' in c][0]
         df_com = df[df[bloque_col] == 'Commodities']
-        df_tech = df[df[bloque_col] == 'Technical']
+        df_tech = df[df[bloque_col] == 'Productos Técnicos']
         
         print("Processing commodities...")
         com_alerts = self.process_commodities(df_com, current_date, ltv_df, df_potencial)
