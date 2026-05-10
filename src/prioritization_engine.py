@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import math
+import json
 from datetime import timedelta
 import os
 from data_loader import DataLoader
@@ -137,6 +138,50 @@ class PrioritizationEngine:
                 reason_str = (f'Overdue {dslp}d (cycle:{base_cycle:.0f}, thresh:{adjusted_threshold:.0f}, '
                               f'conf:{confidence:.2f}, age:{client_age_days}d, txns:{len(unique_dates)})')
                 
+                # Generate Interpretability Data
+                history = []
+                purchase_dates = set(unique_dates.dt.date)
+                start_date = current_date - timedelta(days=400)
+                
+                past_dates = [d for d in purchase_dates if d <= start_date.date()]
+                current_last_purchase = max(past_dates) if past_dates else None
+                
+                for i in range(400, -1, -1):
+                    d = (current_date - timedelta(days=i)).date()
+                    if d in purchase_dates:
+                        current_last_purchase = d
+                        
+                    days_since_purchase = (d - current_last_purchase).days if current_last_purchase else 0
+                    
+                    point = {
+                        "date": d.strftime('%Y-%m-%d'),
+                        "days_since_purchase": days_since_purchase,
+                        "moving_threshold": int(base_cycle),
+                        "frozen_threshold": int(adjusted_threshold)
+                    }
+                    
+                    if i == 0:
+                        point["is_current_date"] = True
+                        point["is_alert_evaluated"] = True
+                        
+                    if days_since_purchase == int(adjusted_threshold):
+                        point["is_overdue_date"] = True
+                        point["event"] = "Overdue"
+                    elif days_since_purchase == int(base_cycle):
+                        point["is_past_triggered"] = True
+                        point["event"] = "Soft Alert Triggered"
+                        
+                    if d in purchase_dates:
+                        point["event"] = "Purchase"
+                        
+                    history.append(point)
+                    
+                interpretability = {
+                    "company_id": str(client),
+                    "typical_purchase_cadence": f"El client compra habitualment cada {int(base_cycle)} dies",
+                    "timeseries": history
+                }
+                
                 alerts.append({
                     'Client_ID': client,
                     'Product_Family': family,
@@ -145,7 +190,8 @@ class PrioritizationEngine:
                     'Reason': reason_str,
                     'Formula': formula_str,
                     'Expected_Value': avg_tx_value,
-                    'Confidence': confidence
+                    'Confidence': confidence,
+                    'Interpretability_JSON': json.dumps(interpretability)
                 })
         return alerts
 
@@ -194,6 +240,13 @@ class PrioritizationEngine:
                                f'ltv({ltv_mult:.1f}) × pot({pot_bonus:.1f}) × long({longevity_mult:.1f}) = {priority_score:.1f}')
                 reason_str = (f'Vol drop >50% (prev6m:{prev_vol:.0f}€→recent6m:{recent_vol:.0f}€, age:{client_age_days}d)')
                 
+                # Generate Interpretability Data (Empty timeseries with descriptive text)
+                interpretability = {
+                    "company_id": str(client),
+                    "typical_purchase_cadence": f"Caiguda de volum del >50%. Volum previ 6m: {int(prev_vol)}€, Volum recent 6m: {int(recent_vol)}€",
+                    "timeseries": []
+                }
+                
                 alerts.append({
                     'Client_ID': client,
                     'Product_Family': family,
@@ -202,7 +255,8 @@ class PrioritizationEngine:
                     'Reason': reason_str,
                     'Formula': formula_str,
                     'Expected_Value': prev_vol,
-                    'Confidence': 0.85 # High confidence for clear volume drops
+                    'Confidence': 0.85, # High confidence for clear volume drops
+                    'Interpretability_JSON': json.dumps(interpretability)
                 })
         return alerts
 

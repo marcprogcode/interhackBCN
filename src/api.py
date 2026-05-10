@@ -1,4 +1,5 @@
 import os
+import json
 import pandas as pd
 import numpy as np
 from fastapi import FastAPI, HTTPException
@@ -75,7 +76,7 @@ def load_data_to_mongo(force=False):
             # Prepare final documents for MongoDB
             records = []
             for _, row in df.iterrows():
-                records.append({
+                record = {
                     "company_id": str(row['Client_ID']),
                     "location": row['location'],
                     "reason": row['Reason'],
@@ -84,7 +85,15 @@ def load_data_to_mongo(force=False):
                     "confidence": round(float(row.get('Confidence', 0.5)), 2),
                     "product_family": row.get('Product_Family', 'N/A'),
                     "type": row.get('Type', 'N/A')
-                })
+                }
+                
+                if 'Interpretability_JSON' in row and pd.notna(row['Interpretability_JSON']):
+                    try:
+                        record["interpretability"] = json.loads(row['Interpretability_JSON'])
+                    except json.JSONDecodeError:
+                        pass
+                        
+                records.append(record)
             
             # Clear existing data and insert new data
             collection.delete_many({})
@@ -126,11 +135,39 @@ def get_alerts(top_x: int = 20):
             load_data_to_mongo(force=True)
         
         # Retrieve documents from the collection, sorted by priority_score descending
-        cursor = collection.find({}, {"_id": 0}).sort("priority_score", -1).limit(top_x)
+        # Exclude interpretability data from the main list view to save bandwidth
+        cursor = collection.find({}, {"_id": 0, "interpretability": 0}).sort("priority_score", -1).limit(top_x)
         alerts = list(cursor)
         return alerts
     except ServerSelectionTimeoutError:
         raise HTTPException(status_code=503, detail="MongoDB service is unavailable")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/alerts/{company_id}/interpretability")
+def get_interpretability(company_id: str):
+    try:
+        # Check connection
+        client.admin.command('ping')
+        
+        # Check when data was loaded for the last time
+        metadata_collection = db["metadata"]
+        last_loaded_doc = metadata_collection.find_one({"_id": "last_loaded"})
+        
+        if not last_loaded_doc or "timestamp" not in last_loaded_doc or (datetime.now() - last_loaded_doc["timestamp"]) > timedelta(minutes=20):
+            print("Data is older than 20 minutes or not found. Reloading data...")
+            load_data_to_mongo(force=True)
+            
+        alert = collection.find_one({"company_id": company_id}, {"_id": 0, "interpretability": 1})
+        if alert and "interpretability" in alert:
+            return alert["interpretability"]
+        else:
+            raise HTTPException(status_code=404, detail="Interpretability data not found for this company")
+            
+    except ServerSelectionTimeoutError:
+        raise HTTPException(status_code=503, detail="MongoDB service is unavailable")
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
