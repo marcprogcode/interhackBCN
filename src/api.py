@@ -1,12 +1,23 @@
 import os
 import pandas as pd
+import numpy as np
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 import uvicorn
 from datetime import datetime, timedelta
 
 app = FastAPI(title="Interhack BCN Daily Alerts API")
+
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Connect to local MongoDB instance
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
@@ -33,10 +44,47 @@ def load_data_to_mongo(force=False):
                     return
             print("Data is stale or missing timestamp, proceeding to load.")
 
-        if os.path.exists(CSV_PATH):
+        if os.path.exists(CSV_PATH) or force:
+            # 1. Trigger the actual Recalculation Engine
+            print("Triggering Prioritization Engine recalculation...")
+            from prioritization_engine import PrioritizationEngine
+            engine = PrioritizationEngine()
+            engine.generate_alerts() # This updates the CSV with fresh logic
+            
+            # 2. Prepare for MongoDB Load
+            from data_loader import DataLoader
+            loader = DataLoader()
+            locations = loader.get_client_locations()
+            
             df = pd.read_csv(CSV_PATH)
-            # Convert dataframe to list of dictionaries
-            records = df.to_dict(orient='records')
+            
+            # Map locations and rename/normalize fields
+            df['location'] = df['Client_ID'].map(locations).fillna("Unknown")
+            
+            # Normalize Priority_Score to 1-10 scale using quantiles for better distribution
+            if not df.empty and 'Priority_Score' in df.columns:
+                # Use a log transformation to dampen outliers before scaling
+                df['log_score'] = np.log1p(df['Priority_Score'])
+                min_s = df['log_score'].min()
+                max_s = df['log_score'].max()
+                if max_s > min_s:
+                    df['priority_score'] = 1 + 9 * (df['log_score'] - min_s) / (max_s - min_s)
+                else:
+                    df['priority_score'] = 5.0
+            
+            # Prepare final documents for MongoDB
+            records = []
+            for _, row in df.iterrows():
+                records.append({
+                    "company_id": str(row['Client_ID']),
+                    "location": row['location'],
+                    "reason": row['Reason'],
+                    "priority_score": round(float(row.get('priority_score', 5.0)), 1),
+                    "expected_return": round(float(row.get('Expected_Value', 0.0)), 2),
+                    "confidence": round(float(row.get('Confidence', 0.5)), 2),
+                    "product_family": row.get('Product_Family', 'N/A'),
+                    "type": row.get('Type', 'N/A')
+                })
             
             # Clear existing data and insert new data
             collection.delete_many({})
@@ -63,7 +111,8 @@ def load_data_to_mongo(force=False):
 load_data_to_mongo()
 
 @app.get("/api/alerts")
-def get_all_alerts():
+@app.get("/alerts")
+def get_alerts(top_x: int = 20):
     try:
         # Check connection
         client.admin.command('ping')
@@ -76,18 +125,15 @@ def get_all_alerts():
             print("Data is older than 20 minutes or not found. Reloading data...")
             load_data_to_mongo(force=True)
         
-        # Retrieve all documents from the collection
-        cursor = collection.find({})
-        alerts = []
-        for document in cursor:
-            # Convert ObjectId to string or remove it
-            document['_id'] = str(document['_id'])
-            alerts.append(document)
-        return {"data": alerts}
+        # Retrieve documents from the collection, sorted by priority_score descending
+        cursor = collection.find({}, {"_id": 0}).sort("priority_score", -1).limit(top_x)
+        alerts = list(cursor)
+        return alerts
     except ServerSelectionTimeoutError:
         raise HTTPException(status_code=503, detail="MongoDB service is unavailable")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
