@@ -8,6 +8,7 @@ from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 import uvicorn
 from datetime import datetime, timedelta
+from pydantic import BaseModel
 
 app = FastAPI(title="Interhack BCN Daily Alerts API")
 
@@ -36,6 +37,12 @@ def load_data_to_mongo(force=False):
         
         # If not forcing and we already have data, treat it as a cache
         if not force and collection.count_documents({}) > 0:
+            # Check if alert_id field exists (to handle migration)
+            if collection.find_one({"alert_id": {"$exists": False}}):
+                print("Found old records missing 'alert_id'. Forcing reload...")
+                load_data_to_mongo(force=True)
+                return
+
             metadata_collection = db["metadata"]
             last_loaded_doc = metadata_collection.find_one({"_id": "last_loaded"})
             if last_loaded_doc and "timestamp" in last_loaded_doc:
@@ -78,6 +85,7 @@ def load_data_to_mongo(force=False):
             for _, row in df.iterrows():
                 record = {
                     "company_id": str(row['Client_ID']),
+                    "alert_id": f"{str(row['Client_ID'])}_{row.get('Product_Family', 'N/A')}_{row.get('Type', 'N/A')}".replace(" ", "_"),
                     "location": row['location'],
                     "reason": row['Reason'],
                     "priority_score": round(float(row.get('priority_score', 5.0)), 1),
@@ -119,9 +127,29 @@ def load_data_to_mongo(force=False):
 # Load the data when the script starts (only if MongoDB is empty)
 load_data_to_mongo()
 
+class StatusUpdate(BaseModel):
+    status: str
+
+@app.put("/api/alerts/{alert_id}/status")
+def update_alert_status(alert_id: str, update: StatusUpdate):
+    if update.status not in ["new", "wip", "complete", "discarded"]:
+        raise HTTPException(status_code=400, detail="Invalid status")
+        
+    status_collection = db["alert_statuses"]
+    
+    if update.status == "new":
+        status_collection.delete_one({"alert_id": alert_id})
+    else:
+        status_collection.update_one(
+            {"alert_id": alert_id},
+            {"$set": {"status": update.status, "updated_at": datetime.now()}},
+            upsert=True
+        )
+    return {"message": "Status updated successfully", "status": update.status}
+
 @app.get("/api/alerts")
 @app.get("/alerts")
-def get_alerts(top_x: int = 20):
+def get_alerts(skip: int = 0, limit: int = 20, filter: str = "all"):
     try:
         # Check connection
         client.admin.command('ping')
@@ -134,18 +162,53 @@ def get_alerts(top_x: int = 20):
             print("Data is older than 20 minutes or not found. Reloading data...")
             load_data_to_mongo(force=True)
         
-        # Retrieve documents from the collection, sorted by priority_score descending
-        # Exclude interpretability data from the main list view to save bandwidth
-        cursor = collection.find({}, {"_id": 0, "interpretability": 0}).sort("priority_score", -1).limit(top_x)
+        # Build query based on filter and alert statuses
+        status_collection = db["alert_statuses"]
+        
+        # Fetch statuses to filter in-memory or via join (Mongo join is complex here, let's use a query on statuses)
+        query = {}
+        
+        if filter == "done":
+            done_ids = [doc["alert_id"] for doc in status_collection.find({"status": "complete"}) if "alert_id" in doc]
+            query = {"alert_id": {"$in": done_ids}}
+        elif filter == "discarded":
+            disc_ids = [doc["alert_id"] for doc in status_collection.find({"status": "discarded"}) if "alert_id" in doc]
+            query = {"alert_id": {"$in": disc_ids}}
+        elif filter == "wip":
+            wip_ids = [doc["alert_id"] for doc in status_collection.find({"status": "wip"}) if "alert_id" in doc]
+            query = {"alert_id": {"$in": wip_ids}}
+        else:
+            # "all" or "urgent" - exclude completed and discarded
+            excluded_ids = [doc["alert_id"] for doc in status_collection.find({"status": {"$in": ["complete", "discarded"]}}) if "alert_id" in doc]
+            if excluded_ids:
+                query = {"alert_id": {"$nin": excluded_ids}}
+            
+            if filter == "urgent":
+                query["priority_score"] = {"$gte": 7.0}
+
+        # Retrieve documents from the collection
+        print(f"DEBUG: get_alerts(skip={skip}, limit={limit}, filter={filter})")
+        cursor = collection.find(query, {"_id": 0, "interpretability": 0}).sort([("priority_score", -1), ("alert_id", 1)]).skip(skip).limit(limit)
         alerts = list(cursor)
+        print(f"DEBUG: Returning {len(alerts)} alerts")
+        
+        # Join statuses
+        statuses = {doc["alert_id"]: doc["status"] for doc in status_collection.find() if "alert_id" in doc}
+        
+        for alert in alerts:
+            # Ensure alert_id is present (should be from records)
+            if "alert_id" not in alert:
+                 alert["alert_id"] = f"{alert.get('company_id')}_{alert.get('product_family', 'N/A')}_{alert.get('type', 'N/A')}".replace(" ", "_")
+            alert["status"] = statuses.get(alert["alert_id"], "new")
+            
         return alerts
     except ServerSelectionTimeoutError:
         raise HTTPException(status_code=503, detail="MongoDB service is unavailable")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/alerts/{company_id}/interpretability")
-def get_interpretability(company_id: str):
+@app.get("/api/alerts/{alert_id}/interpretability")
+def get_interpretability(alert_id: str):
     try:
         # Check connection
         client.admin.command('ping')
@@ -158,11 +221,15 @@ def get_interpretability(company_id: str):
             print("Data is older than 20 minutes or not found. Reloading data...")
             load_data_to_mongo(force=True)
             
-        alert = collection.find_one({"company_id": company_id}, {"_id": 0, "interpretability": 1})
+        alert = collection.find_one({"alert_id": alert_id}, {"_id": 0, "interpretability": 1})
+        # Try finding by company_id fallback if the previous didn't work (for backwards compatibility if needed, though we reload on empty)
+        if not alert:
+             alert = collection.find_one({"company_id": alert_id}, {"_id": 0, "interpretability": 1})
+             
         if alert and "interpretability" in alert:
             return alert["interpretability"]
         else:
-            raise HTTPException(status_code=404, detail="Interpretability data not found for this company")
+            raise HTTPException(status_code=404, detail="Interpretability data not found for this alert")
             
     except ServerSelectionTimeoutError:
         raise HTTPException(status_code=503, detail="MongoDB service is unavailable")
