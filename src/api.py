@@ -149,7 +149,10 @@ def update_alert_status(alert_id: str, update: StatusUpdate):
 
 @app.get("/api/alerts")
 @app.get("/alerts")
-def get_alerts(skip: int = 0, limit: int = 20, filter: str = "all"):
+def get_alerts(skip: int = 0, limit: int = 20, filter: str = "all", top_x: int = None):
+    # Use top_x as limit if provided (backwards compatibility)
+    if top_x is not None:
+        limit = top_x
     try:
         # Check connection
         client.admin.command('ping')
