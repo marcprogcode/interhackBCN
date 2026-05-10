@@ -141,33 +141,61 @@ class PrioritizationEngine:
                 # Generate Interpretability Data
                 history = []
                 purchase_dates = set(unique_dates.dt.date)
-                start_date = current_date - timedelta(days=400)
+                
+                # Window size: proportional to cycle length, ensuring we see the last purchase
+                window_days = int(max(base_cycle * 3, dslp + base_cycle * 1.5))
+                start_date = current_date - timedelta(days=window_days)
+                
+                # Precalculate thresholds to reflect realtime evolution
+                threshold_history = {}
+                sorted_dates_dt = sorted(list(unique_dates))
+                for idx in range(len(sorted_dates_dt)):
+                    p_date = sorted_dates_dt[idx].date()
+                    if idx < 3:
+                        threshold_history[p_date] = (base_cycle, adjusted_threshold)
+                        continue
+                    past_series = pd.Series(sorted_dates_dt[:idx+1])
+                    past_ipts = past_series.diff().dt.days.dropna()
+                    hist_bc = past_ipts.tail(15).quantile(0.85)
+                    if pd.isna(hist_bc) or hist_bc <= 0:
+                        threshold_history[p_date] = (base_cycle, adjusted_threshold)
+                    else:
+                        hist_conf = min(1.0, len(past_ipts[past_ipts >= 7]) / 10.0)
+                        hist_marg = 0.30 - (0.15 * hist_conf)
+                        hist_exp = p_date + timedelta(days=hist_bc)
+                        hist_adj = hist_bc + 30 if hist_exp.month == 8 else hist_bc * (1.0 + hist_marg)
+                        threshold_history[p_date] = (hist_bc, hist_adj)
                 
                 past_dates = [d for d in purchase_dates if d <= start_date.date()]
                 current_last_purchase = max(past_dates) if past_dates else None
                 
-                for i in range(400, -1, -1):
+                for i in range(window_days, -1, -1):
                     d = (current_date - timedelta(days=i)).date()
                     if d in purchase_dates:
                         current_last_purchase = d
                         
                     days_since_purchase = (d - current_last_purchase).days if current_last_purchase else 0
                     
+                    if current_last_purchase and current_last_purchase in threshold_history:
+                        hist_base_cycle, hist_adjusted_threshold = threshold_history[current_last_purchase]
+                    else:
+                        hist_base_cycle, hist_adjusted_threshold = base_cycle, adjusted_threshold
+                    
                     point = {
                         "date": d.strftime('%Y-%m-%d'),
                         "days_since_purchase": days_since_purchase,
-                        "moving_threshold": int(base_cycle),
-                        "frozen_threshold": int(adjusted_threshold)
+                        "moving_threshold": int(hist_base_cycle),
+                        "frozen_threshold": int(hist_adjusted_threshold)
                     }
                     
                     if i == 0:
                         point["is_current_date"] = True
                         point["is_alert_evaluated"] = True
                         
-                    if days_since_purchase == int(adjusted_threshold):
+                    if days_since_purchase == int(hist_adjusted_threshold):
                         point["is_overdue_date"] = True
                         point["event"] = "Overdue"
-                    elif days_since_purchase == int(base_cycle):
+                    elif days_since_purchase == int(hist_base_cycle):
                         point["is_past_triggered"] = True
                         point["event"] = "Soft Alert Triggered"
                         
