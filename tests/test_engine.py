@@ -26,13 +26,13 @@ class TestPrioritizationEngine(unittest.TestCase):
         self.assertEqual(len(ltv_df), 4)
         self.assertIn('LTV_Multiplier', ltv_df.columns)
         
-        # ID 4 should have highest multiplier 1.5
+        # ID 4 should have highest multiplier 5.0 (it's the top 99th percentile in this small sample)
         mult_4 = ltv_df[ltv_df['Id. Cliente'] == 4]['LTV_Multiplier'].values[0]
-        self.assertEqual(mult_4, 1.5)
+        self.assertEqual(mult_4, 5.0)
         
-        # ID 1 should have base multiplier 1.0
+        # ID 1 should have base multiplier 0.2 (it's below the median)
         mult_1 = ltv_df[ltv_df['Id. Cliente'] == 1]['LTV_Multiplier'].values[0]
-        self.assertEqual(mult_1, 1.0)
+        self.assertEqual(mult_1, 0.2)
         
     def test_potencial_bonus(self):
         df_pot = pd.DataFrame({
@@ -41,10 +41,10 @@ class TestPrioritizationEngine(unittest.TestCase):
             'Potencial_H': [1000]
         })
         
-        bonus_match = self.engine.get_potencial_bonus(1, 'Fam_A', df_pot)
-        self.assertEqual(bonus_match, 1.05)
+        bonus_match = self.engine.get_potencial_bonus(1, 'Fam_A', df_pot, annualized_spend=100)
+        self.assertEqual(bonus_match, 2.0) # 1000 potential vs 100 spend -> >2x -> 2.0
         
-        bonus_nomatch = self.engine.get_potencial_bonus(2, 'Fam_A', df_pot)
+        bonus_nomatch = self.engine.get_potencial_bonus(2, 'Fam_A', df_pot, annualized_spend=100)
         self.assertEqual(bonus_nomatch, 1.0)
 
     def test_commodities_logic(self):
@@ -65,7 +65,7 @@ class TestPrioritizationEngine(unittest.TestCase):
         # Median IPT = 30.5. Threshold = 30.5 * 1.5 = 45.75.
         # DSLP > Threshold. Should alert.
         
-        ltv_df = pd.DataFrame({'Id. Cliente': [1], 'LTV_Multiplier': [1.0]})
+        ltv_df = pd.DataFrame({'Id. Cliente': [1], 'LTV_Multiplier': [1.0], 'LTV': [400]})
         df_pot = pd.DataFrame({'Id.Cliente': [], 'Familia': [], 'Potencial_H': []})
         
         alerts = self.engine.process_commodities(df_com, current_date, ltv_df, df_pot)
@@ -99,19 +99,19 @@ class TestPrioritizationEngine(unittest.TestCase):
             'Id. Cliente': [3, 3],
             'Familia_H': ['Fam_T', 'Fam_T'],
             'Fecha': [
-                current_date - timedelta(days=200), # Prev 6M
-                current_date - timedelta(days=250), # Prev 6M
+                current_date - timedelta(days=20), # Recent
+                current_date - timedelta(days=250), # Prev 6M (age = 230 days)
             ],
-            'Valores_H': [500, 500]
+            'Valores_H': [100, 1000] # Vol drop from 1000 to 100
         })
         
-        ltv_df = pd.DataFrame({'Id. Cliente': [3], 'LTV_Multiplier': [1.0]})
+        ltv_df = pd.DataFrame({'Id. Cliente': [3], 'LTV_Multiplier': [1.0], 'LTV': [1100]})
         df_pot = pd.DataFrame({'Id.Cliente': [], 'Familia': [], 'Potencial_H': []})
         
         alerts = self.engine.process_technical(df_tech, current_date, ltv_df, df_pot)
         self.assertEqual(len(alerts), 1)
         self.assertEqual(alerts[0]['Type'], 'Churn Risk')
-        self.assertTrue('Volume dropped >50%' in alerts[0]['Reason'])
+        self.assertTrue('Vol drop >50%' in alerts[0]['Reason'])
 
     # End to end test
     def test_e2e_run(self):

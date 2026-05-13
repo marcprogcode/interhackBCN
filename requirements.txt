@@ -5,3 +5,5 @@ numpy
 tqdm
 openpyxl
 pymongo
+matplotlib
+seaborn

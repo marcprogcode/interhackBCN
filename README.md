@@ -85,7 +85,7 @@ graph TD
 *   **Language**: Python 3.11+
 *   **Web Framework**: FastAPI / Uvicorn
 *   **Database**: MongoDB
-*   **Analysis**: Pandas, NumPy, Scipy
+*   **Analysis**: Pandas, NumPy, OpenPyXL
 *   **Visualization**: Matplotlib, Seaborn
 *   **Ops**: Docker, Pydantic
 
@@ -100,7 +100,7 @@ graph TD
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/interhackBCN.git
+git clone https://github.com/marcprogcode/interhackBCN.git
 cd interhackBCN
 
 # Install dependencies
@@ -137,9 +137,13 @@ The project includes a suite of retroactive testing tools to validate the engine
 
 *   `src/`: Main source code.
     *   `prioritization_engine.py`: Core logic for alert generation.
-    *   `api.py`: FastAPI implementation.
-    *   `data_loader.py`: Data ingestion and cleaning.
-    *   `visualize_alerts.py`: Matplotlib visualization suite.
+    *   `api.py`: FastAPI implementation & MongoDB orchestration.
+    *   `data_loader.py`: Data ingestion, cleaning, and normalization.
+    *   `visualize_alerts.py`: Matplotlib visualization suite for alerts.
+    *   `retroactive_sim.py`: Time-travel simulation for historical validation.
+    *   `analyze_clients.py`: Exploratory data analysis (LTV & Tenure).
+    *   `large_scale_test.py`: Performance & reliability benchmarking.
+    *   `refresh_db.py`: Manual trigger for full database recalculation.
 *   `data/`: Input datasets.
 *   `docs/`: Detailed API and technical documentation.
 *   `plots/`: Generated visual reports.

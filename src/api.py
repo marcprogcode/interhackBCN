@@ -199,10 +199,8 @@ def get_alerts(skip: int = 0, limit: int = 20, filter: str = "all", top_x: int =
                 query["priority_score"] = {"$gte": 7.0}
 
         # Retrieve documents from the collection
-        print(f"DEBUG: get_alerts(skip={skip}, limit={limit}, filter={filter})")
         cursor = collection.find(query, {"_id": 0, "interpretability": 0}).sort([("priority_score", -1), ("alert_id", 1)]).skip(skip).limit(limit)
         alerts = list(cursor)
-        print(f"DEBUG: Returning {len(alerts)} alerts")
         
         # Join statuses
         statuses = {doc["alert_id"]: doc["status"] for doc in status_collection.find() if "alert_id" in doc}

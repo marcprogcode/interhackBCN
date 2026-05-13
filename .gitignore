@@ -2,3 +2,6 @@
 outputs/
 .env
 __pycache__/
+plots/
+documents/
+scratch/
