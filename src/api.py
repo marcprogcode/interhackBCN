@@ -1,5 +1,6 @@
 import os
 import json
+import threading
 import pandas as pd
 import numpy as np
 from fastapi import FastAPI, HTTPException
@@ -30,7 +31,13 @@ collection = db["daily_alerts"]
 
 CSV_PATH = os.path.join(os.path.dirname(__file__), '..', 'outputs', 'daily_alerts.csv')
 
+# Lock to prevent concurrent recalculations
+_recalc_lock = threading.Lock()
+
 def load_data_to_mongo(force=False):
+    if not _recalc_lock.acquire(blocking=False):
+        print("Recalculation already in progress, skipping.")
+        return
     try:
         # Check connection first
         client.admin.command('ping')
@@ -123,6 +130,8 @@ def load_data_to_mongo(force=False):
         print("MongoDB is not running or unreachable. Please start MongoDB.")
     except Exception as e:
         print(f"Error loading CSV to MongoDB: {e}")
+    finally:
+        _recalc_lock.release()
 
 # Load the data when the script starts (only if MongoDB is empty)
 load_data_to_mongo()
@@ -149,7 +158,10 @@ def update_alert_status(alert_id: str, update: StatusUpdate):
 
 @app.get("/api/alerts")
 @app.get("/alerts")
-def get_alerts(skip: int = 0, limit: int = 20, filter: str = "all"):
+def get_alerts(skip: int = 0, limit: int = 20, filter: str = "all", top_x: int = None):
+    # Use top_x as limit if provided (backwards compatibility)
+    if top_x is not None:
+        limit = top_x
     try:
         # Check connection
         client.admin.command('ping')
